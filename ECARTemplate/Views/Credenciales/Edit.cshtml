@@ -1,0 +1,111 @@
+﻿@model ECARTemplate.Models.Credencial
+@{
+    ViewData["Title"] = "Editar Credencial";
+}
+<a asp-action="Index" class="btn btn-secondary ms-2">Volver a Credenciales</a>
+<br />
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1 class="text-center mb-4">Editar Credencial</h1>
+
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Credencial</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="CodigoEquipo" class="control-label"> Codigo Equipo</label>
+                                    <input asp-for="CodigoEquipo" class="form-control" readonly/>
+                                    <span asp-validation-for="CodigoEquipo" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="FechaYHora" class="control-label">Fecha Y Hora</label>
+                                    <input asp-for="FechaYHora" class="form-control" readonly />
+                                    <span asp-validation-for="FechaYHora" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="CodigoUsuarioEcar" class="control-label"> Codigo Empleado</label>
+                                    <input asp-for="CodigoUsuarioEcar" class="form-control" readonly/>
+                                    <span asp-validation-for="CodigoUsuarioEcar" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="NombreUsuario" class="control-label">Nombre Empleado</label>
+                                    <input asp-for="NombreUsuario" class="form-control" readonly />
+                                    <span asp-validation-for="NombreUsuario" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Perfil" class="control-label">Perfil</label>
+                                    <input asp-for="Perfil" class="form-control" />
+                                    <span asp-validation-for="Perfil" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Usuario" class="control-label"></label>
+                                    <input asp-for="Usuario" class="form-control" />
+                                    <span asp-validation-for="Usuario" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Contrasena" class="control-label">Contraseña</label>
+                                    <input asp-for="Contrasena" class="form-control" placeholder="Dejar vacía para no cambiar" />
+                                    <span asp-validation-for="Contrasena" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Estado" class="control-label"></label>
+                                    <input asp-for="Estado" class="form-control" readonly/>
+                                    <span asp-validation-for="Estado" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="UsuarioRegistro" class="control-label">Usuario que registró</label>
+                            <input asp-for="UsuarioRegistro" class="form-control" readonly/>
+                            <span asp-validation-for="UsuarioRegistro" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group text-center mt-4">
+                            <button type="submit" class="btn btn-success">Guardar</button>
+                            <a asp-action="Index" class="btn btn-secondary ms-2">Volver a la Lista</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

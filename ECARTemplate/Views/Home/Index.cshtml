@@ -1,0 +1,150 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body style="margin: 0; padding: 0; height: 100vh;">
+    <div id="arrowContainer" style="position: absolute; margin-left: 90px; left: 0;">
+        <div id="arrow" style="width: 0; height: 0; border-top: 15px solid transparent; border-bottom: 15px solid transparent; border-right: 30px solid #0066ff;"></div>
+        <div id="arrowLine" style="position: absolute; top: 48%; left: 22px; transform: translateY(-50%); width: 50px; height: 10px; background-color: #0066ff;"></div>
+    </div>
+
+<div class="text-center">
+    <div class="justify-content-end align-items-center">
+        <img src="~/img/logo-big.png" alt="@Settings.App WebApp" aria-roledescription="logo" class="img-fluid" style="max-height: 250px;">
+    </div>
+    <h1 class="display-2">¡Bienvenido!</h1>
+        @using System.Security.Claims
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="alert alert-success" role="alert">
+                <H4>Usuario activo: @User.Identity.Name.</H4>
+            </div>
+        }
+        else
+        {
+            <div>No hay ningún usuario autenticado.</div>
+        }
+    <p><h3>Esta página permite la gestión de las credenciales de equipos y software productivos de la compañía.</h3></p>
+
+</div>
+</body>
+@section Scripts {
+
+    <script>
+        // Elementos de la flecha
+        const arrowContainer = document.getElementById('arrowContainer');
+        const arrow = document.getElementById('arrow');
+        const arrowLine = document.getElementById('arrowLine');
+
+        // Estado para controlar la proximidad del mouse
+        let isMouseNearby = false;
+        let mouseProximityTimer = null;
+
+        // Función para posicionar la flecha a 1/4 de la altura de la página
+        function positionArrow() {
+            const windowHeight = window.innerHeight;
+            arrowContainer.style.top = (windowHeight / 4) + 'px';
+            arrowContainer.style.transform = 'translateY(-50%)';
+        }
+
+        // Animación pulsante
+        function startPulseAnimation() {
+            let opacity = 0.3;
+            let scale = 0.8;
+            let increasing = true;
+
+            setInterval(function() {
+                // Si el cursor está cerca, mantener invisible independientemente de la animación
+                if (isMouseNearby) {
+                    arrow.style.opacity = 0;
+                    arrowLine.style.opacity = 0;
+                    return;
+                }
+
+                // Continuar con la animación normal
+                if (increasing) {
+                    opacity += 0.05;
+                    scale += 0.01;
+                    if (opacity >= 1) {
+                        increasing = false;
+                    }
+                } else {
+                    opacity -= 0.05;
+                    scale -= 0.01;
+                    if (opacity <= 0.3) {
+                        increasing = true;
+                    }
+                }
+
+                arrow.style.opacity = opacity;
+                arrowLine.style.opacity = opacity;
+                arrow.style.transform = `scale(${scale})`;
+                arrowLine.style.transform = `scale(${scale}) translateY(-50%)`;
+
+                // Añadir efecto de sombra
+                arrow.style.filter = `drop-shadow(0 0 5px rgba(0, 102, 255, ${opacity}))`;
+                arrowLine.style.filter = `drop-shadow(0 0 5px rgba(0, 102, 255, ${opacity}))`;
+            }, 50);
+        }
+
+        // Detector para movimiento del mouse
+        function setupMouseProximityDetection() {
+            document.addEventListener('mousemove', function(event) {
+                // Recalcular posición de la flecha (para asegurar precisión)
+                const arrowRect = arrowContainer.getBoundingClientRect();
+                const arrowCenterX = arrowRect.left + arrowRect.width / 2;
+                const arrowCenterY = arrowRect.top + arrowRect.height / 2;
+
+                // Posición del cursor
+                const mouseX = event.clientX;
+                const mouseY = event.clientY;
+
+                // Calcular distancia euclidiana
+                const distance = Math.sqrt(
+                    Math.pow(mouseX - arrowCenterX, 2) +
+                    Math.pow(mouseY - arrowCenterY, 2)
+                );
+
+                // Distancia umbral en píxeles (aproximadamente 4 cm)
+                const thresholdDistance = 80; // 1~cm en píxeles estándar
+
+                // // Actualizar estado de proximidad
+                // const wasMouseNearby = isMouseNearby;
+                // isMouseNearby = distance < thresholdDistance;
+
+                // Si el estado cambió de lejos a cerca
+                if (!wasMouseNearby && isMouseNearby) {
+                    // El cursor acaba de entrar en el área - ocultar inmediatamente
+                    arrow.style.opacity = 0;
+                    arrowLine.style.opacity = 0;
+                    // Cancelar cualquier temporizador pendiente
+                    if (mouseProximityTimer) clearTimeout(mouseProximityTimer);
+                }
+                // Si el estado cambió de cerca a lejos
+                else if (wasMouseNearby && !isMouseNearby) {
+                    // El cursor acaba de salir del área - esperar antes de mostrar
+                    if (mouseProximityTimer) clearTimeout(mouseProximityTimer);
+                    mouseProximityTimer = setTimeout(() => {
+                        // Solo restaurar si sigue fuera del área después del retraso
+                        if (!isMouseNearby) {
+                            // Permitir que la animación continúe
+                            isMouseNearby = false;
+                        }
+                    }, 200); // 200ms de retraso
+                }
+            });
+        }
+
+        // Inicializar todo cuando el DOM esté cargado
+        document.addEventListener('DOMContentLoaded', function() {
+            positionArrow();
+            setupMouseProximityDetection();
+            startPulseAnimation();
+
+            // Actualizar posición si cambia el tamaño de la ventana
+            window.addEventListener('resize', positionArrow);
+        });
+    </script>
+
+    }

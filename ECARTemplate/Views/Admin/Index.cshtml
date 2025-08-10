@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Panel de Administración";
+}
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+    <p>Bienvenido al panel de administración de la aplicación.</p>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card bg-light mb-3">
+                <div class="card-header">Gestión de Equipos</div>
+                <div class="card-body">
+                    <p class="card-text">Administra la información de los equipos.</p>
+                    <a asp-controller="Equipos" asp-action="Index" class="btn btn-primary">Ir a Equipos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-light mb-3">
+                <div class="card-header">Gestión de Usuarios</div>
+                <div class="card-body">
+                    <p class="card-text">Administra la información de los usuarios de la aplicación.</p>
+                    <a asp-action="Usuarios" class="btn btn-primary">Ir a Usuarios</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-light mb-3">
+                <div class="card-header">Gestión de Usuarios TI</div>
+                <div class="card-body">
+                    <p class="card-text">Administra la información de los usuarios con permisos de TI.</p>
+                    <a asp-action="UsuariosTI" class="btn btn-primary">Ir a Usuarios TI</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-light mb-3">
+                <div class="card-header">Gestión de Credenciales</div>
+                <div class="card-body">
+                    <p class="card-text">Administra las credenciales y accesos de la aplicación.</p>
+                    <a asp-action="Credenciales" class="btn btn-primary">Ir a Credenciales</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

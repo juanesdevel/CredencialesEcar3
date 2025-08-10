@@ -1,0 +1,206 @@
+﻿@model IEnumerable<ECARTemplate.Models.Credencial>
+
+@{
+    ViewData["Title"] = "Credenciales";
+}
+<div fa-computer-classic="text-center">
+    <h1 class="display-4">Credenciales</h1>
+</div>
+<p class="mx-5 mb-3">
+    <a class="btn btn-success btn-sm" asp-action="Create">Crear Nuevo</a>
+</p>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show mx-5" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show mx-5" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["InfoMessage"] != null)
+{
+    <div class="alert alert-info alert-dismissible fade show mx-5" role="alert">
+        @TempData["InfoMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="card mb-3">
+    <div class="card-header bg-primary text-white">
+        <h6 class="mb-0">Filtro Avanzado</h6>
+    </div>
+    <div class="card-body py-2">
+        <form asp-action="Index" method="get">
+            <div class="row gx-2 align-items-end">
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="fechaYHoraDesdeFiltro" class="form-label-sm">Fecha Desde:</label>
+                        <input type="date" class="form-control form-control-sm" id="fechaYHoraDesdeFiltro" name="fechaYHoraDesdeFiltro" value="@((ViewBag.FechaYHoraDesdeFiltro as DateTime?)?.ToString("yyyy-MM-dd") ?? "")" />
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="nombreUsuarioFiltro" class="form-label-sm">Nombre Empleado:</label>
+                        <input type="text" class="form-control form-control-sm" id="nombreUsuarioFiltro" name="nombreUsuarioFiltro" value="@((string)ViewBag.NombreUsuarioFiltro ?? "")" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="codigoUsuarioEcarFiltro" class="form-label-sm">Código Empleado:</label>
+                        <input type="text" class="form-control form-control-sm" id="codigoUsuarioEcarFiltro" name="codigoUsuarioEcarFiltro" value="@((string)ViewBag.CodigoUsuarioEcarFiltro ?? "")" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="codigoEquipoFiltro" class="form-label-sm">Código Equipo:</label>
+                        <input type="text" class="form-control form-control-sm" id="codigoEquipoFiltro" name="codigoEquipoFiltro" value="@((string)ViewBag.CodigoEquipoFiltro ?? "")" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-2 align-items-end">
+
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="fechaYHoraHastaFiltro" class="form-label-sm">Fecha Hasta:</label>
+                        <input type="date" class="form-control form-control-sm" id="fechaYHoraHastaFiltro" name="fechaYHoraHastaFiltro" value="@((ViewBag.FechaYHoraHastaFiltro as DateTime?)?.ToString("yyyy-MM-dd") ?? "")" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="perfilFiltro" class="form-label-sm">Perfil:</label>
+                        <input type="text" class="form-control form-control-sm" id="perfilFiltro" name="perfilFiltro" value="@((string)ViewBag.PerfilFiltro ?? "")" />
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="usuarioRegistroFiltro" class="form-label-sm">Usuario que Registró:</label>
+                        <input type="text" class="form-control form-control-sm" id="usuarioRegistroFiltro" name="usuarioRegistroFiltro" value="@((string)ViewBag.UsuarioRegistroFiltro ?? "")" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="estadoFiltro">Estado:</label>
+                        <select class="form-control" id="estadoFiltro" name="estadoFiltro">
+                            <option value="">Todos</option>
+                            <option value="Activo" selected="@(((string)ViewBag.EstadoFiltro ?? "") == "Activo")">Activo</option>
+                            <option value="Inactivo" selected="@(((string)ViewBag.EstadoFiltro ?? "") == "Inactivo")">Inactivo</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-2 align-items-end">
+
+                <div class="col-md-9 text-start">
+                    <div class="form-group mt-2">
+                        <button type="submit" class="btn btn-primary btn-sm">Filtrar</button>
+                        <a asp-action="Index" class="btn btn-secondary btn-sm ms-2">Limpiar Filtros</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mx-5 mb-3">
+    <p class="text-muted total-registros-counter">Mostrando @ViewData["TotalRegistros"] registros.</p>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <h4>Estado</h4>
+            </th>
+            <th>
+                <h4>Código Equipo</h4>
+            </th>
+            <th>
+                <h4>Código Empleado</h4>
+            </th>
+            <th>
+                <h4>Nombre Empleado</h4>
+            </th>
+            <th>
+                <h4>Usuario</h4>
+            </th>
+            <th>
+                <h4>Contraseña</h4>
+            </th>
+            <th>
+                <h4>Acciones</h4>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (item.Estado == "Activo")
+                    {
+                        <span class="badge bg-success">Activo</span>
+                    }
+                    else if (item.Estado == "Inactivo")
+                    {
+                        <span class="badge bg-secondary">Inactivo</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Desconocido</span>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodigoEquipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodigoUsuarioEcar)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NombreUsuario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Usuario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contrasena)
+                </td>
+                <td>
+                    <a asp-action="Clonar" asp-route-id="@item.Id" class="btn btn-info btn-sm">Clonar</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Editar</a>
+                   
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Detalles</a>
+                    @if (item.Estado == "Activo")
+                    {
+                        @* --- CAMBIO CRÍTICO: DE ENLACE A FORMULARIO POST --- *@
+                        <form asp-action="Desactivar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro de inactivar la credencial?');">
+                            <button type="submit" class="btn btn-secondary btn-sm">Inactivar</button>
+                        </form>
+                    }
+                    else
+                    {
+                        @* --- CAMBIO CRÍTICO: DE ENLACE A FORMULARIO POST --- *@
+                        <form asp-action="Activar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro de activar la credencial?');">
+                            <button type="submit" class="btn btn-success btn-sm">Activar</button>
+                        </form>
+                    }
+                    @* Comento esta linea de "Eliminar" ya que se recomienda usar inactivo para evitar inconsistencias en el sistema de auditoría. *@
+                    @* <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm" onclick="return confirm('¿Está seguro que desea eliminar este equipo? Esta acción no se puede deshacer.');">Eliminar</a> *@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

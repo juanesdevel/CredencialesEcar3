@@ -1,0 +1,140 @@
+﻿@model ECARTemplate.Models.Equipo
+
+@{
+    ViewData["Title"] = "Editar Equipo";
+}
+<a asp-action="Index" class="btn btn-secondary ms-2">Volver a Equipos</a>
+<br />
+
+<div class="container">
+    <h1 class="text-center mb-4">Editar Equipo ó Software</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Equipo ó Software</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit" enctype="multipart/form-data">
+                        @* <--- ¡CAMBIO CLAVE: AÑADIR enctype="multipart/form-data"! *@
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" /> @* Campo oculto para el Id del equipo *@
+                        <input type="hidden" asp-for="RutaImagen" /> @* <--- IMPORTANTE: Campo oculto para enviar la RutaImagen actual si no se sube una nueva *@
+                        <input type="hidden" asp-for="Fecha" /> @* Campo oculto para la Fecha (si no se edita directamente en el form) *@
+                        <input type="hidden" asp-for="UsuarioRegistro" /> @* Campo oculto para UsuarioTiRegistro (si no se edita directamente en el form) *@
+
+                        <div class="mb-3">
+                            <label asp-for="Fecha" class="control-label"></label>
+                            <input asp-for="Fecha" class="form-control" id="FechaCreacionInput" type="date" readonly />
+                            <span asp-validation-for="Fecha" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="CodigoEquipo" class="control-label"></label>
+                            <input asp-for="CodigoEquipo" class="form-control" readonly /> @* Mantenido readonly por tu código previo *@
+                            <span asp-validation-for="CodigoEquipo" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="NombreEquipo" class="control-label"></label>
+                            <input asp-for="NombreEquipo" class="form-control" />
+                            <span asp-validation-for="NombreEquipo" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Sede" class="control-label"></label>
+                            <input asp-for="Sede" class="form-control" />
+                            <span asp-validation-for="Sede" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Area" class="control-label"></label>
+                            <select asp-for="Area" class="form-control">
+                                <option value="">-- Seleccione un área --</option>
+                                <option>Solidos 2</option>
+                                <option>Solidos 3</option>
+                                <option>Solidos 4</option>
+                                <option>Solidos 5</option>
+                                <option>Linea Marchesini</option>
+                                <option>Acondicionamiento</option>
+                                <option>PPE</option>
+                                <option>Inyectables</option>
+                                <option>Cosméticos</option>
+                                <option>Sin registro</option>
+                                <option>Control Calidad</option>
+                                <option>Software</option>
+                                <option>Piso ténico</option>
+                                <option>Microbiología</option>
+                                <option>Blisteado</option>
+                                <option>Tableteado</option>
+                                <option>Liquidos</option>
+                                <option>Bodega</option>
+                            </select>
+                            <span asp-validation-for="Area" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="SubArea" class="control-label"></label>
+                            <input asp-for="SubArea" class="form-control" />
+                            <span asp-validation-for="SubArea" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Nota" class="control-label"></label>
+                            <textarea asp-for="Nota" class="form-control"></textarea>
+                            <span asp-validation-for="Nota" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="HojaDeVida" class="control-label"></label>
+                            <textarea asp-for="HojaDeVida" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="HojaDeVida" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Estado" class="control-label"></label>
+                            <input asp-for="Estado" class="form-control" value="Activo" readonly /> @* Mantenido readonly por tu código previo *@
+                            <span asp-validation-for="Estado" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="imageFile" class="form-label">Cambiar Imagen</label>
+                            @if (!string.IsNullOrEmpty(Model.RutaImagen))
+                            {
+                                <div class="mb-2">
+                                    <p>Imagen actual:</p>
+                                    <img src="@Model.RutaImagen" alt="Imagen actual de @Model.NombreEquipo" class="img-thumbnail" style="max-width: 150px; height: auto; border: 1px solid #ddd; padding: 5px;" />
+                                    <p class="text-muted"><small>Se reemplazará al subir una nueva.</small></p>
+                                </div>
+                            }
+                            else
+                            {
+                                <p class="text-muted">No hay imagen actual.</p>
+                            }
+                            <input type="file" id="imageFile" name="imageFile" class="form-control" accept="image/*" />
+                            <span class="text-muted"><small>Selecciona una nueva imagen. Formatos permitidos: JPG, PNG, GIF. Tamaño máximo: 5MB.</small></span>
+                        </div>
+                        <div class="form-group text-center mt-4">
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <a asp-action="Index" class="btn btn-secondary ms-2">Volver a la lista</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(function () {
+            // Script para la Fecha de Creación (si lo sigues necesitando en el Editar)
+            const fechaInput = document.getElementById("FechaCreacionInput");
+            if (fechaInput && !fechaInput.value) { // Solo si está vacío
+                const today = new Date();
+                const year = today.getFullYear();
+                const month = (today.getMonth() + 1).toString().padStart(2, '0');
+                const day = today.getDate().toString().padStart(2, '0');
+                fechaInput.value = `${year}-${month}-${day}`;
+            }
+        });
+    </script>
+}

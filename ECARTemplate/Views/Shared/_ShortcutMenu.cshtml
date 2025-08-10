@@ -1,0 +1,26 @@
+@if (Settings.Features.ShortcutMenu)
+{
+<nav class="shortcut-menu d-none d-sm-block">
+	<input type="checkbox" class="menu-open" name="menu-open" id="menu_open"/>
+	<label for="menu_open" class="menu-open-button ">
+		<span class="app-shortcut-icon d-block"></span>
+	</label>
+	@* <a href="#" class="menu-item btn" data-toggle="tooltip" data-placement="left" title="Scroll Top">
+		<i class="@(Settings.Theme.IconPrefix) fa-arrow-up"></i>
+	</a> *@
+
+		@* <button type="submit" class="nav-link btn btn-link text-left">
+			<i class="nav-link-icon fal fa-power-off"></i>
+			<span class="nav-link-text" data-i18n="nav.utilities">Cerrar Sesión</span>
+		</button> *@
+	<a href="#" class="menu-item btn" data-action="app-fullscreen" data-toggle="tooltip" data-placement="left" title="Pantalla Completa">
+		<i class="@(Settings.Theme.IconPrefix) fa-expand"></i>
+	</a>
+	<a href="#" class="menu-item btn" data-action="app-print" data-toggle="tooltip" data-placement="left" title="Imprimir Página">
+		<i class="@(Settings.Theme.IconPrefix) fa-print"></i>
+	</a>
+	@* <a href="#" class="menu-item btn" data-action="app-voice" data-toggle="tooltip" data-placement="left" title="Voice command">
+		<i class="@(Settings.Theme.IconPrefix) fa-microphone"></i>
+	</a> *@
+</nav>
+}

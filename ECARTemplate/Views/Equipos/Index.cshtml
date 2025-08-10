@@ -1,0 +1,154 @@
+﻿@model IEnumerable<ECARTemplate.Models.Equipo>
+
+@{
+    ViewData["Title"] = "Equipos";
+    // Recuperar los valores de los filtros desde ViewData para que se mantengan en la interfaz
+    var currentSearchString = ViewData["CurrentFilter"] as string;
+    var currentSedeFilter = ViewData["SedeFilter"] as string;
+    var currentAreaFilter = ViewData["AreaFilter"] as string; // <--- ¡NUEVO!
+    var currentEstadoFilter = ViewData["EstadoFilter"] as string;
+    var sedes = ViewBag.Sedes as List<string> ?? new List<string>();
+    var areas = ViewBag.Areas as List<string> ?? new List<string>(); // <--- ¡NUEVO!
+}
+<div fa-computer-classic="text-center">
+    <h1 class="display-4">Equipos ó Software</h1>
+</div>
+    <p class="mx-5">
+        <a class="btn btn-success btn-sm" asp-action="Create">Crear Nuevo</a>
+        <button onclick="location.reload();" class="btn btn-primary btn-sm">Mostrar todos</button>
+    </p>
+    <div class="card mb-3">
+        <div class="card-header bg-primary text-white">
+            <h6 class="mb-0">Filtro</h6>
+        </div>
+        <div class="card-body">
+            <form asp-action="Index" method="get">
+                <div class="row g-2 align-items-end">
+                    <div class="col-md-3">
+                        <label for="searchString" class="form-label-sm">Búsqueda</label>
+                        <input type="text" name="searchString" id="searchString" class="form-control form-control-sm" placeholder="Código o Nombre" value="@currentSearchString">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="sedeFilter" class="form-label-sm">Sede</label>
+                        <select name="sedeFilter" id="sedeFilter" class="form-control form-control-sm">
+                            <option value="">Todas</option>
+                            @foreach (var sede in sedes)
+                            {
+                                <option value="@sede" selected="@(sede == currentSedeFilter ? "selected" : null)">@sede</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="areaFilter" class="form-label-sm">Área</label>
+                        <select name="areaFilter" id="areaFilter" class="form-control form-control-sm">
+                            <option value="">Todas</option>
+                            @foreach (var area in areas)
+                            {
+                                <option value="@area" selected="@(area == currentAreaFilter ? "selected" : null)">@area</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="estadoFilter" class="form-label-sm">Estado</label>
+                        <select name="estadoFilter" id="estadoFilter" class="form-control form-control-sm">
+                            <option value="">Todos</option>
+                            <option value="Activo" selected="@("Activo" == currentEstadoFilter ? "selected" : null)">Activo</option>
+                            <option value="Inactivo" selected="@("Inactivo" == currentEstadoFilter ? "selected" : null)">Inactivo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-2 mt-2">
+                    <div class="col-md-12 text-end">
+                        <button type="submit" class="btn btn-primary btn-sm">Filtrar</button>
+                        <a asp-action="Index" class="btn btn-secondary btn-sm">Limpiar Filtros</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<div class="mx-5 mb-3">
+    <p class="text-muted total-registros-counter">Mostrando @ViewData["TotalRegistros"] registros.</p>
+</div>
+
+    <div class="mx-5">
+        <table class="table" style="font-size: 1.0em;">
+            <thead>
+                <tr>
+                    <th class="px-0">
+                        <h4><strong>Estado</strong></h4>
+                    </th>
+                    <th class="px-0">
+                        <h4><strong>Código</strong></h4>
+                    </th>
+                    <th class="px-0">
+                        <h4><strong>Nombre</strong></h4>
+                    </th>
+                    <th class="px-0">
+                        <h4><strong>Sede</strong></h4>
+                    </th>
+                    <th class="px-0">
+                        <h4><strong>Area</strong></h4>
+                    </th>
+                    <th class="px-0">
+                        <h4><strong>Acciones</strong></h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @if (item.Estado == "Activo")
+                            {
+                                <span class="badge bg-success">Activo</span>
+                            }
+                            else if (item.Estado == "Inactivo")
+                            {
+                                <span class="badge bg-secondary">Inactivo</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Desconocido</span>
+                            }
+                        </td>
+                        <td class="px-1">
+                            @Html.DisplayFor(modelItem => item.CodigoEquipo)
+                        </td>
+                        <td class="px-1">
+                            @Html.DisplayFor(modelItem => item.NombreEquipo)
+                        </td>
+                        <td class="px-1">
+                            @Html.DisplayFor(modelItem => item.Sede)
+                        </td>
+                        <td class="px-1">
+                            @Html.DisplayFor(modelItem => item.Area)
+                        </td>
+                        <td class="px-1">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Editar</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Detalles</a> |
+
+                            @if (item.Estado == "Activo")
+                            {
+                                <form asp-action="Desactivar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('Si inactiva el equipo, todas las credenciales relacionadas también lo harán. ¿Está seguro que desea Inactivar este equipo?');">
+                                    <button type="submit" class="btn btn-secondary btn-sm">Inactivar</button>
+                                </form>
+                            }
+                            else
+                            {
+                                <form asp-action="Activar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro que desea activar este equipo?');">
+                                    <button type="submit" class="btn btn-success btn-sm">Activar</button>
+                                </form>
+                            }
+                        </td>
+                    </tr>
+                }
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="7">No se encontraron equipos.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>

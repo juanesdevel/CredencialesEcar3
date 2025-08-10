@@ -1,0 +1,103 @@
+﻿@model ECARTemplate.Models.Equipo
+
+@{
+    ViewData["Title"] = "Eliminar Equipo";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Eliminar Equipo</h1>
+    <p class="lead">Confirmar eliminación</p>
+</div>
+
+<div class="mx-5">
+    <div class="alert alert-danger">
+        <h4>¿Está seguro que desea eliminar este equipo?</h4>
+        <p>Esta acción no se puede deshacer.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h5>Detalles del Equipo</h5>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <tr>
+                    <th>Estado:</th>
+                    <td>
+                        @if (Model.Estado == "Activo")
+                        {
+                            <span class="badge bg-success">Activo</span>
+                        }
+                        else if (Model.Estado == "Inactivo")
+                        {
+                            <span class="badge bg-secondary">Inactivo</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Desconocido</span>
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <th>Código:</th>
+                    <td>@Html.DisplayFor(model => model.CodigoEquipo)</td>
+                </tr>
+                <tr>
+                    <th>Nombre:</th>
+                    <td>@Html.DisplayFor(model => model.NombreEquipo)</td>
+                </tr>
+                <tr>
+                    <th>Sede:</th>
+                    <td>@Html.DisplayFor(model => model.Sede)</td>
+                </tr>
+                <tr>
+                    <th>Área:</th>
+                    <td>@Html.DisplayFor(model => model.Area)</td>
+                </tr>
+                <tr>
+                    <th>Sub-Área:</th>
+                    <td>@Html.DisplayFor(model => model.SubArea)</td>
+                </tr>
+                <tr>
+                    <th>Fecha:</th>
+                    <td>@Html.DisplayFor(model => model.Fecha)</td>
+                </tr>
+                @if (!string.IsNullOrEmpty(Model.Nota))
+                {
+                    <tr>
+                        <th>Nota:</th>
+                        <td>@Html.DisplayFor(model => model.Nota)</td>
+                    </tr>
+                }
+                @if (!string.IsNullOrEmpty(Model.HojaDeVida))
+                {
+                    <tr>
+                        <th>Hoja de Vida / Link:</th>
+                        <td>
+                            @if (Model.HojaDeVida.StartsWith("http://") || Model.HojaDeVida.StartsWith("https://"))
+                            {
+                                <a href="@Model.HojaDeVida" target="_blank" rel="noopener noreferrer">@Html.DisplayFor(model => model.HojaDeVida)</a>
+                            }
+                            else
+                            {
+                                @Html.DisplayFor(model => model.HojaDeVida)
+                            }
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <form asp-action="Delete" method="post" style="display: inline;">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro que desea eliminar este equipo?')">
+                Eliminar
+            </button>
+        </form>
+        <a asp-action="Index" class="btn btn-secondary">
+            Volver a la lista
+        </a>
+    </div>
+</div>

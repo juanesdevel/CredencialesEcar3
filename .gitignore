@@ -1,0 +1,43 @@
+.vs/
+# Ignorar directorios y archivos de usuario de Windows
+../../.bash_history
+../../.cache/
+../../.dotnet/
+../../.gitconfig
+../../.lesshst
+../../.nuget/
+../../3D Objects/
+../../AppData/
+../../Contacts/
+../../Documents/
+../../Downloads/
+../../Favorites/
+../../IntelGraphicsProfiles/
+../../Links/
+../../Music/
+../../NTUSER.DAT
+../../NTUSER.DAT{...}.TM.blf
+../../NTUSER.DAT{...}.regtrans-ms
+../../OneDrive - LABORATORIOS ECAR S.A/
+../../OneDrive/
+../../Pictures/
+../../Saved Games/
+../../Searches/
+../../Videos/
+../../ntuser.dat.LOG1
+../../ntuser.dat.LOG2
+../../ntuser.ini
+
+# Ignorar archivos temporales o de acceso directo
+../1. Sistemas Computarizados - Acceso directo.lnk
+../Backups - Acceso directo.lnk
+../Correos.txt
+../Error de impresora.png
+../Intentos bancolombia.txt
+../Juan Esteban - Chrome.lnk
+../Juan Esteban Gallego Cano - Acceso directo.lnk
+../KeePass_auxiliares - Acceso directo.lnk
+../Microsoft Edge.lnk
+../Pendiente SENA.txt
+../Pendiente.txt
+../desktop.ini

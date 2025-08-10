@@ -1,0 +1,142 @@
+﻿@model IEnumerable<ECARTemplate.Models.Empleado>
+
+@{
+    ViewData["Title"] = "Empleados";
+    var currentSearchString = ViewData["CurrentFilter"] as string;
+    var currentEstadoFilter = ViewData["EstadoFilter"] as string;
+}
+
+<div fa-computer-classic="text-center">
+    <h1 class="display-4">Empleados</h1>
+</div>
+
+<p class="mx-5 mb-3">
+    <a asp-action="Create" class="btn btn-success btn-sm">Crear Nuevo</a>
+</p>
+
+<div class="card mb-3">
+    <div class="card-header bg-primary text-white">
+        <h6 class="mb-0">Filtro</h6>
+    </div>
+    <div class="card-body">
+        <form asp-action="Index" method="get">
+            <div class="row g-2 align-items-end">
+                <div class="col-md-6">
+                    <label for="searchString" class="form-label-sm">Búsqueda</label>
+                    <input type="text" name="searchString" id="searchString" class="form-control form-control-sm" placeholder="Código o Nombre" value="@currentSearchString">
+                </div>
+                <div class="col-md-3">
+                    <label for="estadoFilter" class="form-label-sm">Estado</label>
+                    <select name="estadoFilter" id="estadoFilter" class="form-control form-control-sm">
+                        <option value="">Todos</option>
+                        <option value="Activo" selected="@("Activo" == currentEstadoFilter ? "selected" : null)">Activo</option>
+                        <option value="Inactivo" selected="@("Inactivo" == currentEstadoFilter ? "selected" : null)">Inactivo</option>
+                    </select>
+                </div>
+                <div class="col-md-3 d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary btn-sm me-1">Filtrar</button>
+                    <a asp-action="Index" class="btn btn-secondary btn-sm">Limpiar</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="mx-5 mb-3">
+    <p class="text-muted total-registros-counter">Mostrando @ViewData["TotalRegistros"] registros.</p>
+</div>
+<div class="mx-5">
+    <div id="resultadosBusqueda">
+        <table class="table" style="font-size: 1.0em;">
+            <thead>
+                <tr>
+                    <th>
+                        <h4>Estado</h4>
+                    </th>
+                    <th>
+                        <h4>Código</h4>
+                    </th>
+                    <th>
+                        <h4>Nombre</h4>
+                    </th>
+                    <th>
+                        <h4>Firma BPM</h4>
+                    </th>
+                    <th>
+                        <h4>Acciones</h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tablaEmpleadosBody">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @if (item.Estado == "Activo")
+                            {
+                                <span class="badge bg-success">Activo</span>
+                            }
+                            else if (item.Estado == "Inactivo")
+                            {
+                                <span class="badge bg-secondary">Inactivo</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Desconocido</span>
+                            }
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CodigoEmpleadoEcar)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NombreEmpleado)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FirmaBpm)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Editar</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Detalles</a> |
+
+                            @* --- FORMULARIO PARA ACTIVAR/DESACTIVAR VÍA POST --- *@
+                            @if (item.Estado == "Activo")
+                            {
+                                <form asp-action="Desactivar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro que desea Inactivar este empleado? Esto afectará sus credenciales.');">
+                                    <button type="submit" class="btn btn-secondary btn-sm">Inactivar</button>
+                                </form>
+                            }
+                            else
+                            {
+                                <form asp-action="Activar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro que desea activar este empleado?');">
+                                    <button type="submit" class="btn btn-success btn-sm">Activar</button>
+                                </form>
+                            }
+                            |
+                            <a asp-action="Create" asp-controller="Credenciales" asp-route-empleadoId="@item.Id" class="btn btn-info btn-sm">Crear Credencial</a>
+                            @* Ejemplo de cómo eliminar: *@
+                            @* | <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm" onclick="return confirm('¿Está seguro que desea eliminar este empleado? Esta acción no se puede deshacer.')">Eliminar</a> *@
+                        </td>
+                    </tr>
+                }
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="5">No se encontraron resultados.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // --- ¡IMPORTANTE! Eliminamos toda la función filtrarEmpleados() y sus llamadas AJAX. ---
+            // Los filtros ahora se manejan con el envío de formulario GET estándar.
+            // Los botones de filtro (incluido el de Limpiar) ahora envían el formulario principal.
+
+            // Puedes eliminar los IDs 'searchInput', 'estadoFilter', 'clearFilters'
+            // si no se usan para nada más que el JavaScript de filtrado que acabamos de eliminar.
+        });
+    </script>
+}

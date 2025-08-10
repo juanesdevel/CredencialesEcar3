@@ -1,0 +1,2129 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\app.bundle-rtl.css",
+      "PackagePath": "staticwebassets\\css\\app.bundle-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\app.bundle.css",
+      "PackagePath": "staticwebassets\\css\\app.bundle.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\datagrid\\datatables\\datatables.bundle-rtl.css",
+      "PackagePath": "staticwebassets\\css\\datagrid\\datatables\\datatables.bundle-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\datagrid\\datatables\\datatables.bundle.css",
+      "PackagePath": "staticwebassets\\css\\datagrid\\datatables\\datatables.bundle.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\datagrid\\datatables\\datatables.bundle.css.map",
+      "PackagePath": "staticwebassets\\css\\datagrid\\datatables\\datatables.bundle.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\fa-brands-rtl.css",
+      "PackagePath": "staticwebassets\\css\\fa-brands-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\fa-brands.css",
+      "PackagePath": "staticwebassets\\css\\fa-brands.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\fa-duotone-rtl.css",
+      "PackagePath": "staticwebassets\\css\\fa-duotone-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\fa-duotone.css",
+      "PackagePath": "staticwebassets\\css\\fa-duotone.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\fa-light-rtl.css",
+      "PackagePath": "staticwebassets\\css\\fa-light-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\fa-light.css",
+      "PackagePath": "staticwebassets\\css\\fa-light.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\fa-regular-rtl.css",
+      "PackagePath": "staticwebassets\\css\\fa-regular-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\fa-regular.css",
+      "PackagePath": "staticwebassets\\css\\fa-regular.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\fa-solid-rtl.css",
+      "PackagePath": "staticwebassets\\css\\fa-solid-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\fa-solid.css",
+      "PackagePath": "staticwebassets\\css\\fa-solid.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\bootstrap-colorpicker\\bootstrap-colorpicker-rtl.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\bootstrap-colorpicker\\bootstrap-colorpicker-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\bootstrap-colorpicker\\bootstrap-colorpicker.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\bootstrap-colorpicker\\bootstrap-colorpicker.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\bootstrap-colorpicker\\bootstrap-colorpicker.css.map",
+      "PackagePath": "staticwebassets\\css\\formplugins\\bootstrap-colorpicker\\bootstrap-colorpicker.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\bootstrap-datepicker\\bootstrap-datepicker-rtl.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\bootstrap-datepicker\\bootstrap-datepicker-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\bootstrap-datepicker\\bootstrap-datepicker.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\bootstrap-datepicker\\bootstrap-datepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\bootstrap-datepicker\\bootstrap-datepicker.css.map",
+      "PackagePath": "staticwebassets\\css\\formplugins\\bootstrap-datepicker\\bootstrap-datepicker.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\bootstrap-daterangepicker\\bootstrap-daterangepicker-rtl.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\bootstrap-daterangepicker\\bootstrap-daterangepicker-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\bootstrap-daterangepicker\\bootstrap-daterangepicker.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\bootstrap-daterangepicker\\bootstrap-daterangepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\bootstrap-daterangepicker\\bootstrap-daterangepicker.css.map",
+      "PackagePath": "staticwebassets\\css\\formplugins\\bootstrap-daterangepicker\\bootstrap-daterangepicker.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\bootstrap-markdown\\bootstrap-markdown-rtl.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\bootstrap-markdown\\bootstrap-markdown-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\bootstrap-markdown\\bootstrap-markdown.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\bootstrap-markdown\\bootstrap-markdown.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\bootstrap-markdown\\bootstrap-markdown.css.map",
+      "PackagePath": "staticwebassets\\css\\formplugins\\bootstrap-markdown\\bootstrap-markdown.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\cropperjs\\cropper-rtl.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\cropperjs\\cropper-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\cropperjs\\cropper.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\cropperjs\\cropper.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\cropperjs\\cropper.css.map",
+      "PackagePath": "staticwebassets\\css\\formplugins\\cropperjs\\cropper.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\dropzone\\dropzone-rtl.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\dropzone\\dropzone-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\dropzone\\dropzone.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\dropzone\\dropzone.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\dropzone\\dropzone.css.map",
+      "PackagePath": "staticwebassets\\css\\formplugins\\dropzone\\dropzone.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\ion-rangeslider\\ion-rangeslider-rtl.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\ion-rangeslider\\ion-rangeslider-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\ion-rangeslider\\ion-rangeslider.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\ion-rangeslider\\ion-rangeslider.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\ion-rangeslider\\ion-rangeslider.css.map",
+      "PackagePath": "staticwebassets\\css\\formplugins\\ion-rangeslider\\ion-rangeslider.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\nouislider\\nouislider-rtl.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\nouislider\\nouislider-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\nouislider\\nouislider.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\nouislider\\nouislider.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\nouislider\\nouislider.css.map",
+      "PackagePath": "staticwebassets\\css\\formplugins\\nouislider\\nouislider.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\select2\\select2.bundle-rtl.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\select2\\select2.bundle-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\select2\\select2.bundle.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\select2\\select2.bundle.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\select2\\select2.bundle.css.map",
+      "PackagePath": "staticwebassets\\css\\formplugins\\select2\\select2.bundle.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\smartwizard\\smartwizard-rtl.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\smartwizard\\smartwizard-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\smartwizard\\smartwizard.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\smartwizard\\smartwizard.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\smartwizard\\smartwizard.css.map",
+      "PackagePath": "staticwebassets\\css\\formplugins\\smartwizard\\smartwizard.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\summernote\\summernote-rtl.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\summernote\\summernote-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\summernote\\summernote.css",
+      "PackagePath": "staticwebassets\\css\\formplugins\\summernote\\summernote.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\formplugins\\summernote\\summernote.css.map",
+      "PackagePath": "staticwebassets\\css\\formplugins\\summernote\\summernote.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\json-path-picker\\json-path-picker-rtl.css",
+      "PackagePath": "staticwebassets\\css\\json-path-picker\\json-path-picker-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\json-path-picker\\json-path-picker.css",
+      "PackagePath": "staticwebassets\\css\\json-path-picker\\json-path-picker.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\json-path-picker\\json-path-picker.css.map",
+      "PackagePath": "staticwebassets\\css\\json-path-picker\\json-path-picker.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\fullcalendar\\fullcalendar.bundle-rtl.css",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\fullcalendar\\fullcalendar.bundle-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\fullcalendar\\fullcalendar.bundle.css",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\fullcalendar\\fullcalendar.bundle.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\fullcalendar\\fullcalendar.bundle.css.map",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\fullcalendar\\fullcalendar.bundle.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\jqvmap\\jqvmap.bundle-rtl.css",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\jqvmap\\jqvmap.bundle-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\jqvmap\\jqvmap.bundle.css",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\jqvmap\\jqvmap.bundle.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\jqvmap\\jqvmap.bundle.css.map",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\jqvmap\\jqvmap.bundle.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\lightgallery\\lightgallery.bundle-rtl.css",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\lightgallery\\lightgallery.bundle-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\lightgallery\\lightgallery.bundle.css",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\lightgallery\\lightgallery.bundle.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\lightgallery\\lightgallery.bundle.css.map",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\lightgallery\\lightgallery.bundle.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\nestable\\nestable-rtl.css",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\nestable\\nestable-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\nestable\\nestable.css",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\nestable\\nestable.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\nestable\\nestable.css.map",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\nestable\\nestable.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\reactions\\reactions-rtl.css",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\reactions\\reactions-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\reactions\\reactions.css",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\reactions\\reactions.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\reactions\\reactions.css.map",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\reactions\\reactions.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\treeview\\treeview-rtl.css",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\treeview\\treeview-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\treeview\\treeview.css",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\treeview\\treeview.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\miscellaneous\\treeview\\treeview.css.map",
+      "PackagePath": "staticwebassets\\css\\miscellaneous\\treeview\\treeview.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\notifications\\sweetalert2\\sweetalert2.bundle-rtl.css",
+      "PackagePath": "staticwebassets\\css\\notifications\\sweetalert2\\sweetalert2.bundle-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\notifications\\sweetalert2\\sweetalert2.bundle.css",
+      "PackagePath": "staticwebassets\\css\\notifications\\sweetalert2\\sweetalert2.bundle.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\notifications\\sweetalert2\\sweetalert2.bundle.css.map",
+      "PackagePath": "staticwebassets\\css\\notifications\\sweetalert2\\sweetalert2.bundle.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\notifications\\toastr\\toastr-rtl.css",
+      "PackagePath": "staticwebassets\\css\\notifications\\toastr\\toastr-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\notifications\\toastr\\toastr.css",
+      "PackagePath": "staticwebassets\\css\\notifications\\toastr\\toastr.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\notifications\\toastr\\toastr.css.map",
+      "PackagePath": "staticwebassets\\css\\notifications\\toastr\\toastr.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\page-invoice-rtl.css",
+      "PackagePath": "staticwebassets\\css\\page-invoice-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\page-invoice.css",
+      "PackagePath": "staticwebassets\\css\\page-invoice.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\page-login-alt-rtl.css",
+      "PackagePath": "staticwebassets\\css\\page-login-alt-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\page-login-alt.css",
+      "PackagePath": "staticwebassets\\css\\page-login-alt.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\skins\\skin-master-rtl.css",
+      "PackagePath": "staticwebassets\\css\\skins\\skin-master-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\skins\\skin-master.css",
+      "PackagePath": "staticwebassets\\css\\skins\\skin-master.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\skins\\skin-master.css.map",
+      "PackagePath": "staticwebassets\\css\\skins\\skin-master.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\statistics\\c3\\c3-rtl.css",
+      "PackagePath": "staticwebassets\\css\\statistics\\c3\\c3-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\statistics\\c3\\c3.css",
+      "PackagePath": "staticwebassets\\css\\statistics\\c3\\c3.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\statistics\\c3\\c3.css.map",
+      "PackagePath": "staticwebassets\\css\\statistics\\c3\\c3.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\statistics\\chartist\\chartist-rtl.css",
+      "PackagePath": "staticwebassets\\css\\statistics\\chartist\\chartist-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\statistics\\chartist\\chartist.css",
+      "PackagePath": "staticwebassets\\css\\statistics\\chartist\\chartist.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\statistics\\chartist\\chartist.css.map",
+      "PackagePath": "staticwebassets\\css\\statistics\\chartist\\chartist.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\statistics\\chartjs\\chartjs-rtl.css",
+      "PackagePath": "staticwebassets\\css\\statistics\\chartjs\\chartjs-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\statistics\\chartjs\\chartjs.css",
+      "PackagePath": "staticwebassets\\css\\statistics\\chartjs\\chartjs.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\statistics\\chartjs\\chartjs.css.map",
+      "PackagePath": "staticwebassets\\css\\statistics\\chartjs\\chartjs.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\statistics\\dygraph\\dygraph-rtl.css",
+      "PackagePath": "staticwebassets\\css\\statistics\\dygraph\\dygraph-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\statistics\\dygraph\\dygraph.css",
+      "PackagePath": "staticwebassets\\css\\statistics\\dygraph\\dygraph.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\statistics\\dygraph\\dygraph.css.map",
+      "PackagePath": "staticwebassets\\css\\statistics\\dygraph\\dygraph.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\theme-demo-rtl.css",
+      "PackagePath": "staticwebassets\\css\\theme-demo-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\theme-demo.css",
+      "PackagePath": "staticwebassets\\css\\theme-demo.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-1-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-1-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-1.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-1.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-1.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-1.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-10-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-10-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-10.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-10.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-10.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-10.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-11-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-11-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-11.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-11.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-11.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-11.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-12-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-12-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-12.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-12.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-12.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-12.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-13-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-13-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-13.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-13.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-13.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-13.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-14-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-14-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-14.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-14.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-14.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-14.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-15-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-15-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-15.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-15.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-15.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-15.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-2-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-2-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-2.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-2.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-2.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-2.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-3-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-3-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-3.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-3.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-3.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-3.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-4-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-4-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-4.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-4.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-4.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-4.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-5-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-5-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-5.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-5.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-5.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-5.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-6-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-6-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-6.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-6.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-6.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-6.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-7-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-7-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-7.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-7.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-7.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-7.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-8-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-8-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-8.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-8.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-8.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-8.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-9-rtl.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-9-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-9.css",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-9.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\themes\\cust-theme-9.css.map",
+      "PackagePath": "staticwebassets\\css\\themes\\cust-theme-9.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\vendors.bundle-rtl.css",
+      "PackagePath": "staticwebassets\\css\\vendors.bundle-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\css\\vendors.bundle.css",
+      "PackagePath": "staticwebassets\\css\\vendors.bundle.css"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\.gitkeep",
+      "PackagePath": "staticwebassets\\img\\.gitkeep"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\bg-1.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\bg-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\bg-2.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\bg-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\bg-3.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\bg-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\bg-4.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\bg-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\bg-5.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\bg-5.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\clouds.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\clouds.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\credit.txt",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\credit.txt"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\glass.jpg",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\glass.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\page-bg.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\page-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\prev-bg-1.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\prev-bg-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\prev-bg-2.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\prev-bg-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\prev-bg-3.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\prev-bg-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\backgrounds\\prev-bg-4.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\prev-bg-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\bitbucket-logo.png",
+      "PackagePath": "staticwebassets\\img\\bitbucket-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\card-backgrounds\\cover-1-lg.png",
+      "PackagePath": "staticwebassets\\img\\card-backgrounds\\cover-1-lg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\card-backgrounds\\cover-2-lg.png",
+      "PackagePath": "staticwebassets\\img\\card-backgrounds\\cover-2-lg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\card-backgrounds\\cover-3-lg.png",
+      "PackagePath": "staticwebassets\\img\\card-backgrounds\\cover-3-lg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\card-backgrounds\\cover-4-lg.png",
+      "PackagePath": "staticwebassets\\img\\card-backgrounds\\cover-4-lg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\card-backgrounds\\cover-5-lg.png",
+      "PackagePath": "staticwebassets\\img\\card-backgrounds\\cover-5-lg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\card-backgrounds\\cover-6-lg.png",
+      "PackagePath": "staticwebassets\\img\\card-backgrounds\\cover-6-lg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\card-backgrounds\\cover-7-lg.png",
+      "PackagePath": "staticwebassets\\img\\card-backgrounds\\cover-7-lg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\clouds.png",
+      "PackagePath": "staticwebassets\\img\\clouds.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\ajax.png",
+      "PackagePath": "staticwebassets\\img\\demo\\ajax.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\angular.png",
+      "PackagePath": "staticwebassets\\img\\demo\\angular.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\authors\\josh.png",
+      "PackagePath": "staticwebassets\\img\\demo\\authors\\josh.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\authors\\jovanni.png",
+      "PackagePath": "staticwebassets\\img\\demo\\authors\\jovanni.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\authors\\roberto.png",
+      "PackagePath": "staticwebassets\\img\\demo\\authors\\roberto.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\authors\\sunny.png",
+      "PackagePath": "staticwebassets\\img\\demo\\authors\\sunny.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-a.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-a.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-admin-lg.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-admin-lg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-admin.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-admin.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-admin.txt",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-admin.txt"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-b.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-b.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-c.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-c.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-d.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-d.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-e.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-e.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-f.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-f.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-g.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-g.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-h.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-h.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-i.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-i.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-j.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-j.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-k.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-k.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\avatar-m.png",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\avatar-m.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\cc.txt",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\cc.txt"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\avatars\\ng.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\avatars\\ng.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\chromedevtools-1.png",
+      "PackagePath": "staticwebassets\\img\\demo\\chromedevtools-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\chromedevtools-2.png",
+      "PackagePath": "staticwebassets\\img\\demo\\chromedevtools-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\chromedevtools-3.png",
+      "PackagePath": "staticwebassets\\img\\demo\\chromedevtools-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\chromedevtools-4.png",
+      "PackagePath": "staticwebassets\\img\\demo\\chromedevtools-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\debounce-at_begin.png",
+      "PackagePath": "staticwebassets\\img\\demo\\debounce-at_begin.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\debounce.png",
+      "PackagePath": "staticwebassets\\img\\demo\\debounce.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\demo-panel.png",
+      "PackagePath": "staticwebassets\\img\\demo\\demo-panel.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\10.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\11.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\12.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\13.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\14.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\15.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\16.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\17.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\18.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\19.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\20.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\21.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\22.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\23.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\24.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\24.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\25.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\26.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\27.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\27.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\28.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\28.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\29.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\29.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\30.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\31.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\31.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\32.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\32.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\33.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\34.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\34.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\35.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\35.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\36.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\36.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\37.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\37.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\38.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\38.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\39.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\39.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\40.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\40.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\41.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\41.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\42.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\42.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\43.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\43.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\44.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\44.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\45.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\45.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\46.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\46.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\47.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\47.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\48.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\48.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\49.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\49.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\50.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\50.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\51.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\51.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\52.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\52.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\53.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\53.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\54.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\54.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\55.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\55.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\56.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\56.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\57.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\57.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\58.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\58.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\59.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\59.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\7.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\8.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\9.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\source.txt",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\source.txt"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\10.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\11.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\12.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\13.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\14.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\15.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\16.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\17.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\18.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\19.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\20.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\21.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\22.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\23.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\24.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\24.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\25.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\26.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\27.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\27.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\28.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\28.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\29.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\29.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\30.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\31.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\31.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\32.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\32.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\33.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\34.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\34.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\35.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\35.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\36.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\36.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\37.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\37.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\38.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\38.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\39.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\39.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\40.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\40.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\41.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\41.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\42.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\42.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\43.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\43.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\44.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\44.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\45.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\45.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\46.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\46.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\47.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\47.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\48.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\48.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\49.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\49.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\50.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\50.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\51.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\51.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\52.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\52.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\53.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\53.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\54.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\54.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\55.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\55.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\56.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\56.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\57.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\57.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\58.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\58.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\59.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\59.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\7.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\8.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\gallery\\thumb\\9.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\gallery\\thumb\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\grid-options.png",
+      "PackagePath": "staticwebassets\\img\\demo\\grid-options.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\html5.png",
+      "PackagePath": "staticwebassets\\img\\demo\\html5.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\laravel.png",
+      "PackagePath": "staticwebassets\\img\\demo\\laravel.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\modes\\mode-dark-lg.png",
+      "PackagePath": "staticwebassets\\img\\demo\\modes\\mode-dark-lg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\modes\\mode-dark.png",
+      "PackagePath": "staticwebassets\\img\\demo\\modes\\mode-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\modes\\mode-default-lg.png",
+      "PackagePath": "staticwebassets\\img\\demo\\modes\\mode-default-lg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\modes\\mode-glass-lg.png",
+      "PackagePath": "staticwebassets\\img\\demo\\modes\\mode-glass-lg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\modes\\mode-light-lg.png",
+      "PackagePath": "staticwebassets\\img\\demo\\modes\\mode-light-lg.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\modes\\mode-light.png",
+      "PackagePath": "staticwebassets\\img\\demo\\modes\\mode-light.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\mvc.png",
+      "PackagePath": "staticwebassets\\img\\demo\\mvc.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\peace-full.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\peace-full.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\php.png",
+      "PackagePath": "staticwebassets\\img\\demo\\php.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\position-absolute.gif",
+      "PackagePath": "staticwebassets\\img\\demo\\position-absolute.gif"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\position-fixed.gif",
+      "PackagePath": "staticwebassets\\img\\demo\\position-fixed.gif"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\position-sticky.gif",
+      "PackagePath": "staticwebassets\\img\\demo\\position-sticky.gif"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\profile\\article-healthyfood.png",
+      "PackagePath": "staticwebassets\\img\\demo\\profile\\article-healthyfood.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\profile\\cc.txt",
+      "PackagePath": "staticwebassets\\img\\demo\\profile\\cc.txt"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\rails.png",
+      "PackagePath": "staticwebassets\\img\\demo\\rails.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\react.png",
+      "PackagePath": "staticwebassets\\img\\demo\\react.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\relax-full.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\relax-full.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\s-1.png",
+      "PackagePath": "staticwebassets\\img\\demo\\s-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\sea-full.jpg",
+      "PackagePath": "staticwebassets\\img\\demo\\sea-full.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\search\\1.png",
+      "PackagePath": "staticwebassets\\img\\demo\\search\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\search\\10.png",
+      "PackagePath": "staticwebassets\\img\\demo\\search\\10.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\search\\11.png",
+      "PackagePath": "staticwebassets\\img\\demo\\search\\11.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\search\\12.png",
+      "PackagePath": "staticwebassets\\img\\demo\\search\\12.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\search\\13.png",
+      "PackagePath": "staticwebassets\\img\\demo\\search\\13.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\search\\14.png",
+      "PackagePath": "staticwebassets\\img\\demo\\search\\14.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\search\\15.png",
+      "PackagePath": "staticwebassets\\img\\demo\\search\\15.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\search\\2.png",
+      "PackagePath": "staticwebassets\\img\\demo\\search\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\search\\3.png",
+      "PackagePath": "staticwebassets\\img\\demo\\search\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\search\\4.png",
+      "PackagePath": "staticwebassets\\img\\demo\\search\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\search\\5.png",
+      "PackagePath": "staticwebassets\\img\\demo\\search\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\search\\6.png",
+      "PackagePath": "staticwebassets\\img\\demo\\search\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\side-panel-demo.gif",
+      "PackagePath": "staticwebassets\\img\\demo\\side-panel-demo.gif"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\skins\\black.png",
+      "PackagePath": "staticwebassets\\img\\demo\\skins\\black.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\skins\\blue.png",
+      "PackagePath": "staticwebassets\\img\\demo\\skins\\blue.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\skins\\green.png",
+      "PackagePath": "staticwebassets\\img\\demo\\skins\\green.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\skins\\pink.png",
+      "PackagePath": "staticwebassets\\img\\demo\\skins\\pink.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\throttle-no_trailing.png",
+      "PackagePath": "staticwebassets\\img\\demo\\throttle-no_trailing.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\throttle.png",
+      "PackagePath": "staticwebassets\\img\\demo\\throttle.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\demo\\vuejs.png",
+      "PackagePath": "staticwebassets\\img\\demo\\vuejs.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\favicon\\android-chrome-144x144.png",
+      "PackagePath": "staticwebassets\\img\\favicon\\android-chrome-144x144.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\favicon\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\img\\favicon\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\favicon\\browserconfig.xml",
+      "PackagePath": "staticwebassets\\img\\favicon\\browserconfig.xml"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\favicon\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\img\\favicon\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\favicon\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\img\\favicon\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\favicon\\favicon-generator.txt",
+      "PackagePath": "staticwebassets\\img\\favicon\\favicon-generator.txt"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\img\\favicon\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\favicon\\mstile-150x150.png",
+      "PackagePath": "staticwebassets\\img\\favicon\\mstile-150x150.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\favicon\\safari-pinned-tab.svg",
+      "PackagePath": "staticwebassets\\img\\favicon\\safari-pinned-tab.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\favicon\\site.webmanifest",
+      "PackagePath": "staticwebassets\\img\\favicon\\site.webmanifest"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\loading.gif",
+      "PackagePath": "staticwebassets\\img\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\logo-big.png",
+      "PackagePath": "staticwebassets\\img\\logo-big.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\logo-flat.svg",
+      "PackagePath": "staticwebassets\\img\\logo-flat.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\logo-gradient.svg",
+      "PackagePath": "staticwebassets\\img\\logo-gradient.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\logo-red.png",
+      "PackagePath": "staticwebassets\\img\\logo-red.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\img\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\site-layout.png",
+      "PackagePath": "staticwebassets\\img\\site-layout.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\svg\\pattern-1.svg",
+      "PackagePath": "staticwebassets\\img\\svg\\pattern-1.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\svg\\pattern-2.svg",
+      "PackagePath": "staticwebassets\\img\\svg\\pattern-2.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\svg\\pattern-3.svg",
+      "PackagePath": "staticwebassets\\img\\svg\\pattern-3.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\svg\\pattern-4.svg",
+      "PackagePath": "staticwebassets\\img\\svg\\pattern-4.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\ng-thumb-1.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\ng-thumb-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\ng-thumb-2.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\ng-thumb-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\ng-thumb-3.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\ng-thumb-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\ng-thumb-4.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\ng-thumb-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\ng-thumb-video-1.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\ng-thumb-video-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\ng-thumb-video-2.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\ng-thumb-video-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\pic-1.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\pic-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\pic-10.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\pic-10.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\pic-11.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\pic-11.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\pic-12.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\pic-12.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\pic-3.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\pic-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\pic-4.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\pic-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\pic-5.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\pic-5.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\pic-6.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\pic-6.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\pic-7.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\pic-7.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\pic-8.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\pic-8.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\img\\thumbs\\pic-9.png",
+      "PackagePath": "staticwebassets\\img\\thumbs\\pic-9.png"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\app.bundle.js",
+      "PackagePath": "staticwebassets\\js\\app.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\datagrid\\datatables\\datatables.bundle.js",
+      "PackagePath": "staticwebassets\\js\\datagrid\\datatables\\datatables.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\datagrid\\datatables\\datatables.export.js",
+      "PackagePath": "staticwebassets\\js\\datagrid\\datatables\\datatables.export.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\dependency\\moment\\moment.js",
+      "PackagePath": "staticwebassets\\js\\dependency\\moment\\moment.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\formplugins\\bootstrap-colorpicker\\bootstrap-colorpicker.js",
+      "PackagePath": "staticwebassets\\js\\formplugins\\bootstrap-colorpicker\\bootstrap-colorpicker.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\formplugins\\bootstrap-datepicker\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\js\\formplugins\\bootstrap-datepicker\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\formplugins\\bootstrap-daterangepicker\\bootstrap-daterangepicker.js",
+      "PackagePath": "staticwebassets\\js\\formplugins\\bootstrap-daterangepicker\\bootstrap-daterangepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\formplugins\\bootstrap-markdown\\bootstrap-markdown.js",
+      "PackagePath": "staticwebassets\\js\\formplugins\\bootstrap-markdown\\bootstrap-markdown.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\formplugins\\cropperjs\\cropper.js",
+      "PackagePath": "staticwebassets\\js\\formplugins\\cropperjs\\cropper.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\formplugins\\dropzone\\dropzone.js",
+      "PackagePath": "staticwebassets\\js\\formplugins\\dropzone\\dropzone.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\formplugins\\inputmask\\inputmask.bundle.js",
+      "PackagePath": "staticwebassets\\js\\formplugins\\inputmask\\inputmask.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\formplugins\\ion-rangeslider\\ion-rangeslider.js",
+      "PackagePath": "staticwebassets\\js\\formplugins\\ion-rangeslider\\ion-rangeslider.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\formplugins\\nouislider\\nouislider.js",
+      "PackagePath": "staticwebassets\\js\\formplugins\\nouislider\\nouislider.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\formplugins\\select2\\select2.bundle.js",
+      "PackagePath": "staticwebassets\\js\\formplugins\\select2\\select2.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\formplugins\\smartwizard\\smartwizard.js",
+      "PackagePath": "staticwebassets\\js\\formplugins\\smartwizard\\smartwizard.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\formplugins\\summernote\\summernote.js",
+      "PackagePath": "staticwebassets\\js\\formplugins\\summernote\\summernote.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\i18n\\i18n.js",
+      "PackagePath": "staticwebassets\\js\\i18n\\i18n.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\json-path-picker\\json-path-picker.js",
+      "PackagePath": "staticwebassets\\js\\json-path-picker\\json-path-picker.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\fullcalendar\\fullcalendar.bundle.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\fullcalendar\\fullcalendar.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\jqvmap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\jqvmap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.algeria.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.algeria.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.argentina.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.argentina.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.brazil.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.brazil.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.canada.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.canada.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.europe.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.europe.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.france.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.france.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.germany.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.germany.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.greece.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.greece.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.iran.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.iran.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.iraq.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.iraq.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.russia.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.russia.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.tunisia.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.tunisia.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.turkey.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.turkey.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.usa.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\jqvmap\\maps\\jquery.vmap.usa.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\lightgallery\\lightgallery.bundle.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\lightgallery\\lightgallery.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\lightgallery\\smartvoice.bundle.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\lightgallery\\smartvoice.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\nestable\\nestable.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\nestable\\nestable.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\miscellaneous\\treeview\\treeview.js",
+      "PackagePath": "staticwebassets\\js\\miscellaneous\\treeview\\treeview.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\notifications\\sweetalert2\\sweetalert2.bundle.js",
+      "PackagePath": "staticwebassets\\js\\notifications\\sweetalert2\\sweetalert2.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\notifications\\toastr\\toastr.js",
+      "PackagePath": "staticwebassets\\js\\notifications\\toastr\\toastr.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\statistics\\c3\\c3.js",
+      "PackagePath": "staticwebassets\\js\\statistics\\c3\\c3.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\statistics\\chartist\\chartist.js",
+      "PackagePath": "staticwebassets\\js\\statistics\\chartist\\chartist.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\statistics\\chartjs\\chartjs.bundle.js",
+      "PackagePath": "staticwebassets\\js\\statistics\\chartjs\\chartjs.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\statistics\\d3\\d3.js",
+      "PackagePath": "staticwebassets\\js\\statistics\\d3\\d3.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\statistics\\demo-data\\demo-c3.js",
+      "PackagePath": "staticwebassets\\js\\statistics\\demo-data\\demo-c3.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\statistics\\demo-data\\demo-data-dygraph.js",
+      "PackagePath": "staticwebassets\\js\\statistics\\demo-data\\demo-data-dygraph.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\statistics\\dygraph\\dygraph.js",
+      "PackagePath": "staticwebassets\\js\\statistics\\dygraph\\dygraph.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\statistics\\easypiechart\\easypiechart.bundle.js",
+      "PackagePath": "staticwebassets\\js\\statistics\\easypiechart\\easypiechart.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\statistics\\flot\\flot.bundle.js",
+      "PackagePath": "staticwebassets\\js\\statistics\\flot\\flot.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\statistics\\peity\\peity.bundle.js",
+      "PackagePath": "staticwebassets\\js\\statistics\\peity\\peity.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\statistics\\sparkline\\sparkline.bundle.js",
+      "PackagePath": "staticwebassets\\js\\statistics\\sparkline\\sparkline.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\js\\vendors.bundle.js",
+      "PackagePath": "staticwebassets\\js\\vendors.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\2500.json",
+      "PackagePath": "staticwebassets\\media\\data\\2500.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\ch.json",
+      "PackagePath": "staticwebassets\\media\\data\\ch.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\en.json",
+      "PackagePath": "staticwebassets\\media\\data\\en.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\es.json",
+      "PackagePath": "staticwebassets\\media\\data\\es.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\fa-brand-list.json",
+      "PackagePath": "staticwebassets\\media\\data\\fa-brand-list.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\fa-duotone.json",
+      "PackagePath": "staticwebassets\\media\\data\\fa-duotone.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\fa-icon-list.json",
+      "PackagePath": "staticwebassets\\media\\data\\fa-icon-list.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\ng-bg-colors.json",
+      "PackagePath": "staticwebassets\\media\\data\\ng-bg-colors.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\ng-icon-base.json",
+      "PackagePath": "staticwebassets\\media\\data\\ng-icon-base.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\ng-icon-list.json",
+      "PackagePath": "staticwebassets\\media\\data\\ng-icon-list.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\ng-text-colors.json",
+      "PackagePath": "staticwebassets\\media\\data\\ng-text-colors.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\plugin-reference.json",
+      "PackagePath": "staticwebassets\\media\\data\\plugin-reference.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\project-structure.json",
+      "PackagePath": "staticwebassets\\media\\data\\project-structure.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\data\\server-demo.json",
+      "PackagePath": "staticwebassets\\media\\data\\server-demo.json"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\bigbox.mp3",
+      "PackagePath": "staticwebassets\\media\\sound\\bigbox.mp3"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\bigbox.ogg",
+      "PackagePath": "staticwebassets\\media\\sound\\bigbox.ogg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\license.txt",
+      "PackagePath": "staticwebassets\\media\\sound\\license.txt"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\messagebox.mp3",
+      "PackagePath": "staticwebassets\\media\\sound\\messagebox.mp3"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\messagebox.ogg",
+      "PackagePath": "staticwebassets\\media\\sound\\messagebox.ogg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\smallbox.mp3",
+      "PackagePath": "staticwebassets\\media\\sound\\smallbox.mp3"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\smallbox.ogg",
+      "PackagePath": "staticwebassets\\media\\sound\\smallbox.ogg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\voice_alert.mp3",
+      "PackagePath": "staticwebassets\\media\\sound\\voice_alert.mp3"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\voice_alert.ogg",
+      "PackagePath": "staticwebassets\\media\\sound\\voice_alert.ogg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\voice_off.mp3",
+      "PackagePath": "staticwebassets\\media\\sound\\voice_off.mp3"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\voice_off.ogg",
+      "PackagePath": "staticwebassets\\media\\sound\\voice_off.ogg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\voice_on.mp3",
+      "PackagePath": "staticwebassets\\media\\sound\\voice_on.mp3"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\sound\\voice_on.ogg",
+      "PackagePath": "staticwebassets\\media\\sound\\voice_on.ogg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\video\\36150715-heavenly-clouds-v2-license.txt",
+      "PackagePath": "staticwebassets\\media\\video\\36150715-heavenly-clouds-v2-license.txt"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\video\\cc.mp4",
+      "PackagePath": "staticwebassets\\media\\video\\cc.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\media\\video\\cc.webm",
+      "PackagePath": "staticwebassets\\media\\video\\cc.webm"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-duotone-900.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-duotone-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-duotone-900.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-duotone-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-duotone-900.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-duotone-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-duotone-900.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-duotone-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-duotone-900.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-duotone-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-light-300.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-light-300.eot"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-light-300.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-light-300.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-light-300.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-light-300.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-light-300.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-light-300.woff"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-light-300.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-light-300.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\nextgen-icons.eot",
+      "PackagePath": "staticwebassets\\webfonts\\nextgen-icons.eot"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\nextgen-icons.svg",
+      "PackagePath": "staticwebassets\\webfonts\\nextgen-icons.svg"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\nextgen-icons.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\nextgen-icons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\nextgen-icons.woff",
+      "PackagePath": "staticwebassets\\webfonts\\nextgen-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\nextgen-icons.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\nextgen-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\summernote.eot",
+      "PackagePath": "staticwebassets\\webfonts\\summernote.eot"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\summernote.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\summernote.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\summernote.woff",
+      "PackagePath": "staticwebassets\\webfonts\\summernote.woff"
+    },
+    {
+      "Id": "C:\\Users\\Juan G\\Desktop\\CredencialesEcar\\ECARTemplate\\wwwroot\\webfonts\\summernote.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\summernote.woff2"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ECARTemplate.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ECARTemplate.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ECARTemplate.props",
+      "PackagePath": "build\\ECARTemplate.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ECARTemplate.props",
+      "PackagePath": "buildMultiTargeting\\ECARTemplate.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ECARTemplate.props",
+      "PackagePath": "buildTransitive\\ECARTemplate.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

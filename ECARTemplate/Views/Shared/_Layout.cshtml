@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<partial name="_CopyrightHeader" />
+<html lang="en">
+<head>
+	<partial name="_Head" />
+	@RenderSection("HeadBlock", required: false)
+</head>
+<body class="mod-bg-1 mod-nav-link mod-nav-link @ViewBag.PreemptiveClass">
+	<partial name="_ScriptsLoadingSaving" />
+	<div class="page-wrapper">
+		<div class="page-inner">
+			<partial name="_LeftPanel" />
+			<div class="page-content-wrapper">
+				<partial name="_PageHeader" />
+				<main id="js-page-content" role="main" class="page-content">
+					@if (ViewBag.PreemptiveClass?.Length > 0)
+					{
+					}
+					else
+					{
+						<partial name="_PageBreadcrumb" />
+						<div class="subheader"><partial name="_PageHeading" />@RenderSection("Subheaderblock", required: false)</div>
+					}
+					@RenderBody()
+				</main>
+				<partial name="_PageContentOverlay" />
+				<partial name="_PageFooter" />
+				<partial name="_ShortcutModal" />
+				<partial name="_ColorProfileReference" />
+			</div>
+		</div>
+	</div>
+	<partial name="_ShortcutMenu" />
+	<partial name="_ShortcutMessenger" />
+	<partial name="_PageSettings" />
+	<partial name="_GoogleAnalytics" />
+	<partial name="_ScriptsBasePlugins" />
+	@* Las siguientes líneas fueron eliminadas porque los bundles del tema ya cargan jQuery y Bootstrap *@
+	@* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
+	@* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@RenderSection("Scripts", required: false)
+</body>
+</html>

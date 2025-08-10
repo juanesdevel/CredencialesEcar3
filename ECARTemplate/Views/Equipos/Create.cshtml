@@ -1,0 +1,144 @@
+﻿@model ECARTemplate.Models.Equipo
+
+@{
+    ViewData["Title"] = "Crear Nuevo Equipo o Software";
+}
+<a asp-action="Index" class="btn btn-secondary ms-2">Volver a Equipos</a>
+<br />
+<div class="container">
+    <h1 class="text-center mb-4">Crear Nuevo Equipo ó Software</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Nuevo Equipo ó Software</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="mb-3">
+                            <label asp-for="UsuarioRegistro" class="control-label">Usuario de registro</label>
+                            <input asp-for="UsuarioRegistro" class="form-control" readonly value="@User.Identity.Name" />
+                            <span asp-validation-for="UsuarioRegistro" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Fecha" class="control-label"></label>
+                            <input asp-for="Fecha" class="form-control" id="FechaCreacionInput" type="date" readonly />
+                            <span asp-validation-for="Fecha" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="CodigoEquipo" class="control-label"></label>
+                            <input asp-for="CodigoEquipo" class="form-control" />
+                            <span asp-validation-for="CodigoEquipo" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="NombreEquipo" class="control-label"></label>
+                            <input asp-for="NombreEquipo" class="form-control" />
+                            <span asp-validation-for="NombreEquipo" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Sede" class="control-label">Sede</label>
+                            <select id="Sede" name="Sede" class="form-control">
+                                <option value="Medellín">Medellín</option>
+                                <option value="Rionegro">Rionegro</option>
+                            </select>
+                            <span asp-validation-for="Sede" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Area" class="control-label"></label>
+                            <select asp-for="Area" class="form-control">
+                                <option value="">-- Seleccione un área --</option>
+                                <option>Solidos 2</option>
+                                <option>Solidos 3</option>
+                                <option>Solidos 4</option>
+                                <option>Solidos 5</option>
+                                <option>Linea Marchesini</option>
+                                <option>Acondicionamiento</option>
+                                <option>PPE</option>
+                                <option>Inyectables</option>
+                                <option>Cosméticos</option>
+                                <option>Sin registro</option>
+                                <option>Control Calidad</option>
+                                <option>Software</option>
+                                <option>Piso ténico</option>
+                                <option>Microbiología</option>
+                                <option>Blisteado</option>
+                                <option>Tableteado</option>
+                                <option>Liquidos</option>
+                                <option>Bodega</option>
+                            </select>
+                            <span asp-validation-for="Area" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="SubArea" class="control-label"></label>
+                            <input asp-for="SubArea" class="form-control" />
+                            <span asp-validation-for="SubArea" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Nota" class="control-label"></label>
+                            <textarea asp-for="Nota" class="form-control"></textarea>
+                            <span asp-validation-for="Nota" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="HojaDeVida" class="control-label"></label>
+                            <textarea asp-for="HojaDeVida" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="HojaDeVida" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Estado" class="control-label"></label>
+                            <input asp-for="Estado" class="form-control" value="Activo" readonly />
+                            <span asp-validation-for="Estado" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="imageFile" class="form-label">Subir Imagen</label>
+                            <input type="file" id="imageFile" name="imageFile" class="form-control" accept="image/*" />
+                            <span class="text-muted"><small>Formatos permitidos: JPG, PNG, GIF. Tamaño máximo: 5MB.</small></span>
+                        </div>
+                        <div class="form-group text-center mt-4">
+                            <button type="submit" class="btn btn-primary">Crear</button>
+                            <a asp-action="Index" class="btn btn-secondary ms-2">Volver a la lista</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+---
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+
+    <script>
+        $(document).ready(function () {
+            console.log("jQuery ready event fired. Script is running.");
+
+            // --- Script para la Fecha de Creación ---
+            const fechaInput = document.getElementById("FechaCreacionInput");
+
+            console.log("fechaInput element:", fechaInput);
+
+            // Función para formatear la fecha a YYYY-MM-DD
+            function formatearFecha(date) {
+                const year = date.getFullYear();
+                const month = (date.getMonth() + 1).toString().padStart(2, '0'); // Meses son 0-indexados
+                const day = date.getDate().toString().padStart(2, '0');
+                return `${year}-${month}-${day}`;
+            }
+
+            // Establecer la fecha actual al cargar la página
+            if (fechaInput) { // Asegúrate de que el input exista
+                const today = new Date();
+                const formattedDate = formatearFecha(today);
+                fechaInput.value = formattedDate;
+                console.log("Fecha establecida a:", formattedDate);
+            } else {
+                console.warn("Elemento con ID 'FechaCreacionInput' no encontrado.");
+            }
+        });
+    </script>
+}

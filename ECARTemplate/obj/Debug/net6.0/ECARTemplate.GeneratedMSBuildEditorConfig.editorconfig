@@ -1,0 +1,817 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ECARTemplate
+build_property.RootNamespace = ECARTemplate
+build_property.ProjectDir = C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 6.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Pages/HelloWorld.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGVsbG9Xb3JsZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Pages/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/AspNetCore/Editions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwTmV0Q29yZVxFZGl0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/AspNetCore/Faq.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwTmV0Q29yZVxGYXEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/AspNetCore/Interactive.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwTmV0Q29yZVxJbnRlcmFjdGl2ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/AspNetCore/Welcome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwTmV0Q29yZVxXZWxjb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Credenciales/Clonar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlZGVuY2lhbGVzXENsb25hci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Credenciales/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlZGVuY2lhbGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Credenciales/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlZGVuY2lhbGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Credenciales/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlZGVuY2lhbGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Credenciales/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlZGVuY2lhbGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Alteditor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xBbHRlZGl0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Autofill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xBdXRvZmlsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xCYXNpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Buttons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xCdXR0b25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Colreorder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xDb2xyZW9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Columnfilter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xDb2x1bW5maWx0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Export.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xFeHBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Fixedcolumns.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xGaXhlZGNvbHVtbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Fixedheader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xGaXhlZGhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Keytable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xLZXl0YWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Responsive.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xSZXNwb25zaXZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/ResponsiveAlt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xSZXNwb25zaXZlQWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Rowgroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xSb3dncm91cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Rowreorder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xSb3dyZW9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Scroller.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xTY3JvbGxlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Datatables/Select.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlc1xTZWxlY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Docs/Buildnotes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jc1xCdWlsZG5vdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Docs/CommunitySupport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jc1xDb21tdW5pdHlTdXBwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Docs/FlavorsEditions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jc1xGbGF2b3JzRWRpdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Docs/General.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jc1xHZW5lcmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Docs/Licensing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jc1xMaWNlbnNpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Empleados/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Empleados/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Empleados/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Empleados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Equipos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Equipos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Equipos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Equipos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Equipos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/FormPlugins/Colorpicker.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBsdWdpbnNcQ29sb3JwaWNrZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/FormPlugins/Datepicker.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBsdWdpbnNcRGF0ZXBpY2tlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/FormPlugins/DaterangePicker.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBsdWdpbnNcRGF0ZXJhbmdlUGlja2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/FormPlugins/Dropzone.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBsdWdpbnNcRHJvcHpvbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/FormPlugins/Imagecropper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBsdWdpbnNcSW1hZ2Vjcm9wcGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/FormPlugins/Inputmask.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBsdWdpbnNcSW5wdXRtYXNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/FormPlugins/Ionrangeslider.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBsdWdpbnNcSW9ucmFuZ2VzbGlkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/FormPlugins/Markdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBsdWdpbnNcTWFya2Rvd24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/FormPlugins/Nouislider.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBsdWdpbnNcTm91aXNsaWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/FormPlugins/Select2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBsdWdpbnNcU2VsZWN0Mi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/FormPlugins/Summernote.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBsdWdpbnNcU3VtbWVybm90ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/FormPlugins/Wizard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBsdWdpbnNcV2l6YXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Form/BasicInputs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxCYXNpY0lucHV0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Form/CheckboxRadio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxDaGVja2JveFJhZGlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Form/InputGroups.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxJbnB1dEdyb3Vwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Form/Validation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxWYWxpZGF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Icons/FontawesomeBrand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcRm9udGF3ZXNvbWVCcmFuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Icons/FontawesomeDuotone.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcRm9udGF3ZXNvbWVEdW90b25lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Icons/FontawesomeLight.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcRm9udGF3ZXNvbWVMaWdodC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Icons/FontawesomeRegular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcRm9udGF3ZXNvbWVSZWd1bGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Icons/FontawesomeSolid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcRm9udGF3ZXNvbWVTb2xpZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Icons/NextgenBase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcTmV4dGdlbkJhc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Icons/NextgenGeneral.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcTmV4dGdlbkdlbmVyYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Icons/StackGenerate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcU3RhY2tHZW5lcmF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Icons/StackShowcase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcU3RhY2tTaG93Y2FzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Icons/WebfontsFaq.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcV2ViZm9udHNGYXEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Intel/AnalyticsDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZWxcQW5hbHl0aWNzRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Intel/MarketingDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZWxcTWFya2V0aW5nRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Intel/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZWxcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Miscellaneous/Fullcalendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzY2VsbGFuZW91c1xGdWxsY2FsZW5kYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Miscellaneous/Lightgallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzY2VsbGFuZW91c1xMaWdodGdhbGxlcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Miscellaneous/Treeview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzY2VsbGFuZW91c1xUcmVldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Notifications/Sweetalert2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xTd2VldGFsZXJ0Mi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Notifications/Toastr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xUb2FzdHIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Chat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxDaGF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Confirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxDb250YWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxFcnJvcjQwNC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/ErrorAnnounced.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxFcnJvckFubm91bmNlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Forget.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxGb3JnZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/ForumDiscussion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxGb3J1bURpc2N1c3Npb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/ForumList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxGb3J1bUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/ForumThreads.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxGb3J1bVRocmVhZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/InboxGeneral.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxJbmJveEdlbmVyYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/InboxRead.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxJbmJveFJlYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/InboxWrite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxJbmJveFdyaXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Invoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxJbnZvaWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Locked.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxMb2NrZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/LoginAlt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxMb2dpbkFsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Projects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxQcm9qZWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Page/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Plugins/Appcore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGx1Z2luc1xBcHBjb3JlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Plugins/Bootbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGx1Z2luc1xCb290Ym94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Plugins/Faq.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGx1Z2luc1xGYXEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Plugins/I18next.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGx1Z2luc1xJMThuZXh0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Plugins/Navigation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGx1Z2luc1xOYXZpZ2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Plugins/Pacejs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGx1Z2luc1xQYWNlanMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Plugins/Slimscroll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGx1Z2luc1xTbGltc2Nyb2xsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Plugins/Smartpanels.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGx1Z2luc1xTbWFydHBhbmVscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Plugins/Throttle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGx1Z2luc1xUaHJvdHRsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Plugins/Waves.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGx1Z2luc1xXYXZlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Settings/HowItWorks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcSG93SXRXb3Jrcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Settings/LayoutOptions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcTGF5b3V0T3B0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Settings/SavingDb.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcU2F2aW5nRGIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Settings/SkinOptions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcU2tpbk9wdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Settings/ThemeModes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcVGhlbWVNb2Rlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/Components/Navigation/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2aWdhdGlvblxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_ColorProfileReference.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db2xvclByb2ZpbGVSZWZlcmVuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_Compose.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db21wb3NlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_ComposeLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db21wb3NlTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_CookieConsentPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db29raWVDb25zZW50UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_CopyrightHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db3B5cmlnaHRIZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_DropdownApp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ecm9wZG93bkFwcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_DropdownMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ecm9wZG93bk1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_DropdownNotification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ecm9wZG93bk5vdGlmaWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_Favicon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9GYXZpY29uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_GoogleAnalytics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Hb29nbGVBbmFseXRpY3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_Head.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_LeftPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MZWZ0UGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_Logo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_NavFilter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZGaWx0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_NavFilterMsg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZGaWx0ZXJNc2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_NavFooter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZGb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_NavInfoCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZJbmZvQ2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_PageBreadcrumb.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYWdlQnJlYWRjcnVtYi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_PageContentOverlay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYWdlQ29udGVudE92ZXJsYXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_PageFooter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYWdlRm9vdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_PageHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYWdlSGVhZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_PageHeading.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYWdlSGVhZGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_PageSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYWdlU2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_ScriptsBasePlugins.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TY3JpcHRzQmFzZVBsdWdpbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_ScriptsLoadingSaving.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TY3JpcHRzTG9hZGluZ1NhdmluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_ShortcutMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaG9ydGN1dE1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_ShortcutMessenger.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaG9ydGN1dE1lc3Nlbmdlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_ShortcutModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaG9ydGN1dE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_Signature.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWduYXR1cmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_TabMsgr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYWJNc2dyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_TabSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYWJTZXR0aW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Statistics/C3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xDMy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Statistics/Chartist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xDaGFydGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Statistics/Chartjs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xDaGFydGpzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Statistics/Dygraph.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xEeWdyYXBoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Statistics/Easypiechart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xFYXN5cGllY2hhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Statistics/Flot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xGbG90LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Statistics/Peity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xQZWl0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Statistics/Sparkline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xTcGFya2xpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Tables/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVzXEJhc2ljLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Tables/GenerateStyle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVzXEdlbmVyYXRlU3R5bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Accordion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcQWNjb3JkaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Alerts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcQWxlcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Badges.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcQmFkZ2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Breadcrumbs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcQnJlYWRjcnVtYnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/ButtonGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcQnV0dG9uR3JvdXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Buttons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcQnV0dG9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Cards.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcQ2FyZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Carousel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcQ2Fyb3VzZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Collapse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcQ29sbGFwc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Dropdowns.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcRHJvcGRvd25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/ListFilter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcTGlzdEZpbHRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Navbars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcTmF2YmFycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Pagination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcUGFnaW5hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Panels.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcUGFuZWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Popovers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcUG9wb3ZlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/ProgressBars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcUHJvZ3Jlc3NCYXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Scrollspy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcU2Nyb2xsc3B5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/SidePanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcU2lkZVBhbmVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Spinners.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcU3Bpbm5lcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/TabsAccordions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcVGFic0FjY29yZGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/TabsPills.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcVGFic1BpbGxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Toasts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcVG9hc3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/Tooltips.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcVG9vbHRpcHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Ui/TooltipsPopovers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlcVG9vbHRpcHNQb3BvdmVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Utilities/Borders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXEJvcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Utilities/Clearfix.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXENsZWFyZml4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Utilities/ColorPallet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXENvbG9yUGFsbGV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Utilities/DisplayProperty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXERpc3BsYXlQcm9wZXJ0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Utilities/Flexbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXEZsZXhib3guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Utilities/Fonts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXEZvbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Utilities/Helpers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXEhlbHBlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Utilities/Position.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXFBvc2l0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Utilities/ResponsiveGrid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXFJlc3BvbnNpdmVHcmlkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Utilities/Sizing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXFNpemluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Utilities/Spacing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXFNwYWNpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/Utilities/Typography.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl0aWVzXFR5cG9ncmFwaHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jegallego/Desktop/CredencialesEcar/ECARTemplate/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

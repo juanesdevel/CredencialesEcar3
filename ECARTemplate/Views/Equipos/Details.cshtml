@@ -1,0 +1,155 @@
+﻿@model ECARTemplate.Models.Equipo
+
+@{
+    ViewData["Title"] = "Detalles del Equipo";
+}
+<a asp-action="Index" class="btn btn-secondary ms-2">Volver a Equipos</a>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1 class="display-4 text-center mb-4">Detalles del Equipo</h1>
+
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Información del Equipo: @Html.DisplayFor(model => model.NombreEquipo)</h5>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.CodigoEquipo)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.CodigoEquipo)
+                        </dd>
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.NombreEquipo)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.NombreEquipo)
+                        </dd>
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.Fecha)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Fecha)
+                        </dd>
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.Sede)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Sede)
+                        </dd>
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.Area)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Area)
+                        </dd>
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.SubArea)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.SubArea)
+                        </dd>
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.Nota)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Nota)
+                        </dd>
+
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.HojaDeVida)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @if (!string.IsNullOrEmpty(Model.HojaDeVida) && (Model.HojaDeVida.StartsWith("http://") || Model.HojaDeVida.StartsWith("https://")))
+                            {
+                                <a href="@Model.HojaDeVida" target="_blank" rel="noopener noreferrer">@Html.DisplayFor(model => model.HojaDeVida)</a>
+                            }
+                            else
+                            {
+                                @Html.DisplayFor(model => model.HojaDeVida)
+                            }
+                        </dd>
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.Estado)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Estado)
+                        </dd>
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.UsuarioRegistro)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.UsuarioRegistro)
+                        </dd>
+
+                        <dt class="col-sm-4">
+                            @Html.DisplayNameFor(model => model.RutaImagen)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @if (!string.IsNullOrEmpty(Model.RutaImagen))
+                            {
+                                <a href="#" data-toggle="modal" data-target="#imageModal" data-image-url="@Model.RutaImagen"
+                                   title="Haz clic para expandir">
+                                    <img src="@Model.RutaImagen" alt="Imagen de @Model.NombreEquipo" class="img-fluid" style="max-width: 200px; height: auto; border: 1px solid #ddd; padding: 5px; cursor: pointer;" />
+                                </a>
+                                <p class="text-muted mt-2">Ubicación: <code>@Model.RutaImagen</code></p>
+                            }
+                            else
+                            {
+                                <p>No hay imagen disponible para este equipo.</p>
+                            }
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a> |
+                    <a asp-action="Index" class="btn btn-secondary">Volver a la Lista</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Imagen del Equipo: @Model.NombreEquipo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="" id="expandedImage" class="img-fluid" alt="Imagen expandida">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var imageModal = $('#imageModal');
+            if (imageModal.length) {
+                imageModal.on('show.bs.modal', function (event) {
+                    var button = $(event.relatedTarget);
+                    var imageUrl = button.data('image-url');
+
+                    var expandedImage = $(this).find('#expandedImage');
+                    expandedImage.attr('src', imageUrl);
+
+                    var modalTitle = $(this).find('.modal-title');
+                    if (modalTitle) {
+                        var originalTitle = button.attr('title') || '';
+                        var cleanedTitle = originalTitle.replace('Haz clic para expandir', 'Imagen del Equipo: ').trim();
+                        modalTitle.text(cleanedTitle || 'Imagen del Equipo');
+                    }
+                });
+            }
+        });
+    </script>
+}

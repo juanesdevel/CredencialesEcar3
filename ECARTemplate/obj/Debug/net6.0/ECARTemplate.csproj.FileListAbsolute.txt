@@ -1,0 +1,986 @@
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\appsettings.json
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\nav.json
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.staticwebassets.runtime.json
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.exe
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.deps.json
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.runtimeconfig.json
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.pdb
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Humanizer.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Negotiate.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ComponentModel.Composition.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ComponentModel.Composition.Registration.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Data.Odbc.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Data.OleDb.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.IO.Ports.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Management.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Private.ServiceModel.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Reflection.Context.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Duplex.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Http.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.NetTcp.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Primitives.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Security.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Syndication.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Speech.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Threading.AccessControl.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Web.Services.Description.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\cs\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\de\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\es\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\fr\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\it\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ja\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ko\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\pl\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\pt-BR\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ru\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\tr\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\zh-Hant\System.Private.ServiceModel.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\cs\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\de\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\es\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\fr\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\it\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ja\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ko\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\pl\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\pt-BR\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ru\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\tr\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\zh-Hans\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\zh-Hant\System.Web.Services.Description.resources.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\freebsd\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\illumos\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\ios\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\solaris\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\tvos\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.IO.Ports.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.IO.Ports.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Speech.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Threading.AccessControl.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.AssemblyReference.cache
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.AssemblyInfoInputs.cache
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.AssemblyInfo.cs
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.CoreCompileInputs.cache
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.RazorAssemblyInfo.cache
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.RazorAssemblyInfo.cs
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\scopedcss\bundle\ECARTemplate.styles.css
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.CopyComplete
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\refint\ECARTemplate.dll
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.pdb
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.genruntimeconfig.cache
+C:\Users\jagiraldo\source\repos\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ref\ECARTemplate.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\appsettings.json
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\nav.json
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.staticwebassets.runtime.json
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.exe
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.deps.json
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.runtimeconfig.json
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.pdb
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Humanizer.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Negotiate.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ComponentModel.Composition.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ComponentModel.Composition.Registration.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Data.Odbc.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Data.OleDb.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.IO.Ports.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Management.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Private.ServiceModel.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Reflection.Context.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Duplex.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Http.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.NetTcp.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Primitives.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Security.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Syndication.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Speech.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Threading.AccessControl.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Web.Services.Description.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\cs\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\de\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\es\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\fr\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\it\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ja\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ko\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\pl\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\pt-BR\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ru\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\tr\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\zh-Hant\System.Private.ServiceModel.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\cs\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\de\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\es\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\fr\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\it\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ja\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ko\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\pl\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\pt-BR\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ru\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\tr\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\zh-Hans\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\zh-Hant\System.Web.Services.Description.resources.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\freebsd\lib\net6.0\System.Data.Odbc.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\illumos\lib\net6.0\System.Data.Odbc.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\ios\lib\net6.0\System.Data.Odbc.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.Data.Odbc.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.Data.Odbc.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\solaris\lib\net6.0\System.Data.Odbc.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\tvos\lib\net6.0\System.Data.Odbc.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.Odbc.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.IO.Ports.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.IO.Ports.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Speech.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Threading.AccessControl.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.AssemblyReference.cache
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.AssemblyInfoInputs.cache
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.AssemblyInfo.cs
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.CoreCompileInputs.cache
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.RazorAssemblyInfo.cache
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.RazorAssemblyInfo.cs
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\scopedcss\bundle\ECARTemplate.styles.css
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.CopyComplete
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\refint\ECARTemplate.dll
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.pdb
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.genruntimeconfig.cache
+C:\Users\gjlopez\Documents\Visual Studio 2022\Template SmartAdmin NET Core\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ref\ECARTemplate.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\appsettings.Development.json
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\appsettings.json
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\nav.json
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.staticwebassets.runtime.json
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.exe
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.deps.json
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.runtimeconfig.json
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ECARTemplate.pdb
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Humanizer.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Negotiate.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Win32.Registry.AccessControl.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.CodeDom.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ComponentModel.Composition.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ComponentModel.Composition.Registration.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Data.Odbc.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Data.OleDb.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.AccountManagement.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.Protocols.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.IO.Packaging.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.IO.Pipelines.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.IO.Ports.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Management.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Private.ServiceModel.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Reflection.Context.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Duplex.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Http.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.NetTcp.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Primitives.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Security.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Syndication.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.ServiceProcess.ServiceController.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Speech.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Threading.AccessControl.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Web.Services.Description.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\cs\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\de\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\es\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\fr\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\it\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ja\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ko\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\pl\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\pt-BR\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ru\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\tr\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\zh-Hans\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\zh-Hant\System.Private.ServiceModel.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\cs\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\de\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\es\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\fr\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\it\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ja\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ko\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\pl\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\pt-BR\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\ru\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\tr\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\zh-Hans\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\zh-Hant\System.Web.Services.Description.resources.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.Registry.AccessControl.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\freebsd\lib\net6.0\System.Data.Odbc.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\illumos\lib\net6.0\System.Data.Odbc.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\ios\lib\net6.0\System.Data.Odbc.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.Data.Odbc.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.Data.Odbc.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\solaris\lib\net6.0\System.Data.Odbc.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\tvos\lib\net6.0\System.Data.Odbc.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.Odbc.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.AccountManagement.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.IO.Ports.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.IO.Ports.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Management.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Speech.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Threading.AccessControl.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.AssemblyReference.cache
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.AssemblyInfoInputs.cache
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.AssemblyInfo.cs
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.CoreCompileInputs.cache
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.MvcApplicationPartsAssemblyInfo.cs
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.MvcApplicationPartsAssemblyInfo.cache
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.RazorAssemblyInfo.cache
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.RazorAssemblyInfo.cs
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\staticwebassets\msbuild.ECARTemplate.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\staticwebassets\msbuild.build.ECARTemplate.props
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ECARTemplate.props
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ECARTemplate.props
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\staticwebassets.build.json
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\staticwebassets.development.json
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\scopedcss\bundle\ECARTemplate.styles.css
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.CopyComplete
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\refint\ECARTemplate.dll
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.pdb
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ECARTemplate.genruntimeconfig.cache
+D:\Cursos\DOTNET\TemplateModificadoGit\TemplateSmartAdmin\ECARTemplate\ECARTemplate\obj\Debug\net6.0\ref\ECARTemplate.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.AssemblyReference.cache
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.AssemblyInfoInputs.cache
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.AssemblyInfo.cs
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.CoreCompileInputs.cache
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.RazorAssemblyInfo.cache
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.RazorAssemblyInfo.cs
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\appsettings.json
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\nav.json
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.staticwebassets.runtime.json
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.staticwebassets.endpoints.json
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.exe
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.deps.json
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.runtimeconfig.json
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.pdb
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Negotiate.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ComponentModel.Composition.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ComponentModel.Composition.Registration.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Data.Odbc.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Data.OleDb.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.IO.Ports.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Management.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Private.ServiceModel.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Reflection.Context.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Duplex.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Http.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.NetTcp.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Primitives.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Security.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Syndication.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Speech.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Threading.AccessControl.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Web.Services.Description.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\cs\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\de\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\es\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\fr\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\it\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ja\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ko\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\pl\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\pt-BR\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ru\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\tr\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\zh-Hant\System.Private.ServiceModel.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\cs\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\de\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\es\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\fr\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\it\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ja\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ko\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\pl\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\pt-BR\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ru\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\tr\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\zh-Hans\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\zh-Hant\System.Web.Services.Description.resources.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\freebsd\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\illumos\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\ios\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\solaris\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\tvos\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.IO.Ports.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.IO.Ports.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Speech.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Threading.AccessControl.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\scopedcss\bundle\ECARTemplate.styles.css
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets\msbuild.ECARTemplate.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets\msbuild.ECARTemplate.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets\msbuild.build.ECARTemplate.props
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ECARTemplate.props
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ECARTemplate.props
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemp.A3F6534E.Up2Date
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\refint\ECARTemplate.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.pdb
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.genruntimeconfig.cache
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ref\ECARTemplate.dll
+C:\Users\Juan G\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.sourcelink.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.AssemblyReference.cache
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\rpswa.dswa.cache.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.AssemblyInfoInputs.cache
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.AssemblyInfo.cs
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.CoreCompileInputs.cache
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.RazorAssemblyInfo.cache
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.RazorAssemblyInfo.cs
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\appsettings.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\nav.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.staticwebassets.runtime.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.staticwebassets.endpoints.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.exe
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.deps.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.runtimeconfig.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.pdb
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Humanizer.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Negotiate.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ComponentModel.Composition.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ComponentModel.Composition.Registration.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Data.Odbc.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Data.OleDb.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.IO.Ports.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Management.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Private.ServiceModel.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Reflection.Context.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Duplex.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Http.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.NetTcp.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Primitives.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Security.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Syndication.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Speech.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Threading.AccessControl.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Web.Services.Description.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\cs\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\de\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\es\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\fr\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\it\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ja\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ko\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\pl\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\pt-BR\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ru\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\tr\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\zh-Hant\System.Private.ServiceModel.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\cs\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\de\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\es\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\fr\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\it\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ja\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ko\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\pl\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\pt-BR\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ru\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\tr\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\zh-Hans\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\zh-Hant\System.Web.Services.Description.resources.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\freebsd\lib\net6.0\System.Data.Odbc.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\illumos\lib\net6.0\System.Data.Odbc.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\ios\lib\net6.0\System.Data.Odbc.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.Data.Odbc.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.Data.Odbc.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\solaris\lib\net6.0\System.Data.Odbc.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\tvos\lib\net6.0\System.Data.Odbc.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.Odbc.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.IO.Ports.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.IO.Ports.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Speech.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Threading.AccessControl.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\rjimswa.dswa.cache.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\rjsmrazor.dswa.cache.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\rjsmcshtml.dswa.cache.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\scopedcss\bundle\ECARTemplate.styles.css
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.build.json.cache
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemp.A3F6534E.Up2Date
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\refint\ECARTemplate.dll
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.pdb
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.genruntimeconfig.cache
+C:\Users\tecnologia\Documents\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ref\ECARTemplate.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\appsettings.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\nav.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.staticwebassets.runtime.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.staticwebassets.endpoints.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.exe
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.deps.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.runtimeconfig.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ECARTemplate.pdb
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Humanizer.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Negotiate.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ComponentModel.Composition.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ComponentModel.Composition.Registration.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Data.Odbc.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Data.OleDb.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.IO.Ports.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Management.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Private.ServiceModel.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Reflection.Context.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Duplex.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Http.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.NetTcp.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Primitives.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Security.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceModel.Syndication.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Speech.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Threading.AccessControl.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Web.Services.Description.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\cs\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\de\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\es\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\fr\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\it\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ja\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ko\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\pl\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\pt-BR\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ru\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\tr\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\zh-Hant\System.Private.ServiceModel.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\cs\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\de\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\es\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\fr\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\it\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ja\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ko\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\pl\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\pt-BR\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\ru\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\tr\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\zh-Hans\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\zh-Hant\System.Web.Services.Description.resources.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.Registry.AccessControl.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\freebsd\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\illumos\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\ios\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\solaris\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\tvos\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.Odbc.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.IO.Ports.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.IO.Ports.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Speech.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Threading.AccessControl.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.AssemblyReference.cache
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\rpswa.dswa.cache.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.AssemblyInfoInputs.cache
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.AssemblyInfo.cs
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.csproj.CoreCompileInputs.cache
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.RazorAssemblyInfo.cache
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.RazorAssemblyInfo.cs
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.sourcelink.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\rjimswa.dswa.cache.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\rjsmrazor.dswa.cache.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\rjsmcshtml.dswa.cache.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\scopedcss\bundle\ECARTemplate.styles.css
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.build.json.cache
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemp.A3F6534E.Up2Date
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\refint\ECARTemplate.dll
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.pdb
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ECARTemplate.genruntimeconfig.cache
+C:\Users\jegallego\Desktop\CredencialesEcar\ECARTemplate\obj\Debug\net6.0\ref\ECARTemplate.dll
