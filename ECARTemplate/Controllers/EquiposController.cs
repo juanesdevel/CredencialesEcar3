@@ -1,19 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ECARTemplate.Data;
-using ECARTemplate.Models;
-using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
-using System.Linq;
-using System;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using System.IO;
-using Microsoft.Data.SqlClient;
-
-namespace ECARTemplate.Controllers
+﻿namespace ECARTemplate.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+    using ECARTemplate.Data;
+    using ECARTemplate.Models;
+    using Microsoft.EntityFrameworkCore;
+    using System.Threading.Tasks;
+    using System.Linq;
+    using System;
+    using System.IO;
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.Http;
+
     [Authorize]
     public class EquiposController : Controller
     {
@@ -126,7 +124,6 @@ namespace ECARTemplate.Controllers
                     equipo.RutaImagen = "/images/equipos/" + uniqueFileName;
                 }
 
-                // Asignar el nombre del usuario de registro del Directorio Activo
                 equipo.UsuarioRegistro = User.Identity.Name;
                 equipo.Fecha = DateTime.Now;
 
@@ -191,8 +188,6 @@ namespace ECARTemplate.Controllers
                     }
 
                     equipo.Fecha = DateTime.Now;
-
-                    // Asignar el nombre del usuario de registro del Directorio Activo
                     equipo.UsuarioRegistro = User.Identity.Name;
 
                     _context.Update(equipo);
@@ -261,50 +256,11 @@ namespace ECARTemplate.Controllers
             {
                 _context.Update(equipo);
                 await _context.SaveChangesAsync();
-
-                var connection = _context.Database.GetDbConnection();
-                var spOutput = new SpResult { Success = 0, Message = "Error desconocido al ejecutar SP." };
-
-                try
-                {
-                    await connection.OpenAsync();
-                    using (var command = connection.CreateCommand())
-                    {
-                        command.CommandText = "dbo.SP_Equipos_ActualizarEstado_Cascade";
-                        command.CommandType = System.Data.CommandType.StoredProcedure;
-                        command.Parameters.Add(new SqlParameter("@IdEquipo", equipo.Id));
-                        command.Parameters.Add(new SqlParameter("@NuevoEstado", equipo.Estado));
-
-                        using (var reader = await command.ExecuteReaderAsync())
-                        {
-                            if (await reader.ReadAsync())
-                            {
-                                spOutput.Success = reader.GetInt32(reader.GetOrdinal("Success"));
-                                spOutput.Message = reader.GetString(reader.GetOrdinal("Message"));
-                            }
-                        }
-                    }
-                }
-                finally
-                {
-                    if (connection.State == System.Data.ConnectionState.Open)
-                    {
-                        await connection.CloseAsync();
-                    }
-                }
-
-                if (spOutput.Success == 0)
-                {
-                    TempData["ErrorMessage"] = $"Equipo activado, pero hubo un error en la cascada de credenciales: {spOutput.Message}";
-                }
-                else
-                {
-                    TempData["SuccessMessage"] = $"Equipo '{equipo.NombreEquipo}' activado exitosamente.";
-                }
+                TempData["SuccessMessage"] = $"Equipo '{equipo.NombreEquipo}' activado exitosamente.";
             }
             catch (Exception ex)
             {
-                TempData["ErrorMessage"] = $"Error al activar equipo o sus credenciales: {ex.Message}";
+                TempData["ErrorMessage"] = $"Error al activar el equipo: {ex.Message}";
             }
 
             return RedirectToAction(nameof(Index));
@@ -328,86 +284,18 @@ namespace ECARTemplate.Controllers
             {
                 _context.Update(equipo);
                 await _context.SaveChangesAsync();
-
-                var connection = _context.Database.GetDbConnection();
-                var spOutput = new SpResult { Success = 0, Message = "Error desconocido al ejecutar SP." };
-
-                try
-                {
-                    await connection.OpenAsync();
-                    using (var command = connection.CreateCommand())
-                    {
-                        command.CommandText = "dbo.SP_Equipos_ActualizarEstado_Cascade";
-                        command.CommandType = System.Data.CommandType.StoredProcedure;
-                        command.Parameters.Add(new SqlParameter("@IdEquipo", equipo.Id));
-                        command.Parameters.Add(new SqlParameter("@NuevoEstado", equipo.Estado));
-
-                        using (var reader = await command.ExecuteReaderAsync())
-                        {
-                            if (await reader.ReadAsync())
-                            {
-                                spOutput.Success = reader.GetInt32(reader.GetOrdinal("Success"));
-                                spOutput.Message = reader.GetString(reader.GetOrdinal("Message"));
-                            }
-                        }
-                    }
-                }
-                finally
-                {
-                    if (connection.State == System.Data.ConnectionState.Open)
-                    {
-                        await connection.CloseAsync();
-                    }
-                }
-
-                if (spOutput.Success == 0)
-                {
-                    TempData["ErrorMessage"] = $"Equipo inactivado, pero hubo un error en la cascada de credenciales: {spOutput.Message}";
-                }
-                else
-                {
-                    TempData["SuccessMessage"] = $"Equipo '{equipo.NombreEquipo}' inactivado exitosamente.";
-                }
+                TempData["SuccessMessage"] = $"Equipo '{equipo.NombreEquipo}' inactivado exitosamente.";
             }
             catch (Exception ex)
             {
-                TempData["ErrorMessage"] = $"Error al inactivar equipo o sus credenciales: {ex.Message}";
+                TempData["ErrorMessage"] = $"Error al inactivar el equipo: {ex.Message}";
             }
 
             return RedirectToAction(nameof(Index));
         }
 
-        // Método Buscar usado para AJAX
         [HttpGet]
-        public async Task<IActionResult> Buscar(string term)
-        {
-            var equiposFiltrados = await _context.Equipos
-                .Where(e => e.CodigoEquipo.Contains(term) || e.NombreEquipo.Contains(term))
-                .ToListAsync();
-            return Json(equiposFiltrados);
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> ObtenerCodigoPorReferencia(string referencia)
-        {
-            if (string.IsNullOrEmpty(referencia))
-                return Json(new { existe = false, mensaje = "Debe proporcionar un código de equipo." });
-
-            var equipo = await _context.Equipos.FirstOrDefaultAsync(e => e.CodigoEquipo == referencia);
-
-            if (equipo != null)
-                return Json(new { existe = true, codigoEquipo = equipo.CodigoEquipo, nombreEquipo = equipo.NombreEquipo });
-            else
-                return Json(new { existe = false, mensaje = "No se encontró ningún equipo con el código especificado." });
-        }
-
-        private bool EquipoExists(int id)
-        {
-            return _context.Equipos.Any(e => e.Id == id);
-        }
-        // Dentro de tu EquiposController.cs
-        [HttpGet]
-        public async Task<IActionResult> ObtenerDatosEquipo(string codigoEquipo) // <-- ¡CORREGIDO!
+        public async Task<IActionResult> ObtenerDatosEquipo(string codigoEquipo)
         {
             if (string.IsNullOrEmpty(codigoEquipo))
             {
@@ -415,16 +303,30 @@ namespace ECARTemplate.Controllers
             }
 
             var equipo = await _context.Equipos
-                                     .FirstOrDefaultAsync(e => e.CodigoEquipo.ToUpper() == codigoEquipo.ToUpper());
+                                       .FirstOrDefaultAsync(e => e.CodigoEquipo.ToUpper() == codigoEquipo.ToUpper());
 
             if (equipo != null)
             {
-                return Json(new { success = true, data = new { codigoEquipo = equipo.CodigoEquipo, nombreEquipo = equipo.NombreEquipo, nota = equipo.Nota } });
+                return Json(new
+                {
+                    success = true,
+                    data = new
+                    {
+                        codigoEquipo = equipo.CodigoEquipo,
+                        nombreEquipo = equipo.NombreEquipo,
+                        nota = equipo.Nota
+                    }
+                });
             }
             else
             {
                 return Json(new { success = false, message = "No se encontró ningún equipo con ese código." });
             }
+        }
+
+        private bool EquipoExists(int id)
+        {
+            return _context.Equipos.Any(e => e.Id == id);
         }
     }
 }

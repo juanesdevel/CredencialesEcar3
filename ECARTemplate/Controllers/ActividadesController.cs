@@ -70,11 +70,21 @@
             ViewData["TotalRegistros"] = actividadesList.Count;
 
             return View(actividadesList);
-        }        // POST: /Actividades/Create
+        }
+
+        // GET: /Actividades/Create
+        // This method is needed to display the form.
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: /Actividades/Create
         // Acción para procesar la creación de una nueva actividad.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Actividad actividad) // ¡CORREGIDO!
+        public IActionResult Create(Actividad actividad)
         {
             if (ModelState.IsValid)
             {

@@ -6,7 +6,6 @@ using ECARTemplate.Models;
 using ECARTemplate.Data;
 using Microsoft.AspNetCore.Authorization;
 using System;
-using Microsoft.Data.SqlClient; // Necesario para SqlParameter
 
 namespace ECARTemplate.Controllers
 {
@@ -198,11 +197,7 @@ namespace ECARTemplate.Controllers
             return View(empleado);
         }
 
-        // --- ¡ACCIÓN GET 'Activar' ELIMINADA! ---
-        // public async Task<IActionResult> Activar(int? id) { ... }
-
-        // POST: Empleados/Activar/5 (Acción que ejecuta la activación y la cascada)
-        [HttpPost, ActionName("Activar")] // Asegura que este POST responde a la URL /Empleados/Activar
+        [HttpPost, ActionName("Activar")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ActivarConfirmado(int id)
         {
@@ -219,63 +214,18 @@ namespace ECARTemplate.Controllers
             {
                 _context.Update(empleado);
                 await _context.SaveChangesAsync();
-
-                var connection = _context.Database.GetDbConnection();
-                var spOutput = new SpResult { Success = 0, Message = "Error desconocido al ejecutar SP." };
-
-                try
-                {
-                    await connection.OpenAsync();
-                    using (var command = connection.CreateCommand())
-                    {
-                        command.CommandText = "dbo.SP_Empleados_ActualizarEstado_Cascade";
-                        command.CommandType = System.Data.CommandType.StoredProcedure;
-
-                        command.Parameters.Add(new SqlParameter("@IdEmpleado", empleado.Id));
-                        command.Parameters.Add(new SqlParameter("@NuevoEstado", empleado.Estado));
-
-                        using (var reader = await command.ExecuteReaderAsync())
-                        {
-                            if (await reader.ReadAsync())
-                            {
-                                spOutput.Success = reader.GetInt32(reader.GetOrdinal("Success"));
-                                spOutput.Message = reader.GetString(reader.GetOrdinal("Message"));
-                            }
-                        }
-                    }
-                }
-                finally
-                {
-                    if (connection.State == System.Data.ConnectionState.Open)
-                    {
-                        await connection.CloseAsync();
-                    }
-                }
-
-                if (spOutput.Success == 0)
-                {
-                    TempData["ErrorMessage"] = $"Empleado activado, pero hubo un error en la cascada de credenciales: {spOutput.Message}";
-                }
-                else
-                {
-                    TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' activado exitosamente.";
-                }
+                TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' activado exitosamente.";
             }
             catch (Exception ex)
             {
-                TempData["ErrorMessage"] = $"Error al activar empleado o sus credenciales: {ex.Message}";
+                TempData["ErrorMessage"] = $"Error al activar el empleado: {ex.Message}";
             }
 
             return RedirectToAction(nameof(Index));
         }
-
-        // --- ¡ACCIÓN GET 'Desactivar' ELIMINADA! ---
-        // public async Task<IActionResult> Desactivar(int? id) { ... }
-
-        // POST: Empleados/Desactivar/5 (Acción que ejecuta la desactivación y la cascada)
-        [HttpPost, ActionName("Desactivar")] // Asegura que este POST responde a la URL /Empleados/Desactivar
+        [HttpPost, ActionName("Desactivar")]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")] // Solo Admin puede desactivar
+        [Authorize]
         public async Task<IActionResult> DesactivarConfirmado(int id)
         {
             var empleado = await _context.Empleados.FindAsync(id);
@@ -291,51 +241,11 @@ namespace ECARTemplate.Controllers
             {
                 _context.Update(empleado);
                 await _context.SaveChangesAsync();
-
-                var connection = _context.Database.GetDbConnection();
-                var spOutput = new SpResult { Success = 0, Message = "Error desconocido al ejecutar SP." };
-
-                try
-                {
-                    await connection.OpenAsync();
-                    using (var command = connection.CreateCommand())
-                    {
-                        command.CommandText = "dbo.SP_Empleados_ActualizarEstado_Cascade";
-                        command.CommandType = System.Data.CommandType.StoredProcedure;
-
-                        command.Parameters.Add(new SqlParameter("@IdEmpleado", empleado.Id));
-                        command.Parameters.Add(new SqlParameter("@NuevoEstado", empleado.Estado));
-
-                        using (var reader = await command.ExecuteReaderAsync())
-                        {
-                            if (await reader.ReadAsync())
-                            {
-                                spOutput.Success = reader.GetInt32(reader.GetOrdinal("Success"));
-                                spOutput.Message = reader.GetString(reader.GetOrdinal("Message"));
-                            }
-                        }
-                    }
-                }
-                finally
-                {
-                    if (connection.State == System.Data.ConnectionState.Open)
-                    {
-                        await connection.CloseAsync();
-                    }
-                }
-
-                if (spOutput.Success == 0)
-                {
-                    TempData["ErrorMessage"] = $"Empleado inactivado, pero hubo un error en la cascada de credenciales: {spOutput.Message}";
-                }
-                else
-                {
-                    TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' inactivado exitosamente.";
-                }
+                TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' inactivado exitosamente.";
             }
             catch (Exception ex)
             {
-                TempData["ErrorMessage"] = $"Error al inactivar empleado o sus credenciales: {ex.Message}";
+                TempData["ErrorMessage"] = $"Error al inactivar el empleado: {ex.Message}";
             }
 
             return RedirectToAction(nameof(Index));
@@ -345,11 +255,5 @@ namespace ECARTemplate.Controllers
         {
             return _context.Empleados.Any(e => e.Id == id);
         }
-    }
-
-    public class SpResult
-    {
-        public int Success { get; set; }
-        public string Message { get; set; }
     }
 }

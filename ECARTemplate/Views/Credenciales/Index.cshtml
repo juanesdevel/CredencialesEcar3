@@ -3,7 +3,8 @@
 @{
     ViewData["Title"] = "Credenciales";
 }
-<div fa-computer-classic="text-center">
+
+<div class="text-center">
     <h1 class="display-4">Credenciales</h1>
 </div>
 <p class="mx-5 mb-3">
@@ -117,25 +118,28 @@
         <thead class="sticky-header">
             <tr>
                 <th style="width: 10%;">
-                    <h4>Estado</h4>
+                    <h4 class="text-sm">Estado</h4>
                 </th>
                 <th style="width: 5%;">
-                    <h4>Código Equipo</h4>
+                    <h4 class="text-sm">Código Equipo</h4>
                 </th>
                 <th style="width: 5%;">
-                    <h4>Código Empleado</h4>
+                    <h4 class="text-sm">Código Empleado</h4>
                 </th>
                 <th>
-                    <h4>Nombre Empleado</h4>
+                    <h4 class="text-sm">Nombre Empleado</h4>
                 </th>
                 <th>
-                    <h4>Usuario</h4>
+                    <h4 class="text-sm">Usuario</h4>
                 </th>
                 <th>
-                    <h4>Contraseña</h4>
+                    <h4 class="text-sm">
+                        <span>Contraseña</span>
+                        <i id="toggle-password" class="fas fa-eye-slash" style="cursor: pointer; margin-left: 5px;"></i>
+                    </h4>
                 </th>
                 <th class="no-print">
-                    <h4>Acciones</h4>
+                    <h4 class="text-sm">Acciones</h4>
                 </th>
             </tr>
         </thead>
@@ -170,7 +174,9 @@
                         @Html.DisplayFor(modelItem => item.Usuario)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Contrasena)
+                        <span class="password-cell" data-original-password="@item.Contrasena">
+                            ••••••
+                        </span>
                     </td>
                     <td class="no-print text-nowrap">
                         <a asp-action="Clonar" asp-route-id="@item.Id" class="btn btn-info btn-xs">Clonar</a>
@@ -196,14 +202,14 @@
 </div>
 
 <style>
-    /* Estilos para impresión */
-    @@media print {
-        .no-print {
-            display: none !important;
-        }
+    /* Estilos para ocultar la contraseña por defecto */
+    .password-cell {
+        cursor: pointer;
+        font-family: monospace;
+        letter-spacing: 2px;
     }
 
-    /* Estilos para el contenedor de la tabla */
+    /* Estilos para el contenedor de la tabla (restante de tu código) */
     .table-container {
         max-height: 500px;
         overflow-y: auto;
@@ -211,30 +217,67 @@
         border-radius: 0.25rem;
     }
 
-    /* Estilos para el encabezado fijo */
     .sticky-header {
         position: sticky;
         top: 0;
-        background-color: #fff;
+        background-color: #f8f9fa; /* Color de fondo para el encabezado */
         z-index: 10;
+        border-bottom: 2px solid #dee2e6; /* Separador del encabezado */
     }
 
-    /* Estilos para que las filas sean más angostas */
     .table-compact th,
     .table-compact td {
         padding-top: 0.25rem;
         padding-bottom: 0.25rem;
+        font-size: 0.8rem;
     }
 
-    /* Evita que los botones se envuelvan a la siguiente línea */
-    .table td.text-nowrap {
-        white-space: nowrap;
-    }
-
-    /* --- Nuevo Estilo para botones extra-pequeños --- */
     .btn.btn-xs {
-        padding: 0.1rem 0.25rem; /* Ajusta el relleno para hacerlos más pequeños */
-        font-size: 0.75rem; /* Reduce el tamaño de la fuente */
-        line-height: 1; /* Ajusta la altura de la línea para evitar espacios extra */
+        padding: 0.1rem 0.25rem;
+        font-size: 0.75rem;
+        line-height: 1;
+    }
+    /* Estilos para la impresión */
+    @@media print {
+        .no-print {
+            display: none !important;
+        }
+    }
+
+    .text-sm {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño para el encabezado */
     }
 </style>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            let isPasswordVisible = false;
+
+            $('#toggle-password').on('click', function() {
+                isPasswordVisible = !isPasswordVisible;
+                if (isPasswordVisible) {
+                    $(this).removeClass('fa-eye-slash').addClass('fa-eye');
+                    $('.password-cell').each(function() {
+                        const originalPassword = $(this).data('original-password');
+                        $(this).text(originalPassword);
+                    });
+                } else {
+                    $(this).removeClass('fa-eye').addClass('fa-eye-slash');
+                    $('.password-cell').text('••••••');
+                }
+            });
+
+            $(document).on('mouseenter', '.password-cell', function() {
+                if (!isPasswordVisible) {
+                    const originalPassword = $(this).data('original-password');
+                    $(this).text(originalPassword);
+                }
+            }).on('mouseleave', '.password-cell', function() {
+                if (!isPasswordVisible) {
+                    $(this).text('••••••');
+                }
+            });
+        });
+    </script>
+}

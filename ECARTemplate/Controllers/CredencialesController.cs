@@ -24,8 +24,8 @@ namespace ECARTemplate.Controllers
         // GET: Credenciales
         public async Task<IActionResult> Index(
             string codigoEquipoFiltro,
-            DateTime? fechaYHoraDesdeFiltro,
-            DateTime? fechaYHoraHastaFiltro,
+            DateTime? fechaYHoraDesdeFiltro, // ¡CORREGIDO! El nombre ahora coincide con la vista
+            DateTime? fechaYHoraHastaFiltro, // ¡CORREGIDO! El nombre ahora coincide con la vista
             string codigoUsuarioEcarFiltro,
             string nombreUsuarioFiltro,
             string perfilFiltro,
@@ -87,7 +87,6 @@ namespace ECARTemplate.Controllers
 
             var credencialesList = await credenciales.ToListAsync();
 
-            // === Desencriptar cada contraseña en la lista ===
             foreach (var credencial in credencialesList)
             {
                 if (!string.IsNullOrEmpty(credencial.Contrasena))
@@ -124,7 +123,6 @@ namespace ECARTemplate.Controllers
 
             return View(credencialesList);
         }
-
         // GET: Credenciales/Details/5
         public async Task<IActionResult> Details(int? id)
         {
