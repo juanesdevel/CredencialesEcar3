@@ -19,8 +19,7 @@ namespace ECARTemplate.Data
         public DbSet<Equipo> Equipos { get; set; }
         public DbSet<Credencial> Credenciales { get; set; }
 
-        // --- ¡IMPORTANTE! Este DbSet NO debe estar presente para tu versión de EF Core. ---
-        // public DbSet<SpResult> SpResults { get; set; } // <<-- ¡ELIMINA ESTA LÍNEA!
+        public DbSet<Actividad> Actividades { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

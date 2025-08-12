@@ -34,7 +34,7 @@
     </div>
 }
 
-<div class="card mb-3">
+<div class="card mb-3 no-print mx-5">
     <div class="card-header bg-primary text-white">
         <h6 class="mb-0">Filtro Avanzado</h6>
     </div>
@@ -47,7 +47,6 @@
                         <input type="date" class="form-control form-control-sm" id="fechaYHoraDesdeFiltro" name="fechaYHoraDesdeFiltro" value="@((ViewBag.FechaYHoraDesdeFiltro as DateTime?)?.ToString("yyyy-MM-dd") ?? "")" />
                     </div>
                 </div>
-
                 <div class="col-md-3">
                     <div class="form-group mb-2">
                         <label for="nombreUsuarioFiltro" class="form-label-sm">Nombre Empleado:</label>
@@ -67,9 +66,7 @@
                     </div>
                 </div>
             </div>
-
             <div class="row gx-2 align-items-end">
-
                 <div class="col-md-3">
                     <div class="form-group mb-2">
                         <label for="fechaYHoraHastaFiltro" class="form-label-sm">Fecha Hasta:</label>
@@ -82,7 +79,6 @@
                         <input type="text" class="form-control form-control-sm" id="perfilFiltro" name="perfilFiltro" value="@((string)ViewBag.PerfilFiltro ?? "")" />
                     </div>
                 </div>
-
                 <div class="col-md-3">
                     <div class="form-group mb-2">
                         <label for="usuarioRegistroFiltro" class="form-label-sm">Usuario que Registró:</label>
@@ -100,9 +96,7 @@
                     </div>
                 </div>
             </div>
-
             <div class="row gx-2 align-items-end">
-
                 <div class="col-md-9 text-start">
                     <div class="form-group mt-2">
                         <button type="submit" class="btn btn-primary btn-sm">Filtrar</button>
@@ -118,89 +112,129 @@
     <p class="text-muted total-registros-counter">Mostrando @ViewData["TotalRegistros"] registros.</p>
 </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                <h4>Estado</h4>
-            </th>
-            <th>
-                <h4>Código Equipo</h4>
-            </th>
-            <th>
-                <h4>Código Empleado</h4>
-            </th>
-            <th>
-                <h4>Nombre Empleado</h4>
-            </th>
-            <th>
-                <h4>Usuario</h4>
-            </th>
-            <th>
-                <h4>Contraseña</h4>
-            </th>
-            <th>
-                <h4>Acciones</h4>
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+<div class="table-container mx-5">
+    <table class="table table-bordered table-striped table-compact">
+        <thead class="sticky-header">
             <tr>
-                <td>
-                    @if (item.Estado == "Activo")
-                    {
-                        <span class="badge bg-success">Activo</span>
-                    }
-                    else if (item.Estado == "Inactivo")
-                    {
-                        <span class="badge bg-secondary">Inactivo</span>
-                    }
-                    else
-                    {
-                        <span class="badge bg-danger">Desconocido</span>
-                    }
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CodigoEquipo)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CodigoUsuarioEcar)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.NombreUsuario)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Usuario)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Contrasena)
-                </td>
-                <td>
-                    <a asp-action="Clonar" asp-route-id="@item.Id" class="btn btn-info btn-sm">Clonar</a>
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Editar</a>
-                   
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Detalles</a>
-                    @if (item.Estado == "Activo")
-                    {
-                        @* --- CAMBIO CRÍTICO: DE ENLACE A FORMULARIO POST --- *@
-                        <form asp-action="Desactivar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro de inactivar la credencial?');">
-                            <button type="submit" class="btn btn-secondary btn-sm">Inactivar</button>
-                        </form>
-                    }
-                    else
-                    {
-                        @* --- CAMBIO CRÍTICO: DE ENLACE A FORMULARIO POST --- *@
-                        <form asp-action="Activar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro de activar la credencial?');">
-                            <button type="submit" class="btn btn-success btn-sm">Activar</button>
-                        </form>
-                    }
-                    @* Comento esta linea de "Eliminar" ya que se recomienda usar inactivo para evitar inconsistencias en el sistema de auditoría. *@
-                    @* <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm" onclick="return confirm('¿Está seguro que desea eliminar este equipo? Esta acción no se puede deshacer.');">Eliminar</a> *@
-                </td>
+                <th style="width: 10%;">
+                    <h4>Estado</h4>
+                </th>
+                <th style="width: 5%;">
+                    <h4>Código Equipo</h4>
+                </th>
+                <th style="width: 5%;">
+                    <h4>Código Empleado</h4>
+                </th>
+                <th>
+                    <h4>Nombre Empleado</h4>
+                </th>
+                <th>
+                    <h4>Usuario</h4>
+                </th>
+                <th>
+                    <h4>Contraseña</h4>
+                </th>
+                <th class="no-print">
+                    <h4>Acciones</h4>
+                </th>
             </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @if (item.Estado == "Activo")
+                        {
+                            <span class="badge bg-success">Activo</span>
+                        }
+                        else if (item.Estado == "Inactivo")
+                        {
+                            <span class="badge bg-secondary">Inactivo</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Desconocido</span>
+                        }
+                    </td>
+                    <td class="text-truncate" style="max-width: 50px;">
+                        @Html.DisplayFor(modelItem => item.CodigoEquipo)
+                    </td>
+                    <td class="text-truncate" style="max-width: 50px;">
+                        @Html.DisplayFor(modelItem => item.CodigoUsuarioEcar)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreUsuario)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Usuario)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Contrasena)
+                    </td>
+                    <td class="no-print text-nowrap">
+                        <a asp-action="Clonar" asp-route-id="@item.Id" class="btn btn-info btn-xs">Clonar</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-xs">Editar</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning btn-xs">Detalles</a>
+                        @if (item.Estado == "Activo")
+                        {
+                            <form asp-action="Desactivar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro de inactivar la credencial?');">
+                                <button type="submit" class="btn btn-secondary btn-xs">Inactivar</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <form asp-action="Activar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro de activar la credencial?');">
+                                <button type="submit" class="btn btn-success btn-xs">Activar</button>
+                            </form>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    /* Estilos para impresión */
+    @@media print {
+        .no-print {
+            display: none !important;
         }
-    </tbody>
-</table>
+    }
+
+    /* Estilos para el contenedor de la tabla */
+    .table-container {
+        max-height: 500px;
+        overflow-y: auto;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+    }
+
+    /* Estilos para el encabezado fijo */
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    /* Estilos para que las filas sean más angostas */
+    .table-compact th,
+    .table-compact td {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    /* Evita que los botones se envuelvan a la siguiente línea */
+    .table td.text-nowrap {
+        white-space: nowrap;
+    }
+
+    /* --- Nuevo Estilo para botones extra-pequeños --- */
+    .btn.btn-xs {
+        padding: 0.1rem 0.25rem; /* Ajusta el relleno para hacerlos más pequeños */
+        font-size: 0.75rem; /* Reduce el tamaño de la fuente */
+        line-height: 1; /* Ajusta la altura de la línea para evitar espacios extra */
+    }
+</style>

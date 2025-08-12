@@ -14,32 +14,38 @@
             "roles": [
                 "Custom"
             ],
-            "items": [
-                {
-                    "href": "/Home",
-                    "icon": "fal fa-desktop",
-                    "roles": [],
-                    "title": "Inicio"
-                },
-                {
-                    "href": "/Credenciales",
-                    "icon": "fal fa-desktop",
-                    "roles": [],
-                    "title": "Gestión de Credenciales"
-                },
-                {
-                    "href": "/Empleados",
-                    "icon": "fal fa-desktop",
-                    "roles": [],
-                    "title": "Gestión de Empleados"
-                },
-                {
-                    "href": "/Equipos",
-                    "icon": "fal fa-desktop",
-                    "roles": [],
-                    "title": "Gestión de Equipos"
-                }
-            ]
+          "items": [
+            {
+              "href": "/Home",
+              "icon": "fal fa-desktop",
+              "roles": [],
+              "title": "Inicio"
+            },
+            {
+              "href": "/Credenciales",
+              "icon": "fal fa-desktop",
+              "roles": [],
+              "title": "Gestión de Credenciales"
+            },
+            {
+              "href": "/Actividades",
+              "icon": "fal fa-desktop",
+              "roles": [],
+              "title": "Gestión de Actividades"
+            },
+            {
+              "href": "/Empleados",
+              "icon": "fal fa-desktop",
+              "roles": [],
+              "title": "Gestión de Empleados"
+            },
+            {
+              "href": "/Equipos",
+              "icon": "fal fa-desktop",
+              "roles": [],
+              "title": "Gestión de Equipos"
+            }
+          ]
         }
     ]
 }

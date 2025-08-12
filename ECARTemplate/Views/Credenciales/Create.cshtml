@@ -3,8 +3,10 @@
 @{
     ViewData["Title"] = "Crear Credencial";
 }
+
 <a asp-action="Index" class="btn btn-secondary ms-2">Volver a Credenciales</a>
 <br />
+
 <div class="container">
     <h1 class="text-center mb-4">Crear Credencial</h1>
 
@@ -27,7 +29,7 @@
                         <hr />
                         <div class="mb-2 mt-0">
                             <label asp-for="FechaYHora" class="control-label">Fecha y Hora</label>
-                            <input asp-for="FechaYHora" class="form-control" id="campoFechaHora" readonly value="" />
+                            <input asp-for="FechaYHora" class="form-control" id="campoFechaHora" readonly />
                             <span asp-validation-for="FechaYHora" class="text-danger"></span>
                         </div>
                         <div class="mb-2 mt-0">
@@ -37,13 +39,14 @@
                         </div>
                         <div class="mb-2 mt-0">
                             <label asp-for="NombreUsuario" class="control-label">Nombre Empleado</label>
-                            <input asp-for="NombreUsuario" class="form-control" placeholder="Nombre Empleado" id="NombreUsuario" readonly/>
+                            <input asp-for="NombreUsuario" class="form-control" placeholder="Nombre Empleado" id="NombreUsuario" readonly />
                             <span asp-validation-for="NombreUsuario" class="text-danger"></span>
-                            <div class="mb-2 mt-0">
-                                <label asp-for="Perfil" class="control-label">Perfil</label>
-                                <input asp-for="Perfil" class="form-control" />
-                                <span asp-validation-for="Perfil" class="text-danger"></span>
-                            </div>
+                        </div>
+                        <div class="mb-2 mt-0">
+                            <label asp-for="Perfil" class="control-label">Perfil</label>
+                            <input asp-for="Perfil" class="form-control" />
+                            <span asp-validation-for="Perfil" class="text-danger"></span>
+                        </div>
                         <div class="mb-2 mt-0">
                             <label asp-for="Estado" class="control-label" hidden></label>
                             <input asp-for="Estado" class="form-control" value="Activo" readonly hidden />
@@ -56,6 +59,7 @@
                             <span asp-validation-for="UsuarioRegistro" class="text-danger"></span>
                         </div>
                         <hr class="mb-2" />
+
                         <div class="mb-2 mt-0">
                             <label for="BuscarReferenciaEquipo" class="control-label">Buscar Código Equipo / software</label>
                             <div class="input-group">
@@ -73,6 +77,7 @@
                             <textarea id="NotaEquipo" class="form-control" rows="3" readonly></textarea>
                         </div>
                         <hr class="mb-2" />
+
                         <div class="mb-2 mt-0">
                             <label asp-for="Usuario" class="control-label">Usuario (Firma BPM)</label>
                             <input asp-for="Usuario" class="form-control" id="Usuario" />
@@ -93,74 +98,53 @@
         </div>
     </div>
 </div>
+
 @section Scripts {
     <script>
-                $(document).ready(function() {
-            // Función para generar una contraseña de 6 números aleatorios
+        $(document).ready(function() {
+            // Lógica para generar contraseña (se mantiene igual)
             function generarContrasenaAleatoria() {
                 let contrasena = '';
                 for (let i = 0; i < 6; i++) {
-                    contrasena += Math.floor(Math.random() * 10); // Genera un número aleatorio entre 0 y 9
+                    contrasena += Math.floor(Math.random() * 10);
                 }
                 return contrasena;
             }
-
-            // Agregar un botón para generar la contraseña si no existe
             if (!$('#generarContrasenaBtn').length) {
                 $('#Contrasena').after('<button type="button" id="generarContrasenaBtn" class="btn btn-outline-info btn-sm ms-2">Generar Contraseña</button>');
             }
-
-            // Evento click del botón para generar la contraseña
             $('#generarContrasenaBtn').click(function() {
                 const nuevaContrasena = generarContrasenaAleatoria();
                 $('#Contrasena').val(nuevaContrasena);
             });
-        });
-                           $(document).ready(function() {
-            // 1. Agregar el botón "Buscar" dinámicamente después del campo CodigoUsuarioEcarBusqueda
+
+            // Lógica para buscar empleado (se mantiene igual)
             $('#CodigoUsuarioEcarBusqueda').after('<button type="button" id="btnBuscarUsuario" class="btn btn-outline-primary btn-sm ms-2">Buscar</button>');
-
-            // 2. Escuchar el evento click del botón "Buscar"
             $('#btnBuscarUsuario').click(function() {
-                buscarDatosUsuario(); // Llamar a la función de búsqueda
+                buscarDatosUsuario();
             });
-
-            // 3. Escuchar el evento 'keypress' del campo CodigoUsuarioEcarBusqueda para la tecla Enter
             $('#CodigoUsuarioEcarBusqueda').keypress(function(event) {
-                if (event.which === 13) { // 13 es el código de la tecla Enter
-                    buscarDatosUsuario(); // Llamar a la función de búsqueda al presionar Enter
-                    event.preventDefault(); // Prevenir el comportamiento predeterminado del Enter en formularios
+                if (event.which === 13) {
+                    buscarDatosUsuario();
+                    event.preventDefault();
                 }
             });
-
-            // 4. Función reutilizable para realizar la búsqueda AJAX
             function buscarDatosUsuario() {
                 var codigoUsuarioEcarBusqueda = $('#CodigoUsuarioEcarBusqueda').val();
-
                 if (codigoUsuarioEcarBusqueda) {
-                    // Agregamos console.log para depuración
-                    console.log("Buscando código: " + codigoUsuarioEcarBusqueda);
-
                     $.ajax({
-                        url: '/Empleados/ObtenerDatosUsuario', // Asegúrate que esta ruta sea correcta
+                        url: '/Empleados/ObtenerDatosUsuario',
                         type: 'GET',
                         data: { codigoEmpleadoEcar: codigoUsuarioEcarBusqueda },
                         dataType: 'json',
                         success: function(response) {
-                            // Depuración: mostrar la respuesta completa en la consola
-                            console.log("Respuesta del servidor:", response);
-
                             if (response.success) {
-                                // Actualizar valores en el formulario
-                                $('#CodigoUsuarioEcar').val(response.data.codigoUsuarioEcar); // Nota: podría ser case-sensitive
+                                $('#CodigoUsuarioEcar').val(response.data.codigoUsuarioEcar);
                                 $('#NombreUsuario').val(response.data.nombreEmpleado);
                                 $('#Usuario').val(response.data.usuario);
-
-                                // Opcional: Mostrar mensaje de éxito
                                 alert("Usuario encontrado: " + response.data.nombreEmpleado);
                             } else {
-                                // Limpiar campos
-                                $('#CodigoUsuarioEcarBusqueda').val(''); // Limpiar el campo de búsqueda
+                                $('#CodigoUsuarioEcarBusqueda').val('');
                                 $('#CodigoUsuarioEcar').val('');
                                 $('#NombreUsuario').val('');
                                 $('#Usuario').val('');
@@ -168,9 +152,7 @@
                             }
                         },
                         error: function(xhr, status, error) {
-                            // Mostrar información detallada del error para depuración
                             console.error("Error en la petición AJAX:", status, error);
-                            console.error("Respuesta:", xhr.responseText);
                             alert("Ocurrió un error al intentar recuperar los datos del usuario.");
                         }
                     });
@@ -182,95 +164,71 @@
                     alert("Por favor, ingrese el Código Usuario para buscar.");
                 }
             }
-        });
-            // Función para formatear la fecha y hora en formato compatible con input datetime-local
-        function obtenerFechaHoraFormateada() {
-            const ahora = new Date();
 
-            // Formato YYYY-MM-DDThh:mm
-            const año = ahora.getFullYear();
-            const mes = String(ahora.getMonth() + 1).padStart(2, '0');
-            const dia = String(ahora.getDate()).padStart(2, '0');
-            const hora = String(ahora.getHours()).padStart(2, '0');
-            const minutos = String(ahora.getMinutes()).padStart(2, '0');
-
-            return `${año}-${mes}-${dia}T${hora}:${minutos}`;
-        }
-
-        // Establecer la fecha y hora actual al cargar la página
-        document.addEventListener("DOMContentLoaded", function() {
-            const campoFechaHora = document.getElementById("campoFechaHora");
-            if (campoFechaHora) {
-                // Si el campo está vacío, establecer la fecha y hora actual
-                if (!campoFechaHora.value) {
-                    campoFechaHora.value = obtenerFechaHoraFormateada();
-                }
-
-                // Asegurarnos de que el tipo del input sea datetime-local
-                campoFechaHora.setAttribute("type", "datetime-local");
-            }
-        });
-                            $(document).ready(function() {
-            // Evento para el botón de buscar equipo
+            // Lógica para buscar equipo (CORREGIDA)
             $('#btnBuscarReferenciaEquipo').click(function() {
                 buscarEquipoPorCodigo();
             });
-
-            // Evento para detectar la tecla Enter en el campo de búsqueda
             $('#BuscarReferenciaEquipo').keypress(function(event) {
-                if (event.which === 13) { // 13 es el código de la tecla Enter
+                if (event.which === 13) {
                     buscarEquipoPorCodigo();
-                    event.preventDefault(); // Prevenir el comportamiento predeterminado del Enter
+                    event.preventDefault();
                 }
             });
 
-        // Función para realizar la búsqueda del equipo por código
-                    function buscarEquipoPorCodigo() {
-                        var codigoBusqueda = $('#BuscarReferenciaEquipo').val();
+            function buscarEquipoPorCodigo() {
+                var codigoBusqueda = $('#BuscarReferenciaEquipo').val();
 
-                        if (codigoBusqueda) {
-                            // Mostrar mensaje de carga o spinner (opcional)
-                            console.log("Buscando equipo con código: " + codigoBusqueda);
-
-                            $.ajax({
-                                url: '@Url.Action("ObtenerDatosEquipo", "Credenciales")', // <-- ¡CORREGIDO! Apunta a tu CredencialesController
-                                type: 'GET',
-                                data: { referencia: codigoBusqueda },
-                                dataType: 'json',
-                                success: function(response) {
-                                    console.log("Respuesta del servidor (Equipo):", response);
-
-                                    if (response.success) { // <-- ¡CORREGIDO! Ahora esperamos 'success' del JSON
-                                        // Actualizar los campos con los datos del equipo encontrado
-                                        $('#CodigoEquipo').val(response.data.codigoEquipo);
-                                        $('#NotaEquipo').val(response.data.nota); // <-- ¡CORREGIDO! Para cargar la nota
-
-                                        alert("Equipo encontrado: " + response.data.nombreEquipo); // Muestra el nombre
-                                    } else {
-                                        // Limpiar los campos si no se encontró
-                                        $('#CodigoEquipo').val('');
-                                        $('#NotaEquipo').val(''); // <-- Limpia la nota también
-                                        alert(response.message || "No se encontró ningún equipo con ese código.");
-                                    }
-                                },
-                                error: function(xhr, status, error) {
-                                    console.error("Error en la petición AJAX (Equipo):", status, error);
-                                    console.error("Respuesta:", xhr.responseText);
-                                    alert("Ocurrió un error al buscar el equipo.");
-                                    // Limpiar campos en caso de error
-                                    $('#CodigoEquipo').val('');
-                                    $('#NotaEquipo').val(''); // <-- Limpia la nota también
-                                }
-                            });
-                        } else {
+                if (codigoBusqueda) {
+                    $.ajax({
+                        url: '@Url.Action("ObtenerDatosEquipo", "Equipos")',
+                        type: 'GET',
+                        data: { codigoEquipo: codigoBusqueda }, // <-- ¡CORREGIDO! Nombre del parámetro
+                        dataType: 'json',
+                        success: function(response) {
+                            if (response && response.success) {
+                                $('#CodigoEquipo').val(response.data.codigoEquipo);
+                                $('#NotaEquipo').val(response.data.nota);
+                                alert("Equipo encontrado: " + response.data.nombreEquipo); // <-- ¡CORREGIDO! Nombre de la propiedad
+                            } else {
+                                $('#CodigoEquipo').val('');
+                                $('#NotaEquipo').val('');
+                                alert(response.message || "No se encontró ningún equipo con ese código.");
+                            }
+                        },
+                        error: function(xhr, status, error) {
+                            console.error("Error en la petición AJAX (Equipo):", status, error);
+                            alert("Ocurrió un error al buscar el equipo.");
                             $('#CodigoEquipo').val('');
-                            $('#NotaEquipo').val(''); // <-- Limpia la nota también
-                            alert("Por favor, ingrese el código del equipo a buscar.");
+                            $('#NotaEquipo').val('');
                         }
-                    }
+                    });
+                } else {
+                    alert("Por favor, ingrese el código del equipo a buscar.");
+                    $('#CodigoEquipo').val('');
+                    $('#NotaEquipo').val('');
+                }
+            }
 
-                        });
+            // Lógica de fecha y hora (se mantiene igual)
+            function obtenerFechaHoraFormateada() {
+                const ahora = new Date();
+                const año = ahora.getFullYear();
+                const mes = String(ahora.getMonth() + 1).padStart(2, '0');
+                const dia = String(ahora.getDate()).padStart(2, '0');
+                const hora = String(ahora.getHours()).padStart(2, '0');
+                const minutos = String(ahora.getMinutes()).padStart(2, '0');
+                return `${año}-${mes}-${dia}T${hora}:${minutos}`;
+            }
+            document.addEventListener("DOMContentLoaded", function() {
+                const campoFechaHora = document.getElementById("campoFechaHora");
+                if (campoFechaHora) {
+                    if (!campoFechaHora.value) {
+                        campoFechaHora.value = obtenerFechaHoraFormateada();
+                    }
+                    campoFechaHora.setAttribute("type", "datetime-local");
+                }
+            });
+        });
     </script>
-   
 }
- 

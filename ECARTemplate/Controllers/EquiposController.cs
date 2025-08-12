@@ -405,5 +405,26 @@ namespace ECARTemplate.Controllers
         {
             return _context.Equipos.Any(e => e.Id == id);
         }
+        // Dentro de tu EquiposController.cs
+        [HttpGet]
+        public async Task<IActionResult> ObtenerDatosEquipo(string codigoEquipo) // <-- ¡CORREGIDO!
+        {
+            if (string.IsNullOrEmpty(codigoEquipo))
+            {
+                return Json(new { success = false, message = "Debe proporcionar un código de equipo." });
+            }
+
+            var equipo = await _context.Equipos
+                                     .FirstOrDefaultAsync(e => e.CodigoEquipo.ToUpper() == codigoEquipo.ToUpper());
+
+            if (equipo != null)
+            {
+                return Json(new { success = true, data = new { codigoEquipo = equipo.CodigoEquipo, nombreEquipo = equipo.NombreEquipo, nota = equipo.Nota } });
+            }
+            else
+            {
+                return Json(new { success = false, message = "No se encontró ningún equipo con ese código." });
+            }
+        }
     }
 }

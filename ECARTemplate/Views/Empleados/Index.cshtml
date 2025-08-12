@@ -10,11 +10,11 @@
     <h1 class="display-4">Empleados</h1>
 </div>
 
-<p class="mx-5 mb-3">
+<p class="mx-5 mb-3 no-print">
     <a asp-action="Create" class="btn btn-success btn-sm">Crear Nuevo</a>
 </p>
 
-<div class="card mb-3">
+<div class="card mb-3 no-print mx-5">
     <div class="card-header bg-primary text-white">
         <h6 class="mb-0">Filtro</h6>
     </div>
@@ -41,102 +41,136 @@
         </form>
     </div>
 </div>
+
 <div class="mx-5 mb-3">
     <p class="text-muted total-registros-counter">Mostrando @ViewData["TotalRegistros"] registros.</p>
 </div>
-<div class="mx-5">
-    <div id="resultadosBusqueda">
-        <table class="table" style="font-size: 1.0em;">
-            <thead>
-                <tr>
-                    <th>
-                        <h4>Estado</h4>
-                    </th>
-                    <th>
-                        <h4>Código</h4>
-                    </th>
-                    <th>
-                        <h4>Nombre</h4>
-                    </th>
-                    <th>
-                        <h4>Firma BPM</h4>
-                    </th>
-                    <th>
-                        <h4>Acciones</h4>
-                    </th>
-                </tr>
-            </thead>
-            <tbody id="tablaEmpleadosBody">
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-                            @if (item.Estado == "Activo")
-                            {
-                                <span class="badge bg-success">Activo</span>
-                            }
-                            else if (item.Estado == "Inactivo")
-                            {
-                                <span class="badge bg-secondary">Inactivo</span>
-                            }
-                            else
-                            {
-                                <span class="badge bg-danger">Desconocido</span>
-                            }
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.CodigoEmpleadoEcar)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.NombreEmpleado)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.FirmaBpm)
-                        </td>
-                        <td>
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Editar</a> |
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Detalles</a> |
 
-                            @* --- FORMULARIO PARA ACTIVAR/DESACTIVAR VÍA POST --- *@
-                            @if (item.Estado == "Activo")
-                            {
-                                <form asp-action="Desactivar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro que desea Inactivar este empleado? Esto afectará sus credenciales.');">
-                                    <button type="submit" class="btn btn-secondary btn-sm">Inactivar</button>
-                                </form>
-                            }
-                            else
-                            {
-                                <form asp-action="Activar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro que desea activar este empleado?');">
-                                    <button type="submit" class="btn btn-success btn-sm">Activar</button>
-                                </form>
-                            }
-                            |
-                            <a asp-action="Create" asp-controller="Credenciales" asp-route-empleadoId="@item.Id" class="btn btn-info btn-sm">Crear Credencial</a>
-                            @* Ejemplo de cómo eliminar: *@
-                            @* | <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm" onclick="return confirm('¿Está seguro que desea eliminar este empleado? Esta acción no se puede deshacer.')">Eliminar</a> *@
-                        </td>
-                    </tr>
-                }
-                @if (!Model.Any())
-                {
-                    <tr>
-                        <td colspan="5">No se encontraron resultados.</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
+<div class="table-container mx-5">
+    <table class="table table-bordered table-striped table-compact">
+        <thead class="sticky-header">
+            <tr>
+                <th style="width: 10%;">
+                    <h4>Estado</h4>
+                </th>
+                <th style="width: 10%;">
+                    <h4>Código</h4>
+                </th>
+                <th style="width: 35%;">
+                    <h4>Nombre</h4>
+                </th>
+                <th>
+                    <h4>Firma BPM</h4>
+                </th>
+                <th class="no-print" style="width: 30%;">
+                    <h4>Acciones</h4>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tablaEmpleadosBody">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @if (item.Estado == "Activo")
+                        {
+                            <span class="badge bg-success">Activo</span>
+                        }
+                        else if (item.Estado == "Inactivo")
+                        {
+                            <span class="badge bg-secondary">Inactivo</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Desconocido</span>
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CodigoEmpleadoEcar)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreEmpleado)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirmaBpm)
+                    </td>
+                    <td class="no-print text-nowrap">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-xs">Editar</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning btn-xs">Detalles</a>
+                        @if (item.Estado == "Activo")
+                        {
+                            <form asp-action="Desactivar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro que desea Inactivar este empleado? Esto afectará sus credenciales.');">
+                                <button type="submit" class="btn btn-secondary btn-xs">Inactivar</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <form asp-action="Activar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro que desea activar este empleado?');">
+                                <button type="submit" class="btn btn-success btn-xs">Activar</button>
+                            </form>
+                        }
+                        <a asp-action="Create" asp-controller="Credenciales" asp-route-empleadoId="@item.Id" class="btn btn-info btn-xs">Crear Credencial</a>
+                    </td>
+                </tr>
+            }
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="5">No se encontraron resultados.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
 
 @section Scripts {
     <script>
         $(document).ready(function () {
-            // --- ¡IMPORTANTE! Eliminamos toda la función filtrarEmpleados() y sus llamadas AJAX. ---
-            // Los filtros ahora se manejan con el envío de formulario GET estándar.
-            // Los botones de filtro (incluido el de Limpiar) ahora envían el formulario principal.
-
-            // Puedes eliminar los IDs 'searchInput', 'estadoFilter', 'clearFilters'
-            // si no se usan para nada más que el JavaScript de filtrado que acabamos de eliminar.
+            // El JavaScript de filtrado dinámico fue eliminado ya que ahora se usa un formulario GET estándar.
         });
     </script>
 }
+
+<style>
+    /* Estilos para impresión */
+    @@media print {
+        .no-print {
+            display: none !important;
+        }
+    }
+
+    /* Estilos para el contenedor de la tabla */
+    .table-container {
+        max-height: 500px;
+        overflow-y: auto;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+    }
+
+    /* Estilos para el encabezado fijo */
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    /* Estilos para que las filas sean más angostas */
+    .table-compact th,
+    .table-compact td {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    /* Evita que los botones se envuelvan a la siguiente línea */
+    .table td.text-nowrap {
+        white-space: nowrap;
+    }
+
+    /* Estilo para botones extra-pequeños */
+    .btn.btn-xs {
+        padding: 0.1rem 0.25rem;
+        font-size: 0.75rem;
+        line-height: 1;
+    }
+</style>

@@ -1,0 +1,145 @@
+﻿@model ECARTemplate.Models.Actividad
+
+@{
+    ViewData["Title"] = "Crear Actividad";
+}
+
+<a asp-action="Index" class="btn btn-secondary ms-2">Volver a Actividades</a>
+<br />
+<div class="container">
+    <h1 class="text-center mb-4">Crear Actividad</h1>
+
+    <div class="row justify-content-center px-0">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Nueva Actividad</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="mb-2 mt-0">
+                            <label asp-for="FechaRegistro" class="control-label">Fecha y Hora</label>
+                            <input asp-for="FechaRegistro" class="form-control" id="campoFechaHora" readonly />
+                            <span asp-validation-for="FechaRegistro" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-2 mt-0">
+                            <label asp-for="UsuarioRegistro" class="control-label">Usuario</label>
+                            <input asp-for="UsuarioRegistro" class="form-control" id="UsuarioRegistro" readonly value="@User.Identity.Name" />
+                            <span asp-validation-for="UsuarioRegistro" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-2 mt-0">
+                            <label for="BuscarCodigoEquipo" class="control-label">Buscar Código Equipo</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Código (AAA01)" id="BuscarCodigoEquipo" />
+                                <button type="button" id="btnBuscarEquipo" class="btn btn-outline-primary btn-sm ms-2">Buscar</button>
+                            </div>
+                        </div>
+
+                        <div class="mb-2 mt-0">
+                            <label asp-for="CodigoEquipo" class="control-label">Código Equipo Asignado</label>
+                            <input asp-for="CodigoEquipo" class="form-control" placeholder="Código Equipo" id="CodigoEquipo" readonly />
+                            <span asp-validation-for="CodigoEquipo" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-2 mt-0">
+                            <label asp-for="TipoActividad" class="control-label">Tipo de Actividad</label>
+                            <select asp-for="TipoActividad" class="form-control">
+                                <option value="">-- Seleccione un tipo --</option>
+                                <option value="Toma de Backup" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Toma de Backup")">Toma de Backup</option>
+                                <option value="Toma de Audit Trail" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Toma de Audit Trail")">Toma de Audit Trail</option>
+                                <option value="Restauración" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Restauración")">Restauración</option>
+                                <option value="Otro" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Otro")">Otro</option>
+                            </select>
+                            <span asp-validation-for="TipoActividad" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-2 mt-0">
+                            <label asp-for="Nota" class="control-label">Nota</label>
+                            <textarea asp-for="Nota" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="Nota" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group text-center mt-4">
+                            <button type="submit" class="btn btn-success">Crear</button>
+                            <a asp-action="Index" class="btn btn-secondary ms-2">Volver a la Lista</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Función para formatear la fecha y hora y asignarla al campo
+            function setFechaHora() {
+                const ahora = new Date();
+                const año = ahora.getFullYear();
+                const mes = String(ahora.getMonth() + 1).padStart(2, '0');
+                const dia = String(ahora.getDate()).padStart(2, '0');
+                const hora = String(ahora.getHours()).padStart(2, '0');
+                const minutos = String(ahora.getMinutes()).padStart(2, '0');
+                const fechaFormateada = `${año}-${mes}-${dia}T${hora}:${minutos}`;
+
+                $('#campoFechaHora').val(fechaFormateada);
+            }
+
+            // Llamar a la función al cargar la página
+            setFechaHora();
+
+            // Función para buscar equipo y llenar el campo CodigoEquipo
+            function buscarEquipoPorCodigo() {
+                // Aquí usamos el ID correcto de tu vista de Actividades
+                var codigoBusqueda = $('#BuscarCodigoEquipo').val();
+
+                // Validar que el campo no esté vacío
+                if (codigoBusqueda) {
+                    console.log("Buscando equipo con código: " + codigoBusqueda);
+
+                    $.ajax({
+                        // La URL debe apuntar al controlador y la acción correctos
+                        url: '@Url.Action("ObtenerDatosEquipo", "Equipos")',
+                        type: 'GET',
+                        data: { codigoEquipo: codigoBusqueda },
+                        dataType: 'json',
+                        success: function(response) {
+                            console.log("Respuesta del servidor (Equipo):", response);
+
+                            if (response && response.success) {
+                                $('#CodigoEquipo').val(response.data.codigoEquipo);
+                                 // ¡CORREGIDO! Ahora usa la propiedad nombreEquipo
+                                alert("Equipo encontrado: " + response.data.nombreEquipo);
+                            } else {
+                                $('#CodigoEquipo').val('');
+                                alert(response.message || "No se encontró ningún equipo con ese código.");
+                            }
+                        },
+                        error: function(xhr, status, error) {
+                            console.error("Error en la petición AJAX (Equipo):", status, error);
+                            alert("Ocurrió un error al buscar el equipo.");
+                            $('#CodigoEquipo').val('');
+                        }
+                    });
+                } else {
+                    alert("Por favor, ingrese el código del equipo a buscar.");
+                    $('#CodigoEquipo').val('');
+                }
+            }
+
+            // Eventos para el botón de búsqueda y la tecla Enter
+            $('#btnBuscarEquipo').click(buscarEquipoPorCodigo);
+            $('#BuscarCodigoEquipo').keypress(function(event) {
+                if (event.which === 13) {
+                    buscarEquipoPorCodigo();
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+}

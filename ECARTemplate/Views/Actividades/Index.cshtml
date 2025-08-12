@@ -1,0 +1,186 @@
+﻿@model IEnumerable<ECARTemplate.Models.Actividad>
+
+@{
+    ViewData["Title"] = "Actividades";
+}
+
+<div fa-computer-classic="text-center">
+    <h1 class="display-4">Actividades Validación de Software</h1>
+</div>
+
+<p class="mx-5 mb-3">
+    <a class="btn btn-success btn-sm" asp-action="Create">Crear Nuevo</a>
+</p>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show mx-5" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show mx-5" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="card mb-3 no-print mx-5">
+    <div class="card-header bg-primary text-white">
+        <h6 class="mb-0">Filtro Avanzado</h6>
+    </div>
+    <div class="card-body py-2">
+        <form asp-action="Index" method="get">
+            <div class="row gx-2 align-items-end">
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="fechaDesdeFiltro" class="form-label-sm">Fecha Desde:</label>
+                        <input type="date" class="form-control form-control-sm" id="fechaDesdeFiltro" name="fechaDesdeFiltro" value="@((ViewBag.FechaDesdeFiltro as DateTime?)?.ToString("yyyy-MM-dd") ?? "")" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="fechaHastaFiltro" class="form-label-sm">Fecha Hasta:</label>
+                        <input type="date" class="form-control form-control-sm" id="fechaHastaFiltro" name="fechaHastaFiltro" value="@((ViewBag.FechaHastaFiltro as DateTime?)?.ToString("yyyy-MM-dd") ?? "")" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="usuarioRegistroFiltro" class="form-label-sm">Usuario que Registró:</label>
+                        <input type="text" class="form-control form-control-sm" id="usuarioRegistroFiltro" name="usuarioRegistroFiltro" value="@((string)ViewBag.UsuarioRegistroFiltro ?? "")" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="codigoEquipoFiltro" class="form-label-sm">Código Equipo:</label>
+                        <input type="text" class="form-control form-control-sm" id="codigoEquipoFiltro" name="codigoEquipoFiltro" value="@((string)ViewBag.CodigoEquipoFiltro ?? "")" />
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-2 align-items-end">
+                <div class="col-md-6">
+                    <div class="form-group mb-2">
+                        <label for="tipoActividadFiltro" class="form-label-sm">Tipo de Actividad:</label>
+                        <select class="form-control form-control-sm" id="tipoActividadFiltro" name="tipoActividadFiltro">
+                            <option value="">Todos</option>
+                            <option value="Toma de Backup" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Toma de Backup")">Toma de Backup</option>
+                            <option value="Toma de Audit Trail" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Toma de Audit Trail")">Toma de Audit Trail</option>
+                            <option value="Restauración" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Restauración")">Restauración</option>
+                            <option value="Otro" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Otro")">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group mb-2">
+                        <label for="notaFiltro" class="form-label-sm">Nota (Contiene):</label>
+                        <input type="text" class="form-control form-control-sm" id="notaFiltro" name="notaFiltro" value="@((string)ViewBag.NotaFiltro ?? "")" />
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-2 align-items-end">
+                <div class="col-md-12 text-start">
+                    <div class="form-group mt-2">
+                        <button type="submit" class="btn btn-primary btn-sm">Filtrar</button>
+                        <a asp-action="Index" class="btn btn-secondary btn-sm ms-2">Limpiar Filtros</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mx-5 mb-3">
+    <p class="text-muted total-registros-counter">Mostrando @ViewData["TotalRegistros"] registros.</p>
+</div>
+
+<div class="table-container mx-5">
+    <table class="table table-bordered table-striped table-compact">
+        <thead class="sticky-header">
+            <tr>
+                <th style="width: 20%;">
+                    <h4>Fecha y Hora</h4>
+                </th>
+                <th style="width: 15%;">
+                    <h4>Usuario que Registró</h4>
+                </th>
+                <th style="width: 10%;">
+                    <h4>Código Equipo</h4>
+                </th>
+                <th style="width: 20%;">
+                    <h4>Tipo de Actividad</h4>
+                </th>
+                <th>
+                    <h4>Nota</h4>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-truncate" style="max-width: 100px;">
+                        @Html.DisplayFor(modelItem => item.FechaRegistro)
+                    </td>
+                    <td class="text-truncate" style="max-width: 120px;">
+                        @Html.DisplayFor(modelItem => item.UsuarioRegistro)
+                    </td>
+                    <td class="text-truncate" style="max-width: 80px;">
+                        @Html.DisplayFor(modelItem => item.CodigoEquipo)
+                    </td>
+                    <td class="text-truncate" style="max-width: 120px;">
+                        @Html.DisplayFor(modelItem => item.TipoActividad)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nota)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    /* Estilos para impresión */
+    @@media print {
+        .no-print {
+            display: none !important;
+        }
+    }
+
+    /* Estilos para el contenedor de la tabla */
+    .table-container {
+        max-height: 500px;
+        overflow-y: auto;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+    }
+
+    /* Estilos para el encabezado fijo */
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    /* Estilos para que las filas sean más angostas */
+    .table-compact th,
+    .table-compact td {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    /* Evita que los botones se envuelvan a la siguiente línea */
+    .table td.text-nowrap {
+        white-space: nowrap;
+    }
+
+    /* --- Nuevo Estilo para botones extra-pequeños --- */
+    .btn.btn-xs {
+        padding: 0.1rem 0.25rem;
+        font-size: 0.75rem;
+        line-height: 1;
+    }
+</style>
