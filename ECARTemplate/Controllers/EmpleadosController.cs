@@ -6,6 +6,7 @@ using ECARTemplate.Models;
 using ECARTemplate.Data;
 using Microsoft.AspNetCore.Authorization;
 using System;
+using System.Collections.Generic;
 
 namespace ECARTemplate.Controllers
 {
@@ -223,6 +224,8 @@ namespace ECARTemplate.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        // POST: Empleados/Desactivar/5
         [HttpPost, ActionName("Desactivar")]
         [ValidateAntiForgeryToken]
         [Authorize]
@@ -235,13 +238,29 @@ namespace ECARTemplate.Controllers
                 return NotFound();
             }
 
+            // --- Lógica de advertencia de credenciales activas ---
+            var tieneCredencialesActivas = await _context.Credenciales
+                                                            .Where(c => c.CodigoUsuarioEcar == empleado.CodigoEmpleadoEcar && c.Estado == "Activo")
+                                                            .AnyAsync();
+
+            if (tieneCredencialesActivas)
+            {
+                TempData["InfoMessage"] = $"Advertencia: El empleado '{empleado.NombreEmpleado}' tiene credenciales activas. Se ha procedido a inactivarlo.";
+            }
+            // --- Fin de la lógica de advertencia ---
+
             empleado.Estado = "Inactivo";
 
             try
             {
                 _context.Update(empleado);
                 await _context.SaveChangesAsync();
-                TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' inactivado exitosamente.";
+
+                // Si no se envió un mensaje de advertencia, se envía un mensaje de éxito.
+                if (TempData["InfoMessage"] == null)
+                {
+                    TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' inactivado exitosamente.";
+                }
             }
             catch (Exception ex)
             {

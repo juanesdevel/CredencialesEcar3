@@ -1,17 +1,18 @@
-﻿namespace ECARTemplate.Controllers
-{
-    using Microsoft.AspNetCore.Mvc;
-    using ECARTemplate.Data;
-    using ECARTemplate.Models;
-    using Microsoft.EntityFrameworkCore;
-    using System.Threading.Tasks;
-    using System.Linq;
-    using System;
-    using System.IO;
-    using Microsoft.AspNetCore.Authorization;
-    using Microsoft.AspNetCore.Hosting;
-    using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Mvc;
+using ECARTemplate.Data;
+using ECARTemplate.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
+using System.Linq;
+using System;
+using System.IO;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
 
+namespace ECARTemplate.Controllers
+{
     [Authorize]
     public class EquiposController : Controller
     {
@@ -61,6 +62,11 @@
                 {
                     equipos = equipos.Where(e => e.Estado == "Inactivo");
                 }
+            }
+            else
+            {
+                // Por defecto, mostrar solo los equipos activos
+                equipos = equipos.Where(e => e.Estado == "Activo");
             }
 
             var equiposList = await equipos.ToListAsync();
@@ -266,18 +272,31 @@
             return RedirectToAction(nameof(Index));
         }
 
-        // POST: Equipos/Desactivar/5
-        [HttpPost, ActionName("Desactivar")]
+        // POST: Equipos/Inactivar/5
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DesactivarConfirmado(int id)
+        public async Task<IActionResult> Inactivar(int id)
         {
             var equipo = await _context.Equipos.FindAsync(id);
             if (equipo == null)
             {
-                TempData["ErrorMessage"] = "El equipo que intentó desactivar no fue encontrado.";
+                TempData["ErrorMessage"] = "El equipo que intentó inactivar no fue encontrado.";
                 return NotFound();
             }
 
+            // Validar si existen credenciales activas para este equipo
+            var credencialesActivas = await _context.Credenciales
+                                                    .Where(c => c.CodigoEquipo == equipo.CodigoEquipo && c.Estado == "Activo")
+                                                    .ToListAsync();
+
+            if (credencialesActivas.Any())
+            {
+                // Si hay credenciales activas, mostrar un mensaje de error y no inactivar
+                TempData["ErrorMessage"] = "No se puede inactivar el equipo. Aún hay credenciales activas asociadas a este equipo. Por favor, revise y desactive las credenciales primero.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            // Si no hay credenciales activas, proceder a inactivar el equipo
             equipo.Estado = "Inactivo";
 
             try
@@ -303,7 +322,7 @@
             }
 
             var equipo = await _context.Equipos
-                                       .FirstOrDefaultAsync(e => e.CodigoEquipo.ToUpper() == codigoEquipo.ToUpper());
+                                     .FirstOrDefaultAsync(e => e.CodigoEquipo.ToUpper() == codigoEquipo.ToUpper());
 
             if (equipo != null)
             {

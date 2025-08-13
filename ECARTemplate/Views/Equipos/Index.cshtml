@@ -2,7 +2,6 @@
 
 @{
     ViewData["Title"] = "Equipos";
-    // Recuperar los valores de los filtros desde ViewData para que se mantengan en la interfaz
     var currentSearchString = ViewData["CurrentFilter"] as string;
     var currentSedeFilter = ViewData["SedeFilter"] as string;
     var currentAreaFilter = ViewData["AreaFilter"] as string;
@@ -10,7 +9,8 @@
     var sedes = ViewBag.Sedes as List<string> ?? new List<string>();
     var areas = ViewBag.Areas as List<string> ?? new List<string>();
 }
-<div fa-computer-classic="text-center">
+
+<div class="text-center">
     <h1 class="display-4">Equipos ó Software</h1>
 </div>
 <p class="mx-5 mb-3 no-print">
@@ -20,7 +20,7 @@
 @if (TempData["SuccessMessage"] != null)
 {
     <div class="alert alert-success alert-dismissible fade show mx-5" role="alert">
-        @TempData["SuccessMessage"]
+        @Html.Raw(TempData["SuccessMessage"])
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 }
@@ -28,7 +28,7 @@
 @if (TempData["ErrorMessage"] != null)
 {
     <div class="alert alert-danger alert-dismissible fade show mx-5" role="alert">
-        @TempData["ErrorMessage"]
+        @Html.Raw(TempData["ErrorMessage"])
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 }
@@ -36,10 +36,27 @@
 @if (TempData["InfoMessage"] != null)
 {
     <div class="alert alert-info alert-dismissible fade show mx-5" role="alert">
-        @TempData["InfoMessage"]
+        @Html.Raw(TempData["InfoMessage"])
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 }
+
+<div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="confirmacionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmacionModalLabel">Confirmación</h5>
+                <button type="button" class="btn-close" id="closeModalBtn" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-body-text">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="cancelarAccionBtn">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="confirmarAccionBtn">Sí, continuar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="card mb-3 no-print mx-5">
     <div class="card-header bg-primary text-white">
@@ -154,14 +171,16 @@
                         <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning btn-xs">Detalles</a>
                         @if (item.Estado == "Activo")
                         {
-                            <form asp-action="Desactivar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('Si inactiva el equipo, todas las credenciales relacionadas también lo harán. ¿Está seguro que desea Inactivar este equipo?');">
-                                <button type="submit" class="btn btn-secondary btn-xs">Inactivar</button>
+                            <form asp-action="Inactivar" asp-route-id="@item.Id" method="post" style="display:inline;" data-mensaje="Debes asegurarte de que todas las <b>credenciales activas</b> relacionadas a este equipo estén inactivas antes de proceder.<br/>¿Deseas continuar?">
+                                @Html.AntiForgeryToken()
+                                <button type="button" class="btn btn-secondary btn-xs" onclick="showConfirmModal(this, this.parentNode.getAttribute('data-mensaje'));">Inactivar</button>
                             </form>
                         }
                         else
                         {
-                            <form asp-action="Activar" asp-route-id="@item.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Está seguro que desea activar este equipo?');">
-                                <button type="submit" class="btn btn-success btn-xs">Activar</button>
+                            <form asp-action="Activar" asp-route-id="@item.Id" method="post" style="display:inline;" data-mensaje="¿Está seguro que desea activar este equipo?">
+                                @Html.AntiForgeryToken()
+                                <button type="button" class="btn btn-success btn-xs" onclick="showConfirmModal(this, this.parentNode.getAttribute('data-mensaje'));">Activar</button>
                             </form>
                         }
                     </td>
@@ -206,6 +225,7 @@
     .table-compact td {
         padding-top: 0.25rem;
         padding-bottom: 0.25rem;
+        font-size: 0.8rem;
     }
 
     /* Evita que los botones se envuelvan a la siguiente línea */
@@ -220,3 +240,63 @@
         line-height: 1;
     }
 </style>
+
+@section Scripts {
+    <script>
+        var formToSubmit = null;
+        var confirmacionModalInstance = null;
+
+        function getConfirmacionModal() {
+            if (!confirmacionModalInstance) {
+                confirmacionModalInstance = new bootstrap.Modal(document.getElementById('confirmacionModal'));
+            }
+            return confirmacionModalInstance;
+        }
+
+        function showConfirmModal(button, message) {
+            formToSubmit = button.closest('form');
+            const modal = getConfirmacionModal();
+
+            // Reemplaza el contenido del modal body
+            document.getElementById('modal-body-text').innerHTML = message;
+
+            // Asocia el evento click al botón de confirmar
+            const confirmarBtn = document.getElementById('confirmarAccionBtn');
+            confirmarBtn.onclick = function() {
+                if (formToSubmit) {
+                    formToSubmit.submit();
+                }
+                modal.hide();
+            };
+
+            // Asocia el evento click a los botones de cancelar y cerrar
+            const cancelarBtn = document.getElementById('cancelarAccionBtn');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+
+            cancelarBtn.onclick = function() {
+                modal.hide();
+            };
+
+            closeModalBtn.onclick = function() {
+                modal.hide();
+            };
+
+            modal.show();
+        }
+
+        // Lógica para mostrar mensajes de TempData al cargar la página
+        $(document).ready(function() {
+            var successMessage = '@Html.Raw(TempData["SuccessMessage"])';
+            var errorMessage = '@Html.Raw(TempData["ErrorMessage"])';
+            var infoMessage = '@Html.Raw(TempData["InfoMessage"])';
+
+            if (successMessage.length > 0) {
+                showMessageModal('Éxito', `<p>${successMessage}</p>`, 'success');
+            } else if (errorMessage.length > 0) {
+                showMessageModal('Error', `<p>${errorMessage}</p>`, 'danger');
+            } else if (infoMessage.length > 0) {
+                showMessageModal('Información', `<p>${infoMessage}</p>`, 'info');
+            }
+        });
+    </script>
+}
