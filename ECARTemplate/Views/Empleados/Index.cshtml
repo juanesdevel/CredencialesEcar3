@@ -43,7 +43,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="confirmacionModalLabel">Confirmación</h5>
-                <button type="button" class="btn-close" id="closeModalBtn" aria-label="Close"></button>
+                <button type="button" class="btn-close" id="closeModalBtn" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 1.5rem; line-height: 1;">&times;</span>
+                </button>
             </div>
             <div class="modal-body" id="modal-body-text">
             </div>
@@ -91,19 +93,29 @@
     <table class="table table-bordered table-striped table-compact">
         <thead class="sticky-header">
             <tr>
-                <th style="width: 10%;">
+                <th style="width: 6%;">
                     <h4>Estado</h4>
                 </th>
-                <th style="width: 10%;">
-                    <h4>Código</h4>
+                <th style="width: 12%;">
+                    <h4>
+                        Código <br /> Empleado<a asp-action="Index" asp-route-sortOrder="@ViewData["CodigoSortParam"]"> ↓ - ↑</a>
+                    </h4>
                 </th>
-                <th style="width: 35%;">
-                    <h4>Nombre</h4>
+                <th style="width: 25%;">
+                    <h4>
+                        Nombre del Empleado<a asp-action="Index" asp-route-sortOrder="@ViewData["NombreSortParam"]"> A - Z</a>
+                    </h4>
+                </th>
+                <th style="width: 20%;">
+                    <h4>Cargo</h4>
+                </th>
+                <th style="width: 20%;">
+                    <h4>Área</h4>
                 </th>
                 <th>
                     <h4>Firma BPM</h4>
                 </th>
-                <th class="no-print" style="width: 30%;">
+                <th class="no-print" style="width: 25%;">
                     <h4>Acciones</h4>
                 </th>
             </tr>
@@ -131,6 +143,12 @@
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.NombreEmpleado)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cargo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Area)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.FirmaBpm)
@@ -226,10 +244,8 @@
             formToSubmit = button.closest('form');
             const modal = getConfirmacionModal();
 
-            // Reemplaza el contenido del modal body
             document.getElementById('modal-body-text').innerHTML = message;
 
-            // Asocia el evento click al botón de confirmar
             const confirmarBtn = document.getElementById('confirmarAccionBtn');
             confirmarBtn.onclick = function() {
                 if (formToSubmit) {
@@ -238,7 +254,6 @@
                 modal.hide();
             };
 
-            // Asocia el evento click a los botones de cancelar y cerrar
             const cancelarBtn = document.getElementById('cancelarAccionBtn');
             const closeModalBtn = document.getElementById('closeModalBtn');
 

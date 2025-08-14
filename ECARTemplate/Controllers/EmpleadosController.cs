@@ -59,10 +59,14 @@ namespace ECARTemplate.Controllers
         }
 
         // GET: Empleado/Index
-        public async Task<IActionResult> Index(string searchString, string estadoFilter)
+        public async Task<IActionResult> Index(string searchString, string estadoFilter, string sortOrder)
         {
             ViewData["CurrentFilter"] = searchString;
             ViewData["EstadoFilter"] = estadoFilter;
+
+            // Se mantiene el estado actual del ordenamiento
+            ViewData["NombreSortParam"] = string.IsNullOrEmpty(sortOrder) ? "nombre_desc" : "";
+            ViewData["CodigoSortParam"] = sortOrder == "Codigo" ? "codigo_desc" : "Codigo";
 
             var empleados = from e in _context.Empleados
                             select e;
@@ -84,6 +88,23 @@ namespace ECARTemplate.Controllers
                 {
                     empleados = empleados.Where(e => e.Estado == "Inactivo");
                 }
+            }
+
+            // Lógica de ordenamiento
+            switch (sortOrder)
+            {
+                case "nombre_desc":
+                    empleados = empleados.OrderByDescending(e => e.NombreEmpleado);
+                    break;
+                case "Codigo":
+                    empleados = empleados.OrderBy(e => e.CodigoEmpleadoEcar);
+                    break;
+                case "codigo_desc":
+                    empleados = empleados.OrderByDescending(e => e.CodigoEmpleadoEcar);
+                    break;
+                default:
+                    empleados = empleados.OrderBy(e => e.NombreEmpleado);
+                    break;
             }
 
             var empleadosList = await empleados.ToListAsync();
@@ -238,16 +259,15 @@ namespace ECARTemplate.Controllers
                 return NotFound();
             }
 
-            // --- Lógica de advertencia de credenciales activas ---
-            var tieneCredencialesActivas = await _context.Credenciales
-                                                            .Where(c => c.CodigoUsuarioEcar == empleado.CodigoEmpleadoEcar && c.Estado == "Activo")
-                                                            .AnyAsync();
+            var credencialesActivas = await _context.Credenciales
+                                            .Where(c => c.CodigoUsuarioEcar == empleado.CodigoEmpleadoEcar && c.Estado == "Activo")
+                                            .AnyAsync();
 
-            if (tieneCredencialesActivas)
+            if (credencialesActivas)
             {
-                TempData["InfoMessage"] = $"Advertencia: El empleado '{empleado.NombreEmpleado}' tiene credenciales activas. Se ha procedido a inactivarlo.";
+                TempData["ErrorMessage"] = "No se puede inactivar el empleado. Aún hay credenciales activas asociadas a este empleado. Por favor, revise y desactive las credenciales primero.";
+                return RedirectToAction(nameof(Index));
             }
-            // --- Fin de la lógica de advertencia ---
 
             empleado.Estado = "Inactivo";
 
@@ -255,12 +275,7 @@ namespace ECARTemplate.Controllers
             {
                 _context.Update(empleado);
                 await _context.SaveChangesAsync();
-
-                // Si no se envió un mensaje de advertencia, se envía un mensaje de éxito.
-                if (TempData["InfoMessage"] == null)
-                {
-                    TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' inactivado exitosamente.";
-                }
+                TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' inactivado exitosamente.";
             }
             catch (Exception ex)
             {
@@ -270,6 +285,7 @@ namespace ECARTemplate.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // Dentro de la clase EmpleadosController, en la parte inferior.
         private bool EmpleadoExists(int id)
         {
             return _context.Empleados.Any(e => e.Id == id);

@@ -26,12 +26,16 @@ namespace ECARTemplate.Controllers
         }
 
         // GET: Equipos/Index
-        public async Task<IActionResult> Index(string searchString, string sedeFilter, string areaFilter, string estadoFilter)
+        public async Task<IActionResult> Index(string searchString, string sedeFilter, string areaFilter, string estadoFilter, string sortOrder)
         {
             ViewData["CurrentFilter"] = searchString;
             ViewData["SedeFilter"] = sedeFilter;
             ViewData["AreaFilter"] = areaFilter;
             ViewData["EstadoFilter"] = estadoFilter;
+
+            // Se mantiene el estado actual del ordenamiento
+            ViewData["NombreSortParam"] = string.IsNullOrEmpty(sortOrder) ? "nombre_desc" : "";
+            ViewData["CodigoSortParam"] = sortOrder == "Codigo" ? "codigo_desc" : "Codigo";
 
             var equipos = _context.Equipos.AsQueryable();
 
@@ -67,6 +71,23 @@ namespace ECARTemplate.Controllers
             {
                 // Por defecto, mostrar solo los equipos activos
                 equipos = equipos.Where(e => e.Estado == "Activo");
+            }
+
+            // Lógica de ordenamiento
+            switch (sortOrder)
+            {
+                case "nombre_desc":
+                    equipos = equipos.OrderByDescending(e => e.NombreEquipo);
+                    break;
+                case "Codigo":
+                    equipos = equipos.OrderBy(e => e.CodigoEquipo);
+                    break;
+                case "codigo_desc":
+                    equipos = equipos.OrderByDescending(e => e.CodigoEquipo);
+                    break;
+                default:
+                    equipos = equipos.OrderBy(e => e.NombreEquipo);
+                    break;
             }
 
             var equiposList = await equipos.ToListAsync();
@@ -287,11 +308,10 @@ namespace ECARTemplate.Controllers
             // Validar si existen credenciales activas para este equipo
             var credencialesActivas = await _context.Credenciales
                                                     .Where(c => c.CodigoEquipo == equipo.CodigoEquipo && c.Estado == "Activo")
-                                                    .ToListAsync();
+                                                    .AnyAsync(); // Uso de AnyAsync para mayor eficiencia
 
-            if (credencialesActivas.Any())
+            if (credencialesActivas)
             {
-                // Si hay credenciales activas, mostrar un mensaje de error y no inactivar
                 TempData["ErrorMessage"] = "No se puede inactivar el equipo. Aún hay credenciales activas asociadas a este equipo. Por favor, revise y desactive las credenciales primero.";
                 return RedirectToAction(nameof(Index));
             }

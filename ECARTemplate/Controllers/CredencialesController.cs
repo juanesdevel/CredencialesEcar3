@@ -33,9 +33,24 @@ namespace ECARTemplate.Controllers
             string usuarioFiltro,
             string estadoFiltro,
             string usuarioRegistroFiltro,
-            bool retirosPendientes = false)
+            bool retirosPendientes = false,
+            string sortOrder = "")
         {
-            // ... (lógica del filtro Index)
+            ViewData["CodigoEquipoFiltro"] = codigoEquipoFiltro;
+            ViewData["FechaYHoraDesdeFiltro"] = fechaYHoraDesdeFiltro;
+            ViewData["FechaYHoraHastaFiltro"] = fechaYHoraHastaFiltro;
+            ViewData["CodigoUsuarioEcarFiltro"] = codigoUsuarioEcarFiltro;
+            ViewData["NombreUsuarioFiltro"] = nombreUsuarioFiltro;
+            ViewData["PerfilFiltro"] = perfilFiltro;
+            ViewData["UsuarioFiltro"] = usuarioFiltro;
+            ViewData["EstadoFiltro"] = estadoFiltro;
+            ViewData["UsuarioRegistroFiltro"] = usuarioRegistroFiltro;
+            ViewData["RetirosPendientes"] = retirosPendientes;
+
+            ViewData["NombreSortParam"] = sortOrder == "Nombre" ? "nombre_desc" : "Nombre";
+            ViewData["CodigoEquipoSortParam"] = sortOrder == "CodigoEquipo" ? "codigoequipo_desc" : "CodigoEquipo";
+            ViewData["CodigoEmpleadoSortParam"] = sortOrder == "CodigoEmpleado" ? "codigoempleado_desc" : "CodigoEmpleado";
+
             var credenciales = _context.Credenciales.AsQueryable();
 
             if (retirosPendientes)
@@ -51,7 +66,7 @@ namespace ECARTemplate.Controllers
             }
             else
             {
-                if (!fechaYHoraDesdeFiltro.HasValue && !fechaYHoraHastaFiltro.HasValue)
+                if (string.IsNullOrEmpty(codigoEquipoFiltro) && !fechaYHoraDesdeFiltro.HasValue && !fechaYHoraHastaFiltro.HasValue && string.IsNullOrEmpty(codigoUsuarioEcarFiltro) && string.IsNullOrEmpty(nombreUsuarioFiltro) && string.IsNullOrEmpty(perfilFiltro) && string.IsNullOrEmpty(usuarioFiltro) && string.IsNullOrEmpty(estadoFiltro) && string.IsNullOrEmpty(usuarioRegistroFiltro))
                 {
                     var hoy = DateTime.Today;
                     credenciales = credenciales.Where(c => c.FechaYHora.Date == hoy);
@@ -103,8 +118,31 @@ namespace ECARTemplate.Controllers
                 }
             }
 
-            var credencialesList = await credenciales.OrderByDescending(c => c.FechaYHora).ToListAsync();
-            // ... (código de desencriptación de contraseñas)
+            switch (sortOrder)
+            {
+                case "nombre_desc":
+                    credenciales = credenciales.OrderByDescending(c => c.NombreUsuario);
+                    break;
+                case "CodigoEquipo":
+                    credenciales = credenciales.OrderBy(c => c.CodigoEquipo);
+                    break;
+                case "codigoequipo_desc":
+                    credenciales = credenciales.OrderByDescending(c => c.CodigoEquipo);
+                    break;
+                case "CodigoEmpleado":
+                    credenciales = credenciales.OrderBy(c => c.CodigoUsuarioEcar);
+                    break;
+                case "codigoempleado_desc":
+                    credenciales = credenciales.OrderByDescending(c => c.CodigoUsuarioEcar);
+                    break;
+                default:
+                    credenciales = credenciales.OrderBy(c => c.NombreUsuario);
+                    break;
+
+            }
+
+            var credencialesList = await credenciales.ToListAsync();
+
             foreach (var credencial in credencialesList)
             {
                 if (!string.IsNullOrEmpty(credencial.Contrasena))
@@ -216,7 +254,6 @@ namespace ECARTemplate.Controllers
             return View("Clonar", credencialClon);
         }
 
-        // CORRECCIÓN: Agregamos el atributo [HttpGet] para la acción que devuelve el formulario de creación.
         [HttpGet]
         public IActionResult Create()
         {

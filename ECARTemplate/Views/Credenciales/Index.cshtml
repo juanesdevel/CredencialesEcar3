@@ -2,6 +2,16 @@
 
 @{
     ViewData["Title"] = "Credenciales";
+    var codigoEquipoFiltro = ViewData["CodigoEquipoFiltro"] as string;
+    var fechaYHoraDesdeFiltro = ViewData["FechaYHoraDesdeFiltro"] as DateTime?;
+    var fechaYHoraHastaFiltro = ViewData["FechaYHoraHastaFiltro"] as DateTime?;
+    var codigoUsuarioEcarFiltro = ViewData["CodigoUsuarioEcarFiltro"] as string;
+    var nombreUsuarioFiltro = ViewData["NombreUsuarioFiltro"] as string;
+    var perfilFiltro = ViewData["PerfilFiltro"] as string;
+    var usuarioFiltro = ViewData["UsuarioFiltro"] as string;
+    var estadoFiltro = ViewData["EstadoFiltro"] as string;
+    var usuarioRegistroFiltro = ViewData["UsuarioRegistroFiltro"] as string;
+    var retirosPendientes = ViewData["RetirosPendientes"] as bool? ?? false;
 }
 
 <div class="text-center">
@@ -40,12 +50,14 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="confirmacionModalLabel">Confirmación</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" id="closeModalBtn" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 1.5rem; line-height: 1;">&times;</span>
+                </button>
             </div>
             <div class="modal-body" id="modal-body-text">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-secondary" id="cancelarAccionBtn">Cancelar</button>
                 <button type="button" class="btn btn-primary" id="confirmarAccionBtn">Sí, continuar</button>
             </div>
         </div>
@@ -62,25 +74,25 @@
                 <div class="col-md-3">
                     <div class="form-group mb-2">
                         <label for="fechaYHoraDesdeFiltro" class="form-label-sm">Fecha Desde:</label>
-                        <input type="date" class="form-control form-control-sm" id="fechaYHoraDesdeFiltro" name="fechaYHoraDesdeFiltro" value="@((ViewBag.FechaYHoraDesdeFiltro as DateTime?)?.ToString("yyyy-MM-dd") ?? "")" />
+                        <input type="date" class="form-control form-control-sm" id="fechaYHoraDesdeFiltro" name="fechaYHoraDesdeFiltro" value="@(fechaYHoraDesdeFiltro?.ToString("yyyy-MM-dd") ?? "")" />
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group mb-2">
                         <label for="nombreUsuarioFiltro" class="form-label-sm">Nombre Empleado:</label>
-                        <input type="text" class="form-control form-control-sm" id="nombreUsuarioFiltro" name="nombreUsuarioFiltro" value="@((string)ViewBag.NombreUsuarioFiltro ?? "")" />
+                        <input type="text" class="form-control form-control-sm" id="nombreUsuarioFiltro" name="nombreUsuarioFiltro" value="@(nombreUsuarioFiltro ?? "")" />
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group mb-2">
                         <label for="codigoUsuarioEcarFiltro" class="form-label-sm">Código Empleado:</label>
-                        <input type="text" class="form-control form-control-sm" id="codigoUsuarioEcarFiltro" name="codigoUsuarioEcarFiltro" value="@((string)ViewBag.CodigoUsuarioEcarFiltro ?? "")" />
+                        <input type="text" class="form-control form-control-sm" id="codigoUsuarioEcarFiltro" name="codigoUsuarioEcarFiltro" value="@(codigoUsuarioEcarFiltro ?? "")" />
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group mb-2">
                         <label for="codigoEquipoFiltro" class="form-label-sm">Código Equipo:</label>
-                        <input type="text" class="form-control form-control-sm" id="codigoEquipoFiltro" name="codigoEquipoFiltro" value="@((string)ViewBag.CodigoEquipoFiltro ?? "")" />
+                        <input type="text" class="form-control form-control-sm" id="codigoEquipoFiltro" name="codigoEquipoFiltro" value="@(codigoEquipoFiltro ?? "")" />
                     </div>
                 </div>
             </div>
@@ -88,19 +100,19 @@
                 <div class="col-md-3">
                     <div class="form-group mb-2">
                         <label for="fechaYHoraHastaFiltro" class="form-label-sm">Fecha Hasta:</label>
-                        <input type="date" class="form-control form-control-sm" id="fechaYHoraHastaFiltro" name="fechaYHoraHastaFiltro" value="@((ViewBag.FechaYHoraHastaFiltro as DateTime?)?.ToString("yyyy-MM-dd") ?? "")" />
+                        <input type="date" class="form-control form-control-sm" id="fechaYHoraHastaFiltro" name="fechaYHoraHastaFiltro" value="@(fechaYHoraHastaFiltro?.ToString("yyyy-MM-dd") ?? "")" />
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group mb-2">
                         <label for="perfilFiltro" class="form-label-sm">Perfil:</label>
-                        <input type="text" class="form-control form-control-sm" id="perfilFiltro" name="perfilFiltro" value="@((string)ViewBag.PerfilFiltro ?? "")" />
+                        <input type="text" class="form-control form-control-sm" id="perfilFiltro" name="perfilFiltro" value="@(perfilFiltro ?? "")" />
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group mb-2">
                         <label for="usuarioRegistroFiltro" class="form-label-sm">Usuario que Registró:</label>
-                        <input type="text" class="form-control form-control-sm" id="usuarioRegistroFiltro" name="usuarioRegistroFiltro" value="@((string)ViewBag.UsuarioRegistroFiltro ?? "")" />
+                        <input type="text" class="form-control form-control-sm" id="usuarioRegistroFiltro" name="usuarioRegistroFiltro" value="@(usuarioRegistroFiltro ?? "")" />
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -108,8 +120,8 @@
                         <label for="estadoFiltro">Estado:</label>
                         <select class="form-control" id="estadoFiltro" name="estadoFiltro">
                             <option value="">Todos</option>
-                            <option value="Activo" selected="@(((string)ViewBag.EstadoFiltro ?? "") == "Activo")">Activo</option>
-                            <option value="Inactivo" selected="@(((string)ViewBag.EstadoFiltro ?? "") == "Inactivo")">Inactivo</option>
+                            <option value="Activo" selected="@((estadoFiltro ?? "") == "Activo")">Activo</option>
+                            <option value="Inactivo" selected="@((estadoFiltro ?? "") == "Inactivo")">Inactivo</option>
                         </select>
                     </div>
                 </div>
@@ -135,29 +147,72 @@
     <table class="table table-bordered table-striped table-compact">
         <thead class="sticky-header">
             <tr>
-                <th style="width: 10%;">
-                    <h4 class="text-sm">Estado</h4>
+                <th style="width: 7%;">
+                    <h4>Estado</h4>
                 </th>
-                <th style="width: 5%;">
-                    <h4 class="text-sm">Código Equipo</h4>
-                </th>
-                <th style="width: 5%;">
-                    <h4 class="text-sm">Código Empleado</h4>
+                <th style="width: 12%;">
+                    <h4>
+                                Código <br />Equipo 
+                                <a asp-action="Index" asp-route-sortOrder="@ViewData["CodigoEquipoSortParam"]"
+                                   asp-route-codigoEquipoFiltro="@codigoEquipoFiltro"
+                                   asp-route-fechaYHoraDesdeFiltro="@(fechaYHoraDesdeFiltro?.ToString("yyyy-MM-dd"))"
+                                   asp-route-fechaYHoraHastaFiltro="@(fechaYHoraHastaFiltro?.ToString("yyyy-MM-dd"))"
+                                   asp-route-codigoUsuarioEcarFiltro="@codigoUsuarioEcarFiltro"
+                                   asp-route-nombreUsuarioFiltro="@nombreUsuarioFiltro"
+                                   asp-route-perfilFiltro="@perfilFiltro"
+                                   asp-route-usuarioFiltro="@usuarioFiltro"
+                                   asp-route-estadoFiltro="@estadoFiltro"
+                                   asp-route-usuarioRegistroFiltro="@usuarioRegistroFiltro">
+                                     A - Z
+                                </a>
+                            </h4>
+                        </th>
+                        <th style="width: 13%;">
+                            <h4>
+                        Código <br />Empleado
+                                <a asp-action="Index" asp-route-sortOrder="@ViewData["CodigoEmpleadoSortParam"]"
+                                   asp-route-codigoEquipoFiltro="@codigoEquipoFiltro"
+                                   asp-route-fechaYHoraDesdeFiltro="@(fechaYHoraDesdeFiltro?.ToString("yyyy-MM-dd"))"
+                                   asp-route-fechaYHoraHastaFiltro="@(fechaYHoraHastaFiltro?.ToString("yyyy-MM-dd"))"
+                                   asp-route-codigoUsuarioEcarFiltro="@codigoUsuarioEcarFiltro"
+                                   asp-route-nombreUsuarioFiltro="@nombreUsuarioFiltro"
+                                   asp-route-perfilFiltro="@perfilFiltro"
+                                   asp-route-usuarioFiltro="@usuarioFiltro"
+                                   asp-route-estadoFiltro="@estadoFiltro"
+                                   asp-route-usuarioRegistroFiltro="@usuarioRegistroFiltro">
+                                    ↓ - ↑
+                                </a>
+                            </h4>
+                        </th>
+                <th style="width: 25%;">
+                    <h4>
+                        Nombre Empleado
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["NombreSortParam"]"
+                           asp-route-codigoEquipoFiltro="@codigoEquipoFiltro"
+                           asp-route-fechaYHoraDesdeFiltro="@(fechaYHoraDesdeFiltro?.ToString("yyyy-MM-dd"))"
+                           asp-route-fechaYHoraHastaFiltro="@(fechaYHoraHastaFiltro?.ToString("yyyy-MM-dd"))"
+                           asp-route-codigoUsuarioEcarFiltro="@codigoUsuarioEcarFiltro"
+                           asp-route-nombreUsuarioFiltro="@nombreUsuarioFiltro"
+                           asp-route-perfilFiltro="@perfilFiltro"
+                           asp-route-usuarioFiltro="@usuarioFiltro"
+                           asp-route-estadoFiltro="@estadoFiltro"
+                           asp-route-usuarioRegistroFiltro="@usuarioRegistroFiltro">
+                            A - Z
+                            
+                        </a>
+                    </h4>
                 </th>
                 <th>
-                    <h4 class="text-sm">Nombre Empleado</h4>
+                    <h4>Usuario</h4>
                 </th>
-                <th>
-                    <h4 class="text-sm">Usuario</h4>
-                </th>
-                <th>
-                    <h4 class="text-sm">
+                <th style ="width: 15%;">
+                    <h4>
                         <span>Contraseña</span>
                         <i id="toggle-password" class="fas fa-eye-slash" style="cursor: pointer; margin-left: 5px;"></i>
                     </h4>
                 </th>
                 <th class="no-print">
-                    <h4 class="text-sm">Acciones</h4>
+                    <h4>Acciones</h4>
                 </th>
             </tr>
         </thead>
@@ -304,8 +359,8 @@
             };
 
             // Asocia el evento click a los botones de cancelar y cerrar
-            const cancelarBtn = document.getElementById('confirmacionModal').querySelector('[data-bs-dismiss="modal"]');
-            const closeModalBtn = document.getElementById('confirmacionModal').querySelector('.btn-close');
+            const cancelarBtn = document.getElementById('cancelarAccionBtn');
+            const closeModalBtn = document.getElementById('closeModalBtn');
 
             cancelarBtn.onclick = function() {
                 modal.hide();

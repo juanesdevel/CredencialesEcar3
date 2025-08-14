@@ -46,7 +46,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="confirmacionModalLabel">Confirmación</h5>
-                <button type="button" class="btn-close" id="closeModalBtn" aria-label="Close"></button>
+                <button type="button" class="btn-close" id="closeModalBtn" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 1.5rem; line-height: 1;">&times;</span>
+                </button>
             </div>
             <div class="modal-body" id="modal-body-text">
             </div>
@@ -119,11 +121,15 @@
                 <th style="width: 7%;">
                     <h4>Estado</h4>
                 </th>
-                <th style="width: 7%;">
-                    <h4>Código</h4>
+                <th style="width:12%;">
+                    <h4>
+                        Código<a asp-action="Index" asp-route-sortOrder="@ViewData["CodigoSortParam"]">  ↓ - ↑</a>
+                    </h4>
                 </th>
                 <th style="width: 30%;">
-                    <h4>Nombre</h4>
+                    <h4>
+                        Nombre <a asp-action="Index" asp-route-sortOrder="@ViewData["NombreSortParam"]">  A - Z</a>
+                    </h4>
                 </th>
                 <th style="width: 10%;">
                     <h4>Sede</h4>
