@@ -25,17 +25,20 @@ namespace ECARTemplate.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        // GET: Equipos/Index
-        public async Task<IActionResult> Index(string searchString, string sedeFilter, string areaFilter, string estadoFilter, string sortOrder)
+// GET: Equipos/Index
+public async Task<IActionResult> Index(string searchString, string sedeFilter, string areaFilter, string estadoFilter, string sortOrder)
         {
             ViewData["CurrentFilter"] = searchString;
             ViewData["SedeFilter"] = sedeFilter;
             ViewData["AreaFilter"] = areaFilter;
             ViewData["EstadoFilter"] = estadoFilter;
 
-            // Se mantiene el estado actual del ordenamiento
-            ViewData["NombreSortParam"] = string.IsNullOrEmpty(sortOrder) ? "nombre_desc" : "";
+            // Parámetros de ordenamiento
+            ViewData["NombreSortParam"] = sortOrder == "Nombre" ? "nombre_desc" : "Nombre";
             ViewData["CodigoSortParam"] = sortOrder == "Codigo" ? "codigo_desc" : "Codigo";
+            ViewData["EstadoSortParam"] = sortOrder == "Estado" ? "estado_desc" : "Estado";
+            ViewData["SedeSortParam"] = sortOrder == "Sede" ? "sede_desc" : "Sede";
+            ViewData["AreaSortParam"] = sortOrder == "Area" ? "area_desc" : "Area";
 
             var equipos = _context.Equipos.AsQueryable();
 
@@ -56,6 +59,7 @@ namespace ECARTemplate.Controllers
                 equipos = equipos.Where(e => e.Area == areaFilter);
             }
 
+            // FILTRO DE ESTADO CORREGIDO - Solo filtra cuando se especifica
             if (!string.IsNullOrEmpty(estadoFilter))
             {
                 if (estadoFilter.Equals("Activo", StringComparison.OrdinalIgnoreCase))
@@ -66,12 +70,9 @@ namespace ECARTemplate.Controllers
                 {
                     equipos = equipos.Where(e => e.Estado == "Inactivo");
                 }
+                // Si es "Todos" o cualquier otro valor, no filtramos por estado
             }
-            else
-            {
-                // Por defecto, mostrar solo los equipos activos
-                equipos = equipos.Where(e => e.Estado == "Activo");
-            }
+            // ELIMINADO: El else que forzaba mostrar solo activos
 
             // Lógica de ordenamiento
             switch (sortOrder)
@@ -84,6 +85,24 @@ namespace ECARTemplate.Controllers
                     break;
                 case "codigo_desc":
                     equipos = equipos.OrderByDescending(e => e.CodigoEquipo);
+                    break;
+                case "Estado":
+                    equipos = equipos.OrderBy(e => e.Estado);
+                    break;
+                case "estado_desc":
+                    equipos = equipos.OrderByDescending(e => e.Estado);
+                    break;
+                case "Sede":
+                    equipos = equipos.OrderBy(e => e.Sede);
+                    break;
+                case "sede_desc":
+                    equipos = equipos.OrderByDescending(e => e.Sede);
+                    break;
+                case "Area":
+                    equipos = equipos.OrderBy(e => e.Area);
+                    break;
+                case "area_desc":
+                    equipos = equipos.OrderByDescending(e => e.Area);
                     break;
                 default:
                     equipos = equipos.OrderBy(e => e.NombreEquipo);
@@ -268,7 +287,7 @@ namespace ECARTemplate.Controllers
         // POST: Equipos/Activar/5
         [HttpPost, ActionName("Activar")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ActivarConfirmado(int id)
+        public async Task<IActionResult> ActivarConfirmed(int id)
         {
             var equipo = await _context.Equipos.FindAsync(id);
             if (equipo == null)
@@ -294,9 +313,9 @@ namespace ECARTemplate.Controllers
         }
 
         // POST: Equipos/Inactivar/5
-        [HttpPost]
+        [HttpPost, ActionName("Inactivar")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Inactivar(int id)
+        public async Task<IActionResult> InactivarConfirmed(int id)
         {
             var equipo = await _context.Equipos.FindAsync(id);
             if (equipo == null)
@@ -308,7 +327,7 @@ namespace ECARTemplate.Controllers
             // Validar si existen credenciales activas para este equipo
             var credencialesActivas = await _context.Credenciales
                                                     .Where(c => c.CodigoEquipo == equipo.CodigoEquipo && c.Estado == "Activo")
-                                                    .AnyAsync(); // Uso de AnyAsync para mayor eficiencia
+                                                    .AnyAsync();
 
             if (credencialesActivas)
             {
@@ -318,6 +337,8 @@ namespace ECARTemplate.Controllers
 
             // Si no hay credenciales activas, proceder a inactivar el equipo
             equipo.Estado = "Inactivo";
+            equipo.Fecha = DateTime.Now; // Actualizar fecha de modificación
+            equipo.UsuarioRegistro = User.Identity.Name; // Actualizar usuario que hizo la modificación
 
             try
             {
@@ -332,40 +353,34 @@ namespace ECARTemplate.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
-        [HttpGet]
-        public async Task<IActionResult> ObtenerDatosEquipo(string codigoEquipo)
-        {
-            if (string.IsNullOrEmpty(codigoEquipo))
-            {
-                return Json(new { success = false, message = "Debe proporcionar un código de equipo." });
-            }
-
-            var equipo = await _context.Equipos
-                                     .FirstOrDefaultAsync(e => e.CodigoEquipo.ToUpper() == codigoEquipo.ToUpper());
-
-            if (equipo != null)
-            {
-                return Json(new
-                {
-                    success = true,
-                    data = new
-                    {
-                        codigoEquipo = equipo.CodigoEquipo,
-                        nombreEquipo = equipo.NombreEquipo,
-                        nota = equipo.Nota
-                    }
-                });
-            }
-            else
-            {
-                return Json(new { success = false, message = "No se encontró ningún equipo con ese código." });
-            }
-        }
-
         private bool EquipoExists(int id)
         {
             return _context.Equipos.Any(e => e.Id == id);
+        }
+        // Método para debugging - puedes llamarlo temporalmente para verificar el estado
+        [HttpGet]
+        public async Task<IActionResult> DebugEquipo(int id)
+        {
+            var equipo = await _context.Equipos.FindAsync(id);
+            if (equipo == null) return NotFound();
+
+            var credencialesActivas = await _context.Credenciales
+                                                   .Where(c => c.CodigoEquipo == equipo.CodigoEquipo && c.Estado == "Activo")
+                                                   .ToListAsync();
+
+            return Json(new
+            {
+                equipoId = equipo.Id,
+                codigoEquipo = equipo.CodigoEquipo,
+                nombreEquipo = equipo.NombreEquipo,
+                estadoEquipo = equipo.Estado,
+                credencialesActivas = credencialesActivas.Select(c => new
+                {
+                    id = c.Id,
+                    codigo = c.CodigoEquipo,
+                    estado = c.Estado
+                }).ToList()
+            });
         }
     }
 }

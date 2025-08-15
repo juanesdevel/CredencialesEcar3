@@ -59,14 +59,19 @@ namespace ECARTemplate.Controllers
         }
 
         // GET: Empleado/Index
-        public async Task<IActionResult> Index(string searchString, string estadoFilter, string sortOrder)
+        public async Task<IActionResult> Index(string searchString, string estadoFilter, string sortOrder, string cargoFilter, string areaFilter)
         {
             ViewData["CurrentFilter"] = searchString;
             ViewData["EstadoFilter"] = estadoFilter;
+            ViewData["CargoFilter"] = cargoFilter;
+            ViewData["AreaFilter"] = areaFilter;
 
-            // Se mantiene el estado actual del ordenamiento
+            // Parámetros de ordenamiento - AGREGADO EstadoSortParam
             ViewData["NombreSortParam"] = string.IsNullOrEmpty(sortOrder) ? "nombre_desc" : "";
             ViewData["CodigoSortParam"] = sortOrder == "Codigo" ? "codigo_desc" : "Codigo";
+            ViewData["EstadoSortParam"] = sortOrder == "Estado" ? "estado_desc" : "Estado"; // ← NUEVO
+            ViewData["CargoSortParam"] = sortOrder == "Cargo" ? "cargo_desc" : "Cargo";
+            ViewData["AreaSortParam"] = sortOrder == "Area" ? "area_desc" : "Area";
 
             var empleados = from e in _context.Empleados
                             select e;
@@ -78,6 +83,7 @@ namespace ECARTemplate.Controllers
                     e.NombreEmpleado.Contains(searchString));
             }
 
+            // Filtro de estado - SIN modificar el comportamiento existente
             if (!string.IsNullOrEmpty(estadoFilter))
             {
                 if (estadoFilter.Equals("Activo", StringComparison.OrdinalIgnoreCase))
@@ -90,7 +96,17 @@ namespace ECARTemplate.Controllers
                 }
             }
 
-            // Lógica de ordenamiento
+            if (!string.IsNullOrEmpty(cargoFilter))
+            {
+                empleados = empleados.Where(e => e.Cargo == cargoFilter);
+            }
+
+            if (!string.IsNullOrEmpty(areaFilter))
+            {
+                empleados = empleados.Where(e => e.Area == areaFilter);
+            }
+
+            // Switch de ordenamiento - AGREGADOS casos para Estado
             switch (sortOrder)
             {
                 case "nombre_desc":
@@ -102,6 +118,24 @@ namespace ECARTemplate.Controllers
                 case "codigo_desc":
                     empleados = empleados.OrderByDescending(e => e.CodigoEmpleadoEcar);
                     break;
+                case "Estado": // ← NUEVO
+                    empleados = empleados.OrderBy(e => e.Estado);
+                    break;
+                case "estado_desc": // ← NUEVO
+                    empleados = empleados.OrderByDescending(e => e.Estado);
+                    break;
+                case "Cargo":
+                    empleados = empleados.OrderBy(e => e.Cargo);
+                    break;
+                case "cargo_desc":
+                    empleados = empleados.OrderByDescending(e => e.Cargo);
+                    break;
+                case "Area":
+                    empleados = empleados.OrderBy(e => e.Area);
+                    break;
+                case "area_desc":
+                    empleados = empleados.OrderByDescending(e => e.Area);
+                    break;
                 default:
                     empleados = empleados.OrderBy(e => e.NombreEmpleado);
                     break;
@@ -109,6 +143,9 @@ namespace ECARTemplate.Controllers
 
             var empleadosList = await empleados.ToListAsync();
             ViewData["TotalRegistros"] = empleadosList.Count;
+
+            ViewBag.Cargos = await _context.Empleados.Select(e => e.Cargo).Distinct().Where(c => !string.IsNullOrEmpty(c)).OrderBy(c => c).ToListAsync();
+            ViewBag.Areas = await _context.Empleados.Select(e => e.Area).Distinct().Where(a => !string.IsNullOrEmpty(a)).OrderBy(a => a).ToListAsync();
 
             return View(empleadosList);
         }

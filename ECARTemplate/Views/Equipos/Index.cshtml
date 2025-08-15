@@ -118,24 +118,60 @@
     <table class="table table-bordered table-striped table-compact">
         <thead class="sticky-header">
             <tr>
-                <th style="width: 7%;">
-                    <h4>Estado</h4>
-                </th>
-                <th style="width:12%;">
+                <th style="width:10%;">
                     <h4>
-                        Código<a asp-action="Index" asp-route-sortOrder="@ViewData["CodigoSortParam"]">  ↓ - ↑</a>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["EstadoSortParam"]"
+                           asp-route-searchString="@currentSearchString"
+                           asp-route-sedeFilter="@currentSedeFilter"
+                           asp-route-areaFilter="@currentAreaFilter"
+                           asp-route-estadoFilter="@currentEstadoFilter">
+                            Estado <i class="fas fa-sort @(ViewData["EstadoSortParam"] == "Estado" ? "fa-sort-up" : (ViewData["EstadoSortParam"] == "estado_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
+                    </h4>
+                </th>
+                <th style="width: 10%;">
+                    <h4>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["CodigoSortParam"]"
+                           asp-route-searchString="@currentSearchString"
+                           asp-route-sedeFilter="@currentSedeFilter"
+                           asp-route-areaFilter="@currentAreaFilter"
+                           asp-route-estadoFilter="@currentEstadoFilter">
+                            Código <i class="fas fa-sort @(ViewData["CodigoSortParam"] == "Codigo" ? "fa-sort-up" : (ViewData["CodigoSortParam"] == "codigo_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
                     </h4>
                 </th>
                 <th style="width: 30%;">
                     <h4>
-                        Nombre <a asp-action="Index" asp-route-sortOrder="@ViewData["NombreSortParam"]">  A - Z</a>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["NombreSortParam"]"
+                           asp-route-searchString="@currentSearchString"
+                           asp-route-sedeFilter="@currentSedeFilter"
+                           asp-route-areaFilter="@currentAreaFilter"
+                           asp-route-estadoFilter="@currentEstadoFilter">
+                            Nombre Equipo/Software <i class="fas fa-sort @(ViewData["NombreSortParam"] == "Nombre" ? "fa-sort-up" : (ViewData["NombreSortParam"] == "nombre_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
                     </h4>
                 </th>
                 <th style="width: 10%;">
-                    <h4>Sede</h4>
+                    <h4>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["SedeSortParam"]"
+                           asp-route-searchString="@currentSearchString"
+                           asp-route-sedeFilter="@currentSedeFilter"
+                           asp-route-areaFilter="@currentAreaFilter"
+                           asp-route-estadoFilter="@currentEstadoFilter">
+                            Sede <i class="fas fa-sort @(ViewData["SedeSortParam"] == "Sede" ? "fa-sort-up" : (ViewData["SedeSortParam"] == "sede_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
+                    </h4>
                 </th>
                 <th style="width: 22%;">
-                    <h4>Area</h4>
+                    <h4>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["AreaSortParam"]"
+                           asp-route-searchString="@currentSearchString"
+                           asp-route-sedeFilter="@currentSedeFilter"
+                           asp-route-areaFilter="@currentAreaFilter"
+                           asp-route-estadoFilter="@currentEstadoFilter">
+                            Área <i class="fas fa-sort @(ViewData["AreaSortParam"] == "Area" ? "fa-sort-up" : (ViewData["AreaSortParam"] == "area_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
+                    </h4>
                 </th>
                 <th class="no-print" style="width: 20%;">
                     <h4>Acciones</h4>
@@ -179,14 +215,14 @@
                         {
                             <form asp-action="Inactivar" asp-route-id="@item.Id" method="post" style="display:inline;" data-mensaje="Debes asegurarte de que todas las <b>credenciales activas</b> relacionadas a este equipo estén inactivas antes de proceder.<br/>¿Deseas continuar?">
                                 @Html.AntiForgeryToken()
-                                <button type="button" class="btn btn-secondary btn-xs" onclick="showConfirmModal(this, this.parentNode.getAttribute('data-mensaje'));">Inactivar</button>
+                                <button type="button" class="btn btn-secondary btn-xs" onclick="confirmarAccion(this);">Inactivar</button>
                             </form>
                         }
                         else
                         {
                             <form asp-action="Activar" asp-route-id="@item.Id" method="post" style="display:inline;" data-mensaje="¿Está seguro que desea activar este equipo?">
                                 @Html.AntiForgeryToken()
-                                <button type="button" class="btn btn-success btn-xs" onclick="showConfirmModal(this, this.parentNode.getAttribute('data-mensaje'));">Activar</button>
+                                <button type="button" class="btn btn-success btn-xs" onclick="confirmarAccion(this);">Activar</button>
                             </form>
                         }
                     </td>
@@ -231,7 +267,6 @@
     .table-compact td {
         padding-top: 0.25rem;
         padding-bottom: 0.25rem;
-        font-size: 0.8rem;
     }
 
     /* Evita que los botones se envuelvan a la siguiente línea */
@@ -257,6 +292,13 @@
                 confirmacionModalInstance = new bootstrap.Modal(document.getElementById('confirmacionModal'));
             }
             return confirmacionModalInstance;
+        }
+
+        // Función que faltaba - conecta el botón con el modal
+        function confirmarAccion(button) {
+            const form = button.closest('form');
+            const mensaje = form.getAttribute('data-mensaje') || '¿Está seguro que desea realizar esta acción?';
+            showConfirmModal(button, mensaje);
         }
 
         function showConfirmModal(button, message) {
@@ -289,20 +331,5 @@
 
             modal.show();
         }
-
-        // Lógica para mostrar mensajes de TempData al cargar la página
-        $(document).ready(function() {
-            var successMessage = '@Html.Raw(TempData["SuccessMessage"])';
-            var errorMessage = '@Html.Raw(TempData["ErrorMessage"])';
-            var infoMessage = '@Html.Raw(TempData["InfoMessage"])';
-
-            if (successMessage.length > 0) {
-                showMessageModal('Éxito', `<p>${successMessage}</p>`, 'success');
-            } else if (errorMessage.length > 0) {
-                showMessageModal('Error', `<p>${errorMessage}</p>`, 'danger');
-            } else if (infoMessage.length > 0) {
-                showMessageModal('Información', `<p>${infoMessage}</p>`, 'info');
-            }
-        });
     </script>
 }

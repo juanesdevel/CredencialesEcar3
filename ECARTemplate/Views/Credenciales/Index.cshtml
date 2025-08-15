@@ -147,58 +147,71 @@
     <table class="table table-bordered table-striped table-compact">
         <thead class="sticky-header">
             <tr>
-                <th style="width: 7%;">
-                    <h4>Estado</h4>
+                <th>
+                    <h4>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["EstadoSortParam"]"
+                           asp-route-codigoEquipoFiltro="@ViewData["CodigoEquipoFiltro"]"
+                           asp-route-fechaYHoraDesdeFiltro="@ViewData["FechaYHoraDesdeFiltro"]"
+                           asp-route-fechaYHoraHastaFiltro="@ViewData["FechaYHoraHastaFiltro"]"
+                           asp-route-codigoUsuarioEcarFiltro="@ViewData["CodigoUsuarioEcarFiltro"]"
+                           asp-route-nombreUsuarioFiltro="@ViewData["NombreUsuarioFiltro"]"
+                           asp-route-perfilFiltro="@ViewData["PerfilFiltro"]"
+                           asp-route-usuarioFiltro="@ViewData["UsuarioFiltro"]"
+                           asp-route-estadoFiltro="@ViewData["EstadoFiltro"]"
+                           asp-route-usuarioRegistroFiltro="@ViewData["UsuarioRegistroFiltro"]"
+                           asp-route-retirosPendientes="@ViewData["RetirosPendientes"]">
+                            Estado <i class="fas fa-sort @(ViewData["EstadoSortParam"] == "Estado" ? "fa-sort-up" : (ViewData["EstadoSortParam"] == "estado_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
+                    </h4>
                 </th>
-                <th style="width: 12%;">
+                <th>
                     <h4>
-                                Código <br />Equipo 
-                                <a asp-action="Index" asp-route-sortOrder="@ViewData["CodigoEquipoSortParam"]"
-                                   asp-route-codigoEquipoFiltro="@codigoEquipoFiltro"
-                                   asp-route-fechaYHoraDesdeFiltro="@(fechaYHoraDesdeFiltro?.ToString("yyyy-MM-dd"))"
-                                   asp-route-fechaYHoraHastaFiltro="@(fechaYHoraHastaFiltro?.ToString("yyyy-MM-dd"))"
-                                   asp-route-codigoUsuarioEcarFiltro="@codigoUsuarioEcarFiltro"
-                                   asp-route-nombreUsuarioFiltro="@nombreUsuarioFiltro"
-                                   asp-route-perfilFiltro="@perfilFiltro"
-                                   asp-route-usuarioFiltro="@usuarioFiltro"
-                                   asp-route-estadoFiltro="@estadoFiltro"
-                                   asp-route-usuarioRegistroFiltro="@usuarioRegistroFiltro">
-                                     A - Z
-                                </a>
-                            </h4>
-                        </th>
-                        <th style="width: 13%;">
-                            <h4>
-                        Código <br />Empleado
-                                <a asp-action="Index" asp-route-sortOrder="@ViewData["CodigoEmpleadoSortParam"]"
-                                   asp-route-codigoEquipoFiltro="@codigoEquipoFiltro"
-                                   asp-route-fechaYHoraDesdeFiltro="@(fechaYHoraDesdeFiltro?.ToString("yyyy-MM-dd"))"
-                                   asp-route-fechaYHoraHastaFiltro="@(fechaYHoraHastaFiltro?.ToString("yyyy-MM-dd"))"
-                                   asp-route-codigoUsuarioEcarFiltro="@codigoUsuarioEcarFiltro"
-                                   asp-route-nombreUsuarioFiltro="@nombreUsuarioFiltro"
-                                   asp-route-perfilFiltro="@perfilFiltro"
-                                   asp-route-usuarioFiltro="@usuarioFiltro"
-                                   asp-route-estadoFiltro="@estadoFiltro"
-                                   asp-route-usuarioRegistroFiltro="@usuarioRegistroFiltro">
-                                    ↓ - ↑
-                                </a>
-                            </h4>
-                        </th>
-                <th style="width: 25%;">
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["CodigoEquipoSortParam"]"
+                           asp-route-codigoEquipoFiltro="@ViewData["CodigoEquipoFiltro"]"
+                           asp-route-fechaYHoraDesdeFiltro="@ViewData["FechaYHoraDesdeFiltro"]"
+                           asp-route-fechaYHoraHastaFiltro="@ViewData["FechaYHoraHastaFiltro"]"
+                           asp-route-codigoUsuarioEcarFiltro="@ViewData["CodigoUsuarioEcarFiltro"]"
+                           asp-route-nombreUsuarioFiltro="@ViewData["NombreUsuarioFiltro"]"
+                           asp-route-perfilFiltro="@ViewData["PerfilFiltro"]"
+                           asp-route-usuarioFiltro="@ViewData["UsuarioFiltro"]"
+                           asp-route-estadoFiltro="@ViewData["EstadoFiltro"]"
+                           asp-route-usuarioRegistroFiltro="@ViewData["UsuarioRegistroFiltro"]"
+                           asp-route-retirosPendientes="@ViewData["RetirosPendientes"]">
+                            Código Equipo <i class="fas fa-sort @(ViewData["CodigoEquipoSortParam"] == "CodigoEquipo" ? "fa-sort-up" : (ViewData["CodigoEquipoSortParam"] == "codigoequipo_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
+                    </h4>
+                </th>
+                <th>
                     <h4>
-                        Nombre Empleado
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["CodigoEmpleadoSortParam"]"
+                           asp-route-codigoEquipoFiltro="@ViewData["CodigoEquipoFiltro"]"
+                           asp-route-fechaYHoraDesdeFiltro="@ViewData["FechaYHoraDesdeFiltro"]"
+                           asp-route-fechaYHoraHastaFiltro="@ViewData["FechaYHoraHastaFiltro"]"
+                           asp-route-codigoUsuarioEcarFiltro="@ViewData["CodigoUsuarioEcarFiltro"]"
+                           asp-route-nombreUsuarioFiltro="@ViewData["NombreUsuarioFiltro"]"
+                           asp-route-perfilFiltro="@ViewData["PerfilFiltro"]"
+                           asp-route-usuarioFiltro="@ViewData["UsuarioFiltro"]"
+                           asp-route-estadoFiltro="@ViewData["EstadoFiltro"]"
+                           asp-route-usuarioRegistroFiltro="@ViewData["UsuarioRegistroFiltro"]"
+                           asp-route-retirosPendientes="@ViewData["RetirosPendientes"]">
+                            Código Empleado <i class="fas fa-sort @(ViewData["CodigoEmpleadoSortParam"] == "CodigoEmpleado" ? "fa-sort-up" : (ViewData["CodigoEmpleadoSortParam"] == "codigoempleado_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
+                    </h4>
+                </th>
+                <th>
+                    <h4>
                         <a asp-action="Index" asp-route-sortOrder="@ViewData["NombreSortParam"]"
-                           asp-route-codigoEquipoFiltro="@codigoEquipoFiltro"
-                           asp-route-fechaYHoraDesdeFiltro="@(fechaYHoraDesdeFiltro?.ToString("yyyy-MM-dd"))"
-                           asp-route-fechaYHoraHastaFiltro="@(fechaYHoraHastaFiltro?.ToString("yyyy-MM-dd"))"
-                           asp-route-codigoUsuarioEcarFiltro="@codigoUsuarioEcarFiltro"
-                           asp-route-nombreUsuarioFiltro="@nombreUsuarioFiltro"
-                           asp-route-perfilFiltro="@perfilFiltro"
-                           asp-route-usuarioFiltro="@usuarioFiltro"
-                           asp-route-estadoFiltro="@estadoFiltro"
-                           asp-route-usuarioRegistroFiltro="@usuarioRegistroFiltro">
-                            A - Z
-                            
+                           asp-route-codigoEquipoFiltro="@ViewData["CodigoEquipoFiltro"]"
+                           asp-route-fechaYHoraDesdeFiltro="@ViewData["FechaYHoraDesdeFiltro"]"
+                           asp-route-fechaYHoraHastaFiltro="@ViewData["FechaYHoraHastaFiltro"]"
+                           asp-route-codigoUsuarioEcarFiltro="@ViewData["CodigoUsuarioEcarFiltro"]"
+                           asp-route-nombreUsuarioFiltro="@ViewData["NombreUsuarioFiltro"]"
+                           asp-route-perfilFiltro="@ViewData["PerfilFiltro"]"
+                           asp-route-usuarioFiltro="@ViewData["UsuarioFiltro"]"
+                           asp-route-estadoFiltro="@ViewData["EstadoFiltro"]"
+                           asp-route-usuarioRegistroFiltro="@ViewData["UsuarioRegistroFiltro"]"
+                           asp-route-retirosPendientes="@ViewData["RetirosPendientes"]">
+                            Nombre Usuario <i class="fas fa-sort @(ViewData["NombreSortParam"] == "Nombre" ? "fa-sort-up" : (ViewData["NombreSortParam"] == "nombre_desc" ? "fa-sort-down" : ""))"></i>
                         </a>
                     </h4>
                 </th>

@@ -4,6 +4,8 @@
     ViewData["Title"] = "Empleados";
     var currentSearchString = ViewData["CurrentFilter"] as string;
     var currentEstadoFilter = ViewData["EstadoFilter"] as string;
+    var currentCargoFilter = ViewData["CargoFilter"] as string;
+    var currentAreaFilter = ViewData["AreaFilter"] as string;
 }
 
 <div class="text-center">
@@ -64,9 +66,29 @@
     <div class="card-body">
         <form asp-action="Index" method="get">
             <div class="row g-2 align-items-end">
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <label for="searchString" class="form-label-sm">Búsqueda</label>
                     <input type="text" name="searchString" id="searchString" class="form-control form-control-sm" placeholder="Código o Nombre" value="@currentSearchString">
+                </div>
+                <div class="col-md-3">
+                    <label for="cargoFilter" class="form-label-sm">Cargo</label>
+                    <select name="cargoFilter" id="cargoFilter" class="form-control form-control-sm">
+                        <option value="">Todos</option>
+                        @foreach (var cargo in ViewBag.Cargos)
+                        {
+                            <option value="@cargo" selected="@(cargo == currentCargoFilter ? "selected" : null)">@cargo</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="areaFilter" class="form-label-sm">Área</label>
+                    <select name="areaFilter" id="areaFilter" class="form-control form-control-sm">
+                        <option value="">Todas</option>
+                        @foreach (var area in ViewBag.Areas)
+                        {
+                            <option value="@area" selected="@(area == currentAreaFilter ? "selected" : null)">@area</option>
+                        }
+                    </select>
                 </div>
                 <div class="col-md-3">
                     <label for="estadoFilter" class="form-label-sm">Estado</label>
@@ -76,7 +98,7 @@
                         <option value="Inactivo" selected="@("Inactivo" == currentEstadoFilter ? "selected" : null)">Inactivo</option>
                     </select>
                 </div>
-                <div class="col-md-3 d-flex justify-content-end">
+                <div class="col-md-12 text-end mt-2">
                     <button type="submit" class="btn btn-primary btn-sm me-1">Filtrar</button>
                     <a asp-action="Index" class="btn btn-secondary btn-sm">Limpiar</a>
                 </div>
@@ -93,24 +115,60 @@
     <table class="table table-bordered table-striped table-compact">
         <thead class="sticky-header">
             <tr>
-                <th style="width: 6%;">
-                    <h4>Estado</h4>
-                </th>
-                <th style="width: 12%;">
+                <th style="width: 8%;">
                     <h4>
-                        Código <br /> Empleado<a asp-action="Index" asp-route-sortOrder="@ViewData["CodigoSortParam"]"> ↓ - ↑</a>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["EstadoSortParam"]"
+                           asp-route-searchString="@ViewData["CurrentFilter"]"
+                           asp-route-estadoFilter="@ViewData["EstadoFilter"]"
+                           asp-route-cargoFilter="@ViewData["CargoFilter"]"
+                           asp-route-areaFilter="@ViewData["AreaFilter"]">
+                            Estado <i class="fas fa-sort @(ViewData["EstadoSortParam"] == "Estado" ? "fa-sort-up" : (ViewData["EstadoSortParam"] == "estado_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
                     </h4>
                 </th>
-                <th style="width: 25%;">
+                <th style="width: 8%;">
                     <h4>
-                        Nombre del Empleado<a asp-action="Index" asp-route-sortOrder="@ViewData["NombreSortParam"]"> A - Z</a>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["CodigoSortParam"]"
+                           asp-route-searchString="@ViewData["CurrentFilter"]"
+                           asp-route-estadoFilter="@ViewData["EstadoFilter"]"
+                           asp-route-cargoFilter="@ViewData["CargoFilter"]"
+                           asp-route-areaFilter="@ViewData["AreaFilter"]">
+                            Código <i class="fas fa-sort @(ViewData["CodigoSortParam"] == "Codigo" ? "fa-sort-up" : (ViewData["CodigoSortParam"] == "codigo_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
+                    </h4>
+                </th>
+                <th style="width: 22%;">
+                    <h4>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["NombreSortParam"]"
+                           asp-route-searchString="@ViewData["CurrentFilter"]"
+                           asp-route-estadoFilter="@ViewData["EstadoFilter"]"
+                           asp-route-cargoFilter="@ViewData["CargoFilter"]"
+                           asp-route-areaFilter="@ViewData["AreaFilter"]">
+                            Nombre del Empleado <i class="fas fa-sort @(ViewData["NombreSortParam"] == "Nombre" ? "fa-sort-up" : (ViewData["NombreSortParam"] == "nombre_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
                     </h4>
                 </th>
                 <th style="width: 20%;">
-                    <h4>Cargo</h4>
+                    <h4>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["CargoSortParam"]"
+                           asp-route-searchString="@ViewData["CurrentFilter"]"
+                           asp-route-estadoFilter="@ViewData["EstadoFilter"]"
+                           asp-route-cargoFilter="@ViewData["CargoFilter"]"
+                           asp-route-areaFilter="@ViewData["AreaFilter"]">
+                            Cargo <i class="fas fa-sort @(ViewData["CargoSortParam"] == "Cargo" ? "fa-sort-up" : (ViewData["CargoSortParam"] == "cargo_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
+                    </h4>
                 </th>
                 <th style="width: 20%;">
-                    <h4>Área</h4>
+                    <h4>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["AreaSortParam"]"
+                           asp-route-searchString="@ViewData["CurrentFilter"]"
+                           asp-route-estadoFilter="@ViewData["EstadoFilter"]"
+                           asp-route-cargoFilter="@ViewData["CargoFilter"]"
+                           asp-route-areaFilter="@ViewData["AreaFilter"]">
+                            Área <i class="fas fa-sort @(ViewData["AreaSortParam"] == "Area" ? "fa-sort-up" : (ViewData["AreaSortParam"] == "area_desc" ? "fa-sort-down" : ""))"></i>
+                        </a>
+                    </h4>
                 </th>
                 <th>
                     <h4>Firma BPM</h4>
@@ -177,7 +235,7 @@
             @if (!Model.Any())
             {
                 <tr>
-                    <td colspan="5">No se encontraron resultados.</td>
+                    <td colspan="7">No se encontraron resultados.</td>
                 </tr>
             }
         </tbody>

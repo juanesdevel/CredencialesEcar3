@@ -34,7 +34,8 @@ namespace ECARTemplate.Controllers
             string estadoFiltro,
             string usuarioRegistroFiltro,
             bool retirosPendientes = false,
-            string sortOrder = "")
+            string sortOrder = "",
+            bool aplicarFiltroHoy = true) // ← NUEVO parámetro
         {
             ViewData["CodigoEquipoFiltro"] = codigoEquipoFiltro;
             ViewData["FechaYHoraDesdeFiltro"] = fechaYHoraDesdeFiltro;
@@ -47,11 +48,25 @@ namespace ECARTemplate.Controllers
             ViewData["UsuarioRegistroFiltro"] = usuarioRegistroFiltro;
             ViewData["RetirosPendientes"] = retirosPendientes;
 
+            // Parámetros de ordenamiento
             ViewData["NombreSortParam"] = sortOrder == "Nombre" ? "nombre_desc" : "Nombre";
             ViewData["CodigoEquipoSortParam"] = sortOrder == "CodigoEquipo" ? "codigoequipo_desc" : "CodigoEquipo";
             ViewData["CodigoEmpleadoSortParam"] = sortOrder == "CodigoEmpleado" ? "codigoempleado_desc" : "CodigoEmpleado";
+            ViewData["EstadoSortParam"] = sortOrder == "Estado" ? "estado_desc" : "Estado";
 
             var credenciales = _context.Credenciales.AsQueryable();
+
+            // Verificar si hay algún filtro aplicado (excluyendo sortOrder)
+            bool hayFiltrosAplicados = !string.IsNullOrEmpty(codigoEquipoFiltro) ||
+                                      fechaYHoraDesdeFiltro.HasValue ||
+                                      fechaYHoraHastaFiltro.HasValue ||
+                                      !string.IsNullOrEmpty(codigoUsuarioEcarFiltro) ||
+                                      !string.IsNullOrEmpty(nombreUsuarioFiltro) ||
+                                      !string.IsNullOrEmpty(perfilFiltro) ||
+                                      !string.IsNullOrEmpty(usuarioFiltro) ||
+                                      !string.IsNullOrEmpty(estadoFiltro) ||
+                                      !string.IsNullOrEmpty(usuarioRegistroFiltro) ||
+                                      retirosPendientes;
 
             if (retirosPendientes)
             {
@@ -66,13 +81,15 @@ namespace ECARTemplate.Controllers
             }
             else
             {
-                if (string.IsNullOrEmpty(codigoEquipoFiltro) && !fechaYHoraDesdeFiltro.HasValue && !fechaYHoraHastaFiltro.HasValue && string.IsNullOrEmpty(codigoUsuarioEcarFiltro) && string.IsNullOrEmpty(nombreUsuarioFiltro) && string.IsNullOrEmpty(perfilFiltro) && string.IsNullOrEmpty(usuarioFiltro) && string.IsNullOrEmpty(estadoFiltro) && string.IsNullOrEmpty(usuarioRegistroFiltro))
+                // Solo aplicar filtro de "hoy" si NO hay filtros aplicados Y es la primera carga
+                if (!hayFiltrosAplicados && aplicarFiltroHoy && string.IsNullOrEmpty(sortOrder))
                 {
                     var hoy = DateTime.Today;
                     credenciales = credenciales.Where(c => c.FechaYHora.Date == hoy);
                     TempData["InfoMessage"] = "Mostrando registros del día de hoy.";
                 }
 
+                // Aplicar filtros individuales
                 if (!string.IsNullOrEmpty(codigoEquipoFiltro))
                 {
                     credenciales = credenciales.Where(c => c.CodigoEquipo.Contains(codigoEquipoFiltro));
@@ -82,6 +99,7 @@ namespace ECARTemplate.Controllers
                 {
                     credenciales = credenciales.Where(c => c.FechaYHora >= fechaYHoraDesdeFiltro.Value);
                 }
+
                 if (fechaYHoraHastaFiltro.HasValue)
                 {
                     credenciales = credenciales.Where(c => c.FechaYHora <= fechaYHoraHastaFiltro.Value.Date.AddDays(1).AddSeconds(-1));
@@ -118,6 +136,7 @@ namespace ECARTemplate.Controllers
                 }
             }
 
+            // Switch de ordenamiento
             switch (sortOrder)
             {
                 case "nombre_desc":
@@ -135,14 +154,20 @@ namespace ECARTemplate.Controllers
                 case "codigoempleado_desc":
                     credenciales = credenciales.OrderByDescending(c => c.CodigoUsuarioEcar);
                     break;
+                case "Estado":
+                    credenciales = credenciales.OrderBy(c => c.Estado);
+                    break;
+                case "estado_desc":
+                    credenciales = credenciales.OrderByDescending(c => c.Estado);
+                    break;
                 default:
                     credenciales = credenciales.OrderBy(c => c.NombreUsuario);
                     break;
-
             }
 
             var credencialesList = await credenciales.ToListAsync();
 
+            // Lógica de desencriptación
             foreach (var credencial in credencialesList)
             {
                 if (!string.IsNullOrEmpty(credencial.Contrasena))
@@ -169,7 +194,6 @@ namespace ECARTemplate.Controllers
             ViewData["TotalRegistros"] = credencialesList.Count;
             return View(credencialesList);
         }
-
         [HttpGet]
         public async Task<IActionResult> ObtenerDatosEmpleadoPorCodigo(string codigoEmpleado)
         {
