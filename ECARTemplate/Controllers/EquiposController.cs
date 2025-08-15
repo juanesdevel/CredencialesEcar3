@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
+using Microsoft.Data.SqlClient; // Asegúrate de tener este 'using'
 
 namespace ECARTemplate.Controllers
 {
@@ -25,8 +26,8 @@ namespace ECARTemplate.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-// GET: Equipos/Index
-public async Task<IActionResult> Index(string searchString, string sedeFilter, string areaFilter, string estadoFilter, string sortOrder)
+        // GET: Equipos/Index
+        public async Task<IActionResult> Index(string searchString, string sedeFilter, string areaFilter, string estadoFilter, string sortOrder)
         {
             ViewData["CurrentFilter"] = searchString;
             ViewData["SedeFilter"] = sedeFilter;
@@ -70,9 +71,7 @@ public async Task<IActionResult> Index(string searchString, string sedeFilter, s
                 {
                     equipos = equipos.Where(e => e.Estado == "Inactivo");
                 }
-                // Si es "Todos" o cualquier otro valor, no filtramos por estado
             }
-            // ELIMINADO: El else que forzaba mostrar solo activos
 
             // Lógica de ordenamiento
             switch (sortOrder)
@@ -175,6 +174,10 @@ public async Task<IActionResult> Index(string searchString, string sedeFilter, s
 
                 _context.Add(equipo);
                 await _context.SaveChangesAsync();
+
+                // Lógica de Auditoría: Registro de creación
+                await RegistrarAuditoriaAsync(User.Identity.Name, "Crear", "Equipos", $"Se creó el equipo con código '{equipo.CodigoEquipo}' y nombre '{equipo.NombreEquipo}'.");
+
                 TempData["SuccessMessage"] = $"Equipo '{equipo.NombreEquipo}' creado exitosamente.";
                 return RedirectToAction(nameof(Index));
             }
@@ -238,6 +241,10 @@ public async Task<IActionResult> Index(string searchString, string sedeFilter, s
 
                     _context.Update(equipo);
                     await _context.SaveChangesAsync();
+
+                    // Lógica de Auditoría: Registro de edición
+                    await RegistrarAuditoriaAsync(User.Identity.Name, "Editar", "Equipos", $"Se actualizó el equipo con ID {id}.");
+
                     TempData["SuccessMessage"] = $"Equipo '{equipo.NombreEquipo}' actualizado exitosamente.";
                 }
                 catch (DbUpdateConcurrencyException)
@@ -280,6 +287,10 @@ public async Task<IActionResult> Index(string searchString, string sedeFilter, s
 
             _context.Equipos.Remove(equipo);
             await _context.SaveChangesAsync();
+
+            // Lógica de Auditoría: Registro de eliminación
+            await RegistrarAuditoriaAsync(User.Identity.Name, "Eliminar", "Equipos", $"Se eliminó el equipo con código '{equipo.CodigoEquipo}'.");
+
             TempData["SuccessMessage"] = $"Equipo '{equipo.NombreEquipo}' eliminado exitosamente.";
             return RedirectToAction(nameof(Index));
         }
@@ -302,6 +313,10 @@ public async Task<IActionResult> Index(string searchString, string sedeFilter, s
             {
                 _context.Update(equipo);
                 await _context.SaveChangesAsync();
+
+                // Lógica de Auditoría: Registro de activación
+                await RegistrarAuditoriaAsync(User.Identity.Name, "Activar", "Equipos", $"Se activó el equipo con código '{equipo.CodigoEquipo}'.");
+
                 TempData["SuccessMessage"] = $"Equipo '{equipo.NombreEquipo}' activado exitosamente.";
             }
             catch (Exception ex)
@@ -326,8 +341,8 @@ public async Task<IActionResult> Index(string searchString, string sedeFilter, s
 
             // Validar si existen credenciales activas para este equipo
             var credencialesActivas = await _context.Credenciales
-                                                    .Where(c => c.CodigoEquipo == equipo.CodigoEquipo && c.Estado == "Activo")
-                                                    .AnyAsync();
+                                                     .Where(c => c.CodigoEquipo == equipo.CodigoEquipo && c.Estado == "Activo")
+                                                     .AnyAsync();
 
             if (credencialesActivas)
             {
@@ -344,6 +359,10 @@ public async Task<IActionResult> Index(string searchString, string sedeFilter, s
             {
                 _context.Update(equipo);
                 await _context.SaveChangesAsync();
+
+                // Lógica de Auditoría: Registro de inactivación
+                await RegistrarAuditoriaAsync(User.Identity.Name, "Inactivar", "Equipos", $"Se inactivó el equipo con código '{equipo.CodigoEquipo}'.");
+
                 TempData["SuccessMessage"] = $"Equipo '{equipo.NombreEquipo}' inactivado exitosamente.";
             }
             catch (Exception ex)
@@ -353,10 +372,12 @@ public async Task<IActionResult> Index(string searchString, string sedeFilter, s
 
             return RedirectToAction(nameof(Index));
         }
+
         private bool EquipoExists(int id)
         {
             return _context.Equipos.Any(e => e.Id == id);
         }
+
         // Método para debugging - puedes llamarlo temporalmente para verificar el estado
         [HttpGet]
         public async Task<IActionResult> DebugEquipo(int id)
@@ -365,8 +386,8 @@ public async Task<IActionResult> Index(string searchString, string sedeFilter, s
             if (equipo == null) return NotFound();
 
             var credencialesActivas = await _context.Credenciales
-                                                   .Where(c => c.CodigoEquipo == equipo.CodigoEquipo && c.Estado == "Activo")
-                                                   .ToListAsync();
+                                                     .Where(c => c.CodigoEquipo == equipo.CodigoEquipo && c.Estado == "Activo")
+                                                     .ToListAsync();
 
             return Json(new
             {
@@ -382,6 +403,7 @@ public async Task<IActionResult> Index(string searchString, string sedeFilter, s
                 }).ToList()
             });
         }
+
         // Método para buscar equipo por código (para AJAX)
         [HttpGet]
         public async Task<IActionResult> ObtenerDatosEquipo(string codigoEquipo)
@@ -422,6 +444,21 @@ public async Task<IActionResult> Index(string searchString, string sedeFilter, s
             {
                 return Json(new { success = false, message = "Ocurrió un error al buscar el equipo: " + ex.Message });
             }
+        }
+
+        /// <summary>
+        /// Método auxiliar para registrar la auditoría.
+        /// </summary>
+        private async Task RegistrarAuditoriaAsync(string usuario, string tipoAccion, string modulo, string detalle)
+        {
+            var parameters = new[]
+            {
+                new SqlParameter("@Usuario", usuario),
+                new SqlParameter("@TipoAccion", tipoAccion),
+                new SqlParameter("@Modulo", modulo),
+                new SqlParameter("@DetalleCambio", detalle)
+            };
+            await _context.Database.ExecuteSqlRawAsync("EXEC sp_InsertarAuditTrail @Usuario, @TipoAccion, @Modulo, @DetalleCambio", parameters);
         }
     }
 }

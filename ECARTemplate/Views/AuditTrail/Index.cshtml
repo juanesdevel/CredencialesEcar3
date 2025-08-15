@@ -1,0 +1,276 @@
+﻿@model IEnumerable<ECARTemplate.Models.AuditTrail>
+
+@{
+    ViewData["Title"] = "Registro de Auditoría";
+    var fechaDesdeFiltro = ViewData["FechaDesdeFiltro"] as string;
+    var fechaHastaFiltro = ViewData["FechaHastaFiltro"] as string;
+    var usuarioFiltro = ViewData["UsuarioFiltro"] as string;
+    var tipoAccionFiltro = ViewData["TipoAccionFiltro"] as string;
+    var moduloFiltro = ViewData["ModuloFiltro"] as string;
+    var totalRegistros = ViewData["TotalRegistros"];
+
+    // Obtener listas de valores únicos para los filtros de dropdown
+    var tiposAccion = new List<string> { "Crear", "Editar", "Eliminar", "Inactivar", "Activar", "Clonar" };
+    var modulos = new List<string> { "Usuarios", "Empleados", "Equipos", "Credenciales", "Actividades" };
+}
+
+<div class="text-center">
+    <h1 class="display-4">Registro de Auditoría (Audit Trail)</h1>
+</div>
+
+<div class="card mb-3 no-print mx-5">
+    <div class="card-header bg-primary text-white">
+        <h6 class="mb-0">Filtro Avanzado</h6>
+    </div>
+    <div class="card-body py-2">
+        <form asp-action="Index" method="get">
+            <div class="row gx-2 align-items-end">
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="fechaDesdeFiltro" class="form-label-sm">Fecha Desde:</label>
+                        <input type="date" class="form-control form-control-sm" id="fechaDesdeFiltro" name="fechaDesdeFiltro" value="@fechaDesdeFiltro" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="fechaHastaFiltro" class="form-label-sm">Fecha Hasta:</label>
+                        <input type="date" class="form-control form-control-sm" id="fechaHastaFiltro" name="fechaHastaFiltro" value="@fechaHastaFiltro" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="usuarioFiltro" class="form-label-sm">Usuario:</label>
+                        <input type="text" class="form-control form-control-sm" id="usuarioFiltro" name="usuarioFiltro" value="@usuarioFiltro" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-2">
+                        <label for="tipoAccionFiltro" class="form-label-sm">Tipo de Acción:</label>
+                        <select class="form-control form-control-sm" id="tipoAccionFiltro" name="tipoAccionFiltro">
+                            <option value="">Todos</option>
+                            @foreach (var tipo in tiposAccion)
+                            {
+                                <option value="@tipo" selected="@(tipo == tipoAccionFiltro)">@tipo</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-2 align-items-end">
+                <div class="col-md-6">
+                    <div class="form-group mb-2">
+                        <label for="moduloFiltro" class="form-label-sm">Módulo:</label>
+                        <select class="form-control form-control-sm" id="moduloFiltro" name="moduloFiltro">
+                            <option value="">Todos</option>
+                            @foreach (var modulo in modulos)
+                            {
+                                <option value="@modulo" selected="@(modulo == moduloFiltro)">@modulo</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12 text-start">
+                    <div class="form-group mt-2">
+                        <button type="submit" class="btn btn-primary btn-sm">Filtrar</button>
+                        <a asp-action="Index" class="btn btn-secondary btn-sm ms-2">Limpiar Filtros</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mx-5 mb-3">
+    <p class="text-muted total-registros-counter">Mostrando @totalRegistros registros.</p>
+</div>
+
+<div class="table-container mx-5">
+    <table class="table table-bordered table-striped table-compact">
+        <thead class="sticky-header">
+            <tr>
+                <th style ="width: 15%;">
+                    <h4>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["FechaSortParam"]"
+                           asp-route-fechaDesdeFiltro="@fechaDesdeFiltro"
+                           asp-route-fechaHastaFiltro="@fechaHastaFiltro"
+                           asp-route-usuarioFiltro="@usuarioFiltro"
+                           asp-route-tipoAccionFiltro="@tipoAccionFiltro"
+                           asp-route-moduloFiltro="@moduloFiltro">
+                            Fecha y Hora
+                            @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "Fecha")
+                            {
+                                <i class="fas fa-sort-up"></i>
+                            }
+                            else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "fecha_desc")
+                            {
+
+                                <i class="fas fa-sort-down"></i>
+                            }
+                            else
+                            {
+
+                                <i class="fas fa-sort"></i>
+                            }
+                        </a>
+                    </h4>
+                </th>
+                <th>
+                    <h4>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["UsuarioSortParam"]"
+                           asp-route-fechaDesdeFiltro="@fechaDesdeFiltro"
+                           asp-route-fechaHastaFiltro="@fechaHastaFiltro"
+                           asp-route-usuarioFiltro="@usuarioFiltro"
+                           asp-route-tipoAccionFiltro="@tipoAccionFiltro"
+                           asp-route-moduloFiltro="@moduloFiltro">
+                            Usuario
+                            @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "Usuario")
+                            {
+                                <i class="fas fa-sort-up"></i>
+                            }
+                            else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "usuario_desc")
+                            {
+
+                                <i class="fas fa-sort-down"></i>
+                            }
+                            else
+                            {
+
+                                <i class="fas fa-sort"></i>
+                            }
+                        </a>
+                    </h4>
+                </th>
+                <th>
+                    <h4>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["TipoAccionSortParam"]"
+                           asp-route-fechaDesdeFiltro="@fechaDesdeFiltro"
+                           asp-route-fechaHastaFiltro="@fechaHastaFiltro"
+                           asp-route-usuarioFiltro="@usuarioFiltro"
+                           asp-route-tipoAccionFiltro="@tipoAccionFiltro"
+                           asp-route-moduloFiltro="@moduloFiltro">
+                            Tipo de Acción
+                            @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "TipoAccion")
+                            {
+                                <i class="fas fa-sort-up"></i>
+                            }
+                            else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "tipoaccion_desc")
+                            {
+
+                                <i class="fas fa-sort-down"></i>
+                            }
+                            else
+                            {
+
+                                <i class="fas fa-sort"></i>
+                            }
+                        </a>
+                    </h4>
+                </th>
+                <th>
+                    <h4>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewData["ModuloSortParam"]"
+                           asp-route-fechaDesdeFiltro="@fechaDesdeFiltro"
+                           asp-route-fechaHastaFiltro="@fechaHastaFiltro"
+                           asp-route-usuarioFiltro="@usuarioFiltro"
+                           asp-route-tipoAccionFiltro="@tipoAccionFiltro"
+                           asp-route-moduloFiltro="@moduloFiltro">
+                            Módulo
+                            @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "Modulo")
+                            {
+                                <i class="fas fa-sort-up"></i>
+                            }
+                            else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "modulo_desc")
+                            {
+
+                                <i class="fas fa-sort-down"></i>
+                            }
+                            else
+                            {
+
+                                <i class="fas fa-sort"></i>
+                            }
+                        </a>
+                    </h4>
+                </th>
+                <th>
+                    <h4>Detalle del Cambio</h4>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-truncate" style="max-width: 100px;">
+                            @Html.DisplayFor(modelItem => item.FechaRegistro)
+                        </td>
+                        <td class="text-truncate" style="max-width: 120px;">
+                            @Html.DisplayFor(modelItem => item.Usuario)
+                        </td>
+                        <td class="text-truncate" style="max-width: 120px;">
+                            @Html.DisplayFor(modelItem => item.TipoAccion)
+                        </td>
+                        <td class="text-truncate" style="max-width: 80px;">
+                            @Html.DisplayFor(modelItem => item.Modulo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DetalleCambio)
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center">No se encontraron registros de auditoría.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    /* Estilos para impresión */
+    @@media print {
+        .no-print {
+            display: none !important;
+        }
+    }
+
+    /* Estilos para el contenedor de la tabla */
+    .table-container {
+        max-height: 500px;
+        overflow-y: auto;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+    }
+
+    /* Estilos para el encabezado fijo */
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    /* Estilos para que las filas sean más angostas */
+    .table-compact th,
+    .table-compact td {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    /* Evita que los botones se envuelvan a la siguiente línea */
+    .table td.text-nowrap {
+        white-space: nowrap;
+    }
+
+    /* --- Nuevo Estilo para botones extra-pequeños --- */
+    .btn.btn-xs {
+        padding: 0.1rem 0.25rem;
+        font-size: 0.75rem;
+        line-height: 1;
+    }
+</style>

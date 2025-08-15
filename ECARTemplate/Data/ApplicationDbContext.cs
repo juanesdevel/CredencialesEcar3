@@ -18,9 +18,8 @@ namespace ECARTemplate.Data
         public DbSet<Empleado> Empleados { get; set; }
         public DbSet<Equipo> Equipos { get; set; }
         public DbSet<Credencial> Credenciales { get; set; }
-
         public DbSet<Actividad> Actividades { get; set; }
-
+        public DbSet<AuditTrail> AuditTrails { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
+using Microsoft.Data.SqlClient; // Asegúrate de tener este 'using'
 
 namespace ECARTemplate.Controllers
 {
@@ -58,15 +59,15 @@ namespace ECARTemplate.Controllers
 
             // Verificar si hay algún filtro aplicado (excluyendo sortOrder)
             bool hayFiltrosAplicados = !string.IsNullOrEmpty(codigoEquipoFiltro) ||
-                                      fechaYHoraDesdeFiltro.HasValue ||
-                                      fechaYHoraHastaFiltro.HasValue ||
-                                      !string.IsNullOrEmpty(codigoUsuarioEcarFiltro) ||
-                                      !string.IsNullOrEmpty(nombreUsuarioFiltro) ||
-                                      !string.IsNullOrEmpty(perfilFiltro) ||
-                                      !string.IsNullOrEmpty(usuarioFiltro) ||
-                                      !string.IsNullOrEmpty(estadoFiltro) ||
-                                      !string.IsNullOrEmpty(usuarioRegistroFiltro) ||
-                                      retirosPendientes;
+                                         fechaYHoraDesdeFiltro.HasValue ||
+                                         fechaYHoraHastaFiltro.HasValue ||
+                                         !string.IsNullOrEmpty(codigoUsuarioEcarFiltro) ||
+                                         !string.IsNullOrEmpty(nombreUsuarioFiltro) ||
+                                         !string.IsNullOrEmpty(perfilFiltro) ||
+                                         !string.IsNullOrEmpty(usuarioFiltro) ||
+                                         !string.IsNullOrEmpty(estadoFiltro) ||
+                                         !string.IsNullOrEmpty(usuarioRegistroFiltro) ||
+                                         retirosPendientes;
 
             if (retirosPendientes)
             {
@@ -194,6 +195,7 @@ namespace ECARTemplate.Controllers
             ViewData["TotalRegistros"] = credencialesList.Count;
             return View(credencialesList);
         }
+
         [HttpGet]
         public async Task<IActionResult> ObtenerDatosEmpleadoPorCodigo(string codigoEmpleado)
         {
@@ -332,6 +334,10 @@ namespace ECARTemplate.Controllers
 
                 _context.Add(credencial);
                 await _context.SaveChangesAsync();
+
+                // Lógica de Auditoría: Registro de creación
+                await RegistrarAuditoriaAsync(User.Identity.Name, "Crear", "Credenciales", $"Se creó la credencial para el equipo '{credencial.CodigoEquipo}' y el usuario '{credencial.NombreUsuario}'.");
+
                 TempData["SuccessMessage"] = $"La credencial para el equipo '{credencial.CodigoEquipo}' y usuario '{credencial.NombreUsuario}' ha sido creada exitosamente.";
                 return RedirectToAction(nameof(Index));
             }
@@ -384,6 +390,9 @@ namespace ECARTemplate.Controllers
 
                 _context.Add(credencial);
                 await _context.SaveChangesAsync();
+
+                // Lógica de Auditoría: Registro de clonación
+                await RegistrarAuditoriaAsync(User.Identity.Name, "Clonar", "Credenciales", $"Se clonó la credencial con ID {ViewBag.CredencialOriginalId} para el equipo '{credencial.CodigoEquipo}' y el usuario '{credencial.NombreUsuario}'.");
 
                 TempData["SuccessMessage"] = "La credencial se ha clonado correctamente.";
                 return RedirectToAction(nameof(Index));
@@ -495,6 +504,9 @@ namespace ECARTemplate.Controllers
                         credencialToUpdate.Contrasena = AesEncryptor.Encrypt(credencial.Contrasena);
                     }
 
+                    // Se registra el estado actual de la credencial antes de la actualización
+                    string estadoAnterior = credencialToUpdate.Estado;
+
                     credencialToUpdate.CodigoEquipo = credencial.CodigoEquipo;
                     credencialToUpdate.FechaYHora = credencial.FechaYHora;
                     credencialToUpdate.CodigoUsuarioEcar = credencial.CodigoUsuarioEcar;
@@ -506,6 +518,10 @@ namespace ECARTemplate.Controllers
 
                     _context.Update(credencialToUpdate);
                     await _context.SaveChangesAsync();
+
+                    // Lógica de Auditoría: Registro de edición
+                    await RegistrarAuditoriaAsync(User.Identity.Name, "Editar", "Credenciales", $"Se actualizó la credencial con ID {id} para el equipo '{credencial.CodigoEquipo}'. Se cambió el estado de '{estadoAnterior}' a '{credencial.Estado}'.");
+
                     TempData["SuccessMessage"] = $"La credencial para el equipo '{credencial.CodigoEquipo}' y usuario '{credencial.NombreUsuario}' ha sido actualizada exitosamente.";
                 }
                 catch (DbUpdateConcurrencyException)
@@ -553,6 +569,10 @@ namespace ECARTemplate.Controllers
 
             _context.Credenciales.Remove(credencial);
             await _context.SaveChangesAsync();
+
+            // Lógica de Auditoría: Registro de eliminación
+            await RegistrarAuditoriaAsync(User.Identity.Name, "Eliminar", "Credenciales", $"Se eliminó la credencial con ID {id} para el equipo '{credencial.CodigoEquipo}' y el usuario '{credencial.NombreUsuario}'.");
+
             TempData["SuccessMessage"] = $"La credencial para el equipo '{credencial.CodigoEquipo}' y usuario '{credencial.NombreUsuario}' ha sido eliminada exitosamente.";
             return RedirectToAction(nameof(Index));
         }
@@ -592,6 +612,10 @@ namespace ECARTemplate.Controllers
 
                 credencial.Estado = "Activo";
                 await _context.SaveChangesAsync();
+
+                // Lógica de Auditoría: Registro de activación
+                await RegistrarAuditoriaAsync(User.Identity.Name, "Activar", "Credenciales", $"Se activó la credencial con ID {id} para el equipo '{credencial.CodigoEquipo}' y el usuario '{credencial.NombreUsuario}'.");
+
                 TempData["SuccessMessage"] = $"La credencial para el empleado '{credencial.NombreUsuario}' en el equipo '{credencial.CodigoEquipo}' ha sido activada correctamente.";
             }
             else if (credencial.Estado == "Activo")
@@ -617,6 +641,10 @@ namespace ECARTemplate.Controllers
 
             credencial.Estado = "Inactivo";
             await _context.SaveChangesAsync();
+
+            // Lógica de Auditoría: Registro de desactivación
+            await RegistrarAuditoriaAsync(User.Identity.Name, "Desactivar", "Credenciales", $"Se desactivó la credencial con ID {id} para el equipo '{credencial.CodigoEquipo}' y el usuario '{credencial.NombreUsuario}'.");
+
             TempData["SuccessMessage"] = $"La credencial para el empleado '{credencial.NombreUsuario}' en el equipo '{credencial.CodigoEquipo}' ha sido inactivada correctamente.";
             return RedirectToAction(nameof(Index));
         }
@@ -624,6 +652,21 @@ namespace ECARTemplate.Controllers
         private bool CredencialExists(int id)
         {
             return _context.Credenciales.Any(e => e.Id == id);
+        }
+
+        /// <summary>
+        /// Método auxiliar para registrar la auditoría.
+        /// </summary>
+        private async Task RegistrarAuditoriaAsync(string usuario, string tipoAccion, string modulo, string detalle)
+        {
+            var parameters = new[]
+            {
+                new SqlParameter("@Usuario", usuario),
+                new SqlParameter("@TipoAccion", tipoAccion),
+                new SqlParameter("@Modulo", modulo),
+                new SqlParameter("@DetalleCambio", detalle)
+            };
+            await _context.Database.ExecuteSqlRawAsync("EXEC sp_InsertarAuditTrail @Usuario, @TipoAccion, @Modulo, @DetalleCambio", parameters);
         }
     }
 }

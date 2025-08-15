@@ -7,6 +7,7 @@ using ECARTemplate.Data;
 using Microsoft.AspNetCore.Authorization;
 using System;
 using System.Collections.Generic;
+using Microsoft.Data.SqlClient; // Asegúrate de tener este using
 
 namespace ECARTemplate.Controllers
 {
@@ -66,10 +67,10 @@ namespace ECARTemplate.Controllers
             ViewData["CargoFilter"] = cargoFilter;
             ViewData["AreaFilter"] = areaFilter;
 
-            // Parámetros de ordenamiento - AGREGADO EstadoSortParam
+            // Parámetros de ordenamiento
             ViewData["NombreSortParam"] = string.IsNullOrEmpty(sortOrder) ? "nombre_desc" : "";
             ViewData["CodigoSortParam"] = sortOrder == "Codigo" ? "codigo_desc" : "Codigo";
-            ViewData["EstadoSortParam"] = sortOrder == "Estado" ? "estado_desc" : "Estado"; // ← NUEVO
+            ViewData["EstadoSortParam"] = sortOrder == "Estado" ? "estado_desc" : "Estado";
             ViewData["CargoSortParam"] = sortOrder == "Cargo" ? "cargo_desc" : "Cargo";
             ViewData["AreaSortParam"] = sortOrder == "Area" ? "area_desc" : "Area";
 
@@ -83,7 +84,7 @@ namespace ECARTemplate.Controllers
                     e.NombreEmpleado.Contains(searchString));
             }
 
-            // Filtro de estado - SIN modificar el comportamiento existente
+            // Filtros de estado, cargo y área
             if (!string.IsNullOrEmpty(estadoFilter))
             {
                 if (estadoFilter.Equals("Activo", StringComparison.OrdinalIgnoreCase))
@@ -106,7 +107,7 @@ namespace ECARTemplate.Controllers
                 empleados = empleados.Where(e => e.Area == areaFilter);
             }
 
-            // Switch de ordenamiento - AGREGADOS casos para Estado
+            // Switch de ordenamiento
             switch (sortOrder)
             {
                 case "nombre_desc":
@@ -118,10 +119,10 @@ namespace ECARTemplate.Controllers
                 case "codigo_desc":
                     empleados = empleados.OrderByDescending(e => e.CodigoEmpleadoEcar);
                     break;
-                case "Estado": // ← NUEVO
+                case "Estado":
                     empleados = empleados.OrderBy(e => e.Estado);
                     break;
-                case "estado_desc": // ← NUEVO
+                case "estado_desc":
                     empleados = empleados.OrderByDescending(e => e.Estado);
                     break;
                 case "Cargo":
@@ -198,6 +199,10 @@ namespace ECARTemplate.Controllers
             {
                 _context.Add(empleado);
                 await _context.SaveChangesAsync();
+
+                // Lógica de Auditoría: Registro de creación
+                await RegistrarAuditoriaAsync(User.Identity.Name, "Crear", "Empleados", $"Se creó el empleado con código: {empleado.CodigoEmpleadoEcar}");
+
                 TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' creado exitosamente.";
                 return RedirectToAction(nameof(Index));
             }
@@ -237,6 +242,10 @@ namespace ECARTemplate.Controllers
                 {
                     _context.Update(empleado);
                     await _context.SaveChangesAsync();
+
+                    // Lógica de Auditoría: Registro de edición
+                    await RegistrarAuditoriaAsync(User.Identity.Name, "Editar", "Empleados", $"Se actualizó el empleado con código: {empleado.CodigoEmpleadoEcar}");
+
                     TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' actualizado exitosamente.";
                 }
                 catch (DbUpdateConcurrencyException)
@@ -273,6 +282,10 @@ namespace ECARTemplate.Controllers
             {
                 _context.Update(empleado);
                 await _context.SaveChangesAsync();
+
+                // Lógica de Auditoría: Registro de activación
+                await RegistrarAuditoriaAsync(User.Identity.Name, "Activar", "Empleados", $"Se activó el empleado con código: {empleado.CodigoEmpleadoEcar}");
+
                 TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' activado exitosamente.";
             }
             catch (Exception ex)
@@ -286,7 +299,6 @@ namespace ECARTemplate.Controllers
         // POST: Empleados/Desactivar/5
         [HttpPost, ActionName("Desactivar")]
         [ValidateAntiForgeryToken]
-        [Authorize]
         public async Task<IActionResult> DesactivarConfirmado(int id)
         {
             var empleado = await _context.Empleados.FindAsync(id);
@@ -298,8 +310,8 @@ namespace ECARTemplate.Controllers
 
             // Verificar si tiene credenciales activas (solo para mostrar advertencia)
             var credencialesActivas = await _context.Credenciales
-                                            .Where(c => c.CodigoUsuarioEcar == empleado.CodigoEmpleadoEcar && c.Estado == "Activo")
-                                            .AnyAsync();
+                                                        .Where(c => c.CodigoUsuarioEcar == empleado.CodigoEmpleadoEcar && c.Estado == "Activo")
+                                                        .AnyAsync();
 
             empleado.Estado = "Inactivo";
 
@@ -308,12 +320,15 @@ namespace ECARTemplate.Controllers
                 _context.Update(empleado);
                 await _context.SaveChangesAsync();
 
+                // Lógica de Auditoría: Registro de inactivación
+                await RegistrarAuditoriaAsync(User.Identity.Name, "Inactivar", "Empleados", $"Se inactivó el empleado con código: {empleado.CodigoEmpleadoEcar}.");
+
                 // Mensaje de éxito con advertencia si tiene credenciales activas
                 if (credencialesActivas)
                 {
                     TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' inactivado exitosamente. " +
-                                               $"<strong>ADVERTENCIA:</strong> Este empleado tiene credenciales activas asociadas. " +
-                                               $"Por favor, revise y desactive las credenciales manualmente.";
+                                                   $"<strong>ADVERTENCIA:</strong> Este empleado tiene credenciales activas asociadas. " +
+                                                   $"Por favor, revise y desactive las credenciales manualmente.";
                 }
                 else
                 {
@@ -332,6 +347,21 @@ namespace ECARTemplate.Controllers
         private bool EmpleadoExists(int id)
         {
             return _context.Empleados.Any(e => e.Id == id);
+        }
+
+        /// <summary>
+        /// Método auxiliar para registrar la auditoría.
+        /// </summary>
+        private async Task RegistrarAuditoriaAsync(string usuario, string tipoAccion, string modulo, string detalle)
+        {
+            var parameters = new[]
+            {
+                new SqlParameter("@Usuario", usuario),
+                new SqlParameter("@TipoAccion", tipoAccion),
+                new SqlParameter("@Modulo", modulo),
+                new SqlParameter("@DetalleCambio", detalle)
+            };
+            await _context.Database.ExecuteSqlRawAsync("EXEC sp_InsertarAuditTrail @Usuario, @TipoAccion, @Modulo, @DetalleCambio", parameters);
         }
     }
 }

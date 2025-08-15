@@ -8,6 +8,7 @@
     using System;
     using System.Linq;
     using System.Threading.Tasks;
+    using Microsoft.Data.SqlClient; // Asegúrate de tener este 'using'
 
     [Authorize]
     public class ActividadesController : Controller
@@ -113,8 +114,8 @@
 
             return View(actividadesList);
         }
+
         // GET: /Actividades/Create
-        // This method is needed to display the form.
         [HttpGet]
         public IActionResult Create()
         {
@@ -122,10 +123,9 @@
         }
 
         // POST: /Actividades/Create
-        // Acción para procesar la creación de una nueva actividad.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Actividad actividad)
+        public async Task<IActionResult> Create(Actividad actividad)
         {
             if (ModelState.IsValid)
             {
@@ -133,11 +133,16 @@
                 actividad.UsuarioRegistro = User.Identity.Name;
 
                 _context.Actividades.Add(actividad);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
+
+                // Lógica de Auditoría: Registro de creación
+                await RegistrarAuditoriaAsync(User.Identity.Name, "Crear", "Actividades", $"Se creó una actividad para el equipo '{actividad.CodigoEquipo}' con tipo '{actividad.TipoActividad}'.");
+
                 return RedirectToAction(nameof(Index));
             }
             return View(actividad);
         }
+
         // Acción GET para buscar un equipo por su código (llamada desde AJAX)
         [HttpGet]
         public async Task<IActionResult> ObtenerDatosEquipo(string codigoEquipo)
@@ -169,6 +174,7 @@
                 return Json(new { success = false, message = "Ocurrió un error interno al buscar el equipo." });
             }
         }
+
         // GET: Actividades/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -185,6 +191,7 @@
 
             return View(actividad);
         }
+
         // POST: Actividades/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -199,9 +206,13 @@
             {
                 try
                 {
-                    // Opcional: Actualizar la fecha y el usuario de modificación.
-                    // actividad.FechaModificacion = DateTime.Now;
-                    // actividad.UsuarioModificacion = User.Identity.Name;
+                    // Lógica de Auditoría: Se captura la actividad original para el detalle.
+                    var actividadOriginal = await _context.Actividades.AsNoTracking().FirstOrDefaultAsync(a => a.Id == id);
+                    if (actividadOriginal != null)
+                    {
+                        string detalle = $"Se editó la actividad con ID {id}. Cambios: TipoActividad de '{actividadOriginal.TipoActividad}' a '{actividad.TipoActividad}', Nota de '{actividadOriginal.Nota}' a '{actividad.Nota}'.";
+                        await RegistrarAuditoriaAsync(User.Identity.Name, "Editar", "Actividades", detalle);
+                    }
 
                     _context.Update(actividad);
                     await _context.SaveChangesAsync();
@@ -221,6 +232,7 @@
             }
             return View(actividad);
         }
+
         // GET: Actividades/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -238,6 +250,7 @@
 
             return View(actividad);
         }
+
         // POST: Actividades/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -246,11 +259,31 @@
             var actividad = await _context.Actividades.FindAsync(id);
             _context.Actividades.Remove(actividad);
             await _context.SaveChangesAsync();
+
+            // Lógica de Auditoría: Registro de eliminación
+            await RegistrarAuditoriaAsync(User.Identity.Name, "Eliminar", "Actividades", $"Se eliminó la actividad con ID {id} para el equipo '{actividad.CodigoEquipo}'.");
+
             return RedirectToAction(nameof(Index));
         }
+
         private bool ActividadExists(int id)
         {
             return _context.Actividades.Any(e => e.Id == id);
+        }
+
+        /// <summary>
+        /// Método auxiliar para registrar la auditoría.
+        /// </summary>
+        private async Task RegistrarAuditoriaAsync(string usuario, string tipoAccion, string modulo, string detalle)
+        {
+            var parameters = new[]
+            {
+                new SqlParameter("@Usuario", usuario),
+                new SqlParameter("@TipoAccion", tipoAccion),
+                new SqlParameter("@Modulo", modulo),
+                new SqlParameter("@DetalleCambio", detalle)
+            };
+            await _context.Database.ExecuteSqlRawAsync("EXEC sp_InsertarAuditTrail @Usuario, @TipoAccion, @Modulo, @DetalleCambio", parameters);
         }
     }
 }

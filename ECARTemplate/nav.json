@@ -44,6 +44,12 @@
               "icon": "fal fa-desktop",
               "roles": [],
               "title": "Gestión de Equipos"
+            },
+            {
+              "href": "/AuditTrail",
+              "icon": "fal fa-desktop",
+              "roles": [],
+              "title": "Registros Log"
             }
           ]
         }
