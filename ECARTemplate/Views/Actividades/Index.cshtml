@@ -97,26 +97,146 @@
 
 <div class="table-container mx-5">
     <table class="table table-bordered table-striped table-compact">
-        <thead class="sticky-header">
-            <tr>
-                <th style="width: 15%;">
-                    <h4>Fecha y Hora</h4>
-                </th>
-                <th style="width: 15%;">
-                    <h4>Usuario que Registró</h4>
-                </th>
-                <th style="width: 10%;">
-                    <h4>Código Equipo</h4>
-                </th>
-                <th style="width: 15%;">
-                    <h4>Tipo de Actividad</h4>
-                </th>
-                <th>
-                    <h4>Nota</h4>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
+<thead class="sticky-header">
+    <tr>
+        <th style="width: 15%;">
+            <h4>
+                <a href="@Url.Action("Index", new { 
+                    sortOrder = ViewBag.FechaSortParam,
+                    fechaDesdeFiltro = ViewBag.FechaDesdeFiltro,
+                    fechaHastaFiltro = ViewBag.FechaHastaFiltro,
+                    usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro,
+                    codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro,
+                    tipoActividadFiltro = ViewBag.TipoActividadFiltro,
+                    notaFiltro = ViewBag.NotaFiltro
+                })" class="sort-link">
+                    Fecha y Hora
+                    @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "Fecha")
+                    {
+                        <i class="fas fa-sort-up"></i>
+                    }
+                    else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "fecha_desc")
+                    {
+                        <i class="fas fa-sort-down"></i>
+                    }
+                    else
+                    {
+                        <i class="fas fa-sort"></i>
+                    }
+                </a>
+            </h4>
+        </th>
+        <th style="width: 15%;">
+            <h4>
+                <a href="@Url.Action("Index", new { 
+                    sortOrder = ViewBag.UsuarioSortParam,
+                    fechaDesdeFiltro = ViewBag.FechaDesdeFiltro,
+                    fechaHastaFiltro = ViewBag.FechaHastaFiltro,
+                    usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro,
+                    codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro,
+                    tipoActividadFiltro = ViewBag.TipoActividadFiltro,
+                    notaFiltro = ViewBag.NotaFiltro
+                })" class="sort-link">
+                    Usuario que Registró
+                    @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "Usuario")
+                    {
+                        <i class="fas fa-sort-up"></i>
+                    }
+                    else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "usuario_desc")
+                    {
+                        <i class="fas fa-sort-down"></i>
+                    }
+                    else
+                    {
+                        <i class="fas fa-sort"></i>
+                    }
+                </a>
+            </h4>
+        </th>
+        <th style="width: 13%;">
+            <h4>
+                <a href="@Url.Action("Index", new { 
+                    sortOrder = ViewBag.CodigoEquipoSortParam,
+                    fechaDesdeFiltro = ViewBag.FechaDesdeFiltro,
+                    fechaHastaFiltro = ViewBag.FechaHastaFiltro,
+                    usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro,
+                    codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro,
+                    tipoActividadFiltro = ViewBag.TipoActividadFiltro,
+                    notaFiltro = ViewBag.NotaFiltro
+                })" class="sort-link">
+                    Código Equipo
+                    @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "CodigoEquipo")
+                    {
+                        <i class="fas fa-sort-up"></i>
+                    }
+                    else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "codigoequipo_desc")
+                    {
+                        <i class="fas fa-sort-down"></i>
+                    }
+                    else
+                    {
+                        <i class="fas fa-sort"></i>
+                    }
+                </a>
+            </h4>
+        </th>
+        <th style="width: 15%;">
+            <h4>
+                <a href="@Url.Action("Index", new { 
+                    sortOrder = ViewBag.TipoActividadSortParam,
+                    fechaDesdeFiltro = ViewBag.FechaDesdeFiltro,
+                    fechaHastaFiltro = ViewBag.FechaHastaFiltro,
+                    usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro,
+                    codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro,
+                    tipoActividadFiltro = ViewBag.TipoActividadFiltro,
+                    notaFiltro = ViewBag.NotaFiltro
+                })" class="sort-link">
+                    Tipo de Actividad
+                    @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "TipoActividad")
+                    {
+                        <i class="fas fa-sort-up"></i>
+                    }
+                    else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "tipoactividad_desc")
+                    {
+                        <i class="fas fa-sort-down"></i>
+                    }
+                    else
+                    {
+                        <i class="fas fa-sort"></i>
+                    }
+                </a>
+            </h4>
+        </th>
+        <th>
+            <h4>
+                <a href="@Url.Action("Index", new { 
+                    sortOrder = ViewBag.NotaSortParam,
+                    fechaDesdeFiltro = ViewBag.FechaDesdeFiltro,
+                    fechaHastaFiltro = ViewBag.FechaHastaFiltro,
+                    usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro,
+                    codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro,
+                    tipoActividadFiltro = ViewBag.TipoActividadFiltro,
+                    notaFiltro = ViewBag.NotaFiltro
+                })" class="sort-link">
+                    Nota
+                    @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "Nota")
+                    {
+                        <i class="fas fa-sort-up"></i>
+                    }
+                    else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "nota_desc")
+                    {
+                        <i class="fas fa-sort-down"></i>
+                    }
+                    else
+                    {
+                        <i class="fas fa-sort"></i>
+                    }
+                </a>
+            </h4>
+        </th>
+    </tr>
+</thead>
+<tbody>
             @foreach (var item in Model)
             {
                 <tr>

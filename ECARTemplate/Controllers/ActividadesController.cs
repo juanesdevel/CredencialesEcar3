@@ -26,8 +26,16 @@
             string usuarioRegistroFiltro,
             string codigoEquipoFiltro,
             string tipoActividadFiltro,
-            string notaFiltro)
+            string notaFiltro,
+            string sortOrder = "")
         {
+            // Parámetros de ordenamiento para la vista
+            ViewData["FechaSortParam"] = sortOrder == "Fecha" ? "fecha_desc" : "Fecha";
+            ViewData["UsuarioSortParam"] = sortOrder == "Usuario" ? "usuario_desc" : "Usuario";
+            ViewData["CodigoEquipoSortParam"] = sortOrder == "CodigoEquipo" ? "codigoequipo_desc" : "CodigoEquipo";
+            ViewData["TipoActividadSortParam"] = sortOrder == "TipoActividad" ? "tipoactividad_desc" : "TipoActividad";
+            ViewData["NotaSortParam"] = sortOrder == "Nota" ? "nota_desc" : "Nota";
+
             var actividades = _context.Actividades.AsQueryable();
 
             // Filtros
@@ -57,6 +65,41 @@
                 actividades = actividades.Where(a => a.Nota.Contains(notaFiltro));
             }
 
+            // Ordenamiento
+            switch (sortOrder)
+            {
+                case "fecha_desc":
+                    actividades = actividades.OrderByDescending(a => a.FechaRegistro);
+                    break;
+                case "Usuario":
+                    actividades = actividades.OrderBy(a => a.UsuarioRegistro);
+                    break;
+                case "usuario_desc":
+                    actividades = actividades.OrderByDescending(a => a.UsuarioRegistro);
+                    break;
+                case "CodigoEquipo":
+                    actividades = actividades.OrderBy(a => a.CodigoEquipo);
+                    break;
+                case "codigoequipo_desc":
+                    actividades = actividades.OrderByDescending(a => a.CodigoEquipo);
+                    break;
+                case "TipoActividad":
+                    actividades = actividades.OrderBy(a => a.TipoActividad);
+                    break;
+                case "tipoactividad_desc":
+                    actividades = actividades.OrderByDescending(a => a.TipoActividad);
+                    break;
+                case "Nota":
+                    actividades = actividades.OrderBy(a => a.Nota);
+                    break;
+                case "nota_desc":
+                    actividades = actividades.OrderByDescending(a => a.Nota);
+                    break;
+                default:
+                    actividades = actividades.OrderByDescending(a => a.FechaRegistro); // Por defecto ordenar por fecha descendente
+                    break;
+            }
+
             var actividadesList = await actividades.ToListAsync();
 
             // Guardar los filtros en ViewBag para que la vista pueda mantener los valores
@@ -66,12 +109,10 @@
             ViewBag.CodigoEquipoFiltro = codigoEquipoFiltro;
             ViewBag.TipoActividadFiltro = tipoActividadFiltro;
             ViewBag.NotaFiltro = notaFiltro;
-
             ViewData["TotalRegistros"] = actividadesList.Count;
 
             return View(actividadesList);
         }
-
         // GET: /Actividades/Create
         // This method is needed to display the form.
         [HttpGet]
