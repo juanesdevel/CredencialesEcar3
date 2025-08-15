@@ -1,0 +1,88 @@
+﻿@model ECARTemplate.Models.Actividad
+
+@{
+    ViewData["Title"] = "Editar Actividad";
+}
+<a asp-action="Index" class="btn btn-secondary ms-2">Volver a Actividades</a>
+<br />
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1 class="text-center mb-4">Editar Actividad</h1>
+
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Actividad</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="CodigoEquipo" class="control-label">Código Equipo</label>
+                                    <input asp-for="CodigoEquipo" class="form-control" readonly />
+                                    <span asp-validation-for="CodigoEquipo" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="TipoActividad" class="control-label">Tipo de Actividad</label>
+                                    <select asp-for="TipoActividad" class="form-control">
+                                        <option value="Toma de Backup">Toma de Backup</option>
+                                        <option value="Toma de Audit Trail">Toma de Audit Trail</option>
+                                        <option value="Actualización Usuarios">Actualización Usuarios</option>
+                                        <option value="Restauración">Restauración</option>
+                                        <option value="Otro">Otro</option>
+                                    </select>
+                                    <span asp-validation-for="TipoActividad" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label asp-for="Nota" class="control-label">Nota</label>
+                                    <textarea asp-for="Nota" class="form-control" rows="4"></textarea>
+                                    <span asp-validation-for="Nota" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="FechaRegistro" class="control-label">Fecha y Hora de Registro</label>
+                                    <input asp-for="FechaRegistro" class="form-control" readonly />
+                                    <span asp-validation-for="FechaRegistro" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="UsuarioRegistro" class="control-label">Usuario que Registró</label>
+                                    <input asp-for="UsuarioRegistro" class="form-control" readonly />
+                                    <span asp-validation-for="UsuarioRegistro" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group text-center mt-4">
+                            <button type="submit" class="btn btn-success">Guardar Cambios</button>
+                            <a asp-action="Index" class="btn btn-secondary ms-2">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

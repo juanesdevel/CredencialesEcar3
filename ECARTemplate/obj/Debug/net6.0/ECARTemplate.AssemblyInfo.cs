@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ECARTemplate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d673f3a3ed619770094aa3a80318c628ddf6451e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13b907324e416d01920ceefb954198e8135ba154")]
 [assembly: System.Reflection.AssemblyProductAttribute("ECARTemplate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ECARTemplate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

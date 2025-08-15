@@ -138,5 +138,119 @@
             }
             return View(actividad);
         }
+        // Acción GET para buscar un equipo por su código (llamada desde AJAX)
+        [HttpGet]
+        public async Task<IActionResult> ObtenerDatosEquipo(string codigoEquipo)
+        {
+            if (string.IsNullOrEmpty(codigoEquipo))
+            {
+                return Json(new { success = false, message = "El código de equipo no puede estar vacío." });
+            }
+
+            try
+            {
+                // Busca el equipo de forma asíncrona
+                var equipo = await _context.Equipos.FirstOrDefaultAsync(e => e.CodigoEquipo.ToUpper() == codigoEquipo.ToUpper());
+
+                if (equipo != null)
+                {
+                    // Retorna un objeto JSON con éxito y los datos del equipo
+                    return Json(new { success = true, data = new { codigoEquipo = equipo.CodigoEquipo, nombreEquipo = equipo.NombreEquipo } });
+                }
+                else
+                {
+                    // Retorna un objeto JSON con un mensaje de error si no se encuentra el equipo
+                    return Json(new { success = false, message = "No se encontró ningún equipo con ese código." });
+                }
+            }
+            catch (Exception ex)
+            {
+                // Retorna un objeto JSON con un mensaje de error en caso de excepción
+                return Json(new { success = false, message = "Ocurrió un error interno al buscar el equipo." });
+            }
+        }
+        // GET: Actividades/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var actividad = await _context.Actividades.FindAsync(id);
+            if (actividad == null)
+            {
+                return NotFound();
+            }
+
+            return View(actividad);
+        }
+        // POST: Actividades/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,FechaRegistro,UsuarioRegistro,TipoActividad,CodigoEquipo,Nota")] Actividad actividad)
+        {
+            if (id != actividad.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    // Opcional: Actualizar la fecha y el usuario de modificación.
+                    // actividad.FechaModificacion = DateTime.Now;
+                    // actividad.UsuarioModificacion = User.Identity.Name;
+
+                    _context.Update(actividad);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ActividadExists(actividad.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(actividad);
+        }
+        // GET: Actividades/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var actividad = await _context.Actividades
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (actividad == null)
+            {
+                return NotFound();
+            }
+
+            return View(actividad);
+        }
+        // POST: Actividades/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var actividad = await _context.Actividades.FindAsync(id);
+            _context.Actividades.Remove(actividad);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        private bool ActividadExists(int id)
+        {
+            return _context.Actividades.Any(e => e.Id == id);
+        }
     }
 }

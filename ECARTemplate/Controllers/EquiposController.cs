@@ -382,5 +382,46 @@ public async Task<IActionResult> Index(string searchString, string sedeFilter, s
                 }).ToList()
             });
         }
+        // Método para buscar equipo por código (para AJAX)
+        [HttpGet]
+        public async Task<IActionResult> ObtenerDatosEquipo(string codigoEquipo)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(codigoEquipo))
+                {
+                    return Json(new { success = false, message = "El código del equipo es requerido." });
+                }
+
+                // Buscar el equipo por código, solo si está activo
+                var equipo = await _context.Equipos
+                    .Where(e => e.CodigoEquipo.ToUpper() == codigoEquipo.ToUpper() && e.Estado == "Activo")
+                    .FirstOrDefaultAsync();
+
+                if (equipo == null)
+                {
+                    return Json(new { success = false, message = "No se encontró ningún equipo activo con ese código." });
+                }
+
+                return Json(new
+                {
+                    success = true,
+                    message = "Equipo encontrado exitosamente.",
+                    data = new
+                    {
+                        id = equipo.Id,
+                        codigoEquipo = equipo.CodigoEquipo,
+                        nombreEquipo = equipo.NombreEquipo,
+                        sede = equipo.Sede,
+                        area = equipo.Area,
+                        estado = equipo.Estado
+                    }
+                });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "Ocurrió un error al buscar el equipo: " + ex.Message });
+            }
+        }
     }
 }

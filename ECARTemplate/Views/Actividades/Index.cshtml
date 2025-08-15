@@ -27,6 +27,27 @@
     </div>
 }
 
+<!-- Modal corregido -->
+<div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="confirmacionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmacionModalLabel">Confirmación de Eliminación</h5>
+                <button type="button" class="btn-close" id="cerrarModalBtn" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 1.5rem; line-height: 1;">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body-text">
+                ¿Estás seguro de que deseas eliminar este registro? Esta acción es **irreversible**.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="cancelarModalBtn">Cancelar</button>
+                <button type="button" class="btn btn-danger" id="confirmarAccionBtn">Sí, Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="card mb-3 no-print mx-5">
     <div class="card-header bg-primary text-white">
         <h6 class="mb-0">Filtro Avanzado</h6>
@@ -67,6 +88,7 @@
                             <option value="">Todos</option>
                             <option value="Toma de Backup" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Toma de Backup")">Toma de Backup</option>
                             <option value="Toma de Audit Trail" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Toma de Audit Trail")">Toma de Audit Trail</option>
+                            <option value="Actualización Usuarios" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Actualización Usuarios")">Actualización Usuarios</option>
                             <option value="Restauración" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Restauración")">Restauración</option>
                             <option value="Otro" selected="@(((string)ViewBag.TipoActividadFiltro ?? "") == "Otro")">Otro</option>
                         </select>
@@ -97,146 +119,111 @@
 
 <div class="table-container mx-5">
     <table class="table table-bordered table-striped table-compact">
-<thead class="sticky-header">
-    <tr>
-        <th style="width: 15%;">
-            <h4>
-                <a href="@Url.Action("Index", new { 
-                    sortOrder = ViewBag.FechaSortParam,
-                    fechaDesdeFiltro = ViewBag.FechaDesdeFiltro,
-                    fechaHastaFiltro = ViewBag.FechaHastaFiltro,
-                    usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro,
-                    codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro,
-                    tipoActividadFiltro = ViewBag.TipoActividadFiltro,
-                    notaFiltro = ViewBag.NotaFiltro
-                })" class="sort-link">
-                    Fecha y Hora
-                    @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "Fecha")
-                    {
-                        <i class="fas fa-sort-up"></i>
-                    }
-                    else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "fecha_desc")
-                    {
-                        <i class="fas fa-sort-down"></i>
-                    }
-                    else
-                    {
-                        <i class="fas fa-sort"></i>
-                    }
-                </a>
-            </h4>
-        </th>
-        <th style="width: 15%;">
-            <h4>
-                <a href="@Url.Action("Index", new { 
-                    sortOrder = ViewBag.UsuarioSortParam,
-                    fechaDesdeFiltro = ViewBag.FechaDesdeFiltro,
-                    fechaHastaFiltro = ViewBag.FechaHastaFiltro,
-                    usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro,
-                    codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro,
-                    tipoActividadFiltro = ViewBag.TipoActividadFiltro,
-                    notaFiltro = ViewBag.NotaFiltro
-                })" class="sort-link">
-                    Usuario que Registró
-                    @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "Usuario")
-                    {
-                        <i class="fas fa-sort-up"></i>
-                    }
-                    else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "usuario_desc")
-                    {
-                        <i class="fas fa-sort-down"></i>
-                    }
-                    else
-                    {
-                        <i class="fas fa-sort"></i>
-                    }
-                </a>
-            </h4>
-        </th>
-        <th style="width: 13%;">
-            <h4>
-                <a href="@Url.Action("Index", new { 
-                    sortOrder = ViewBag.CodigoEquipoSortParam,
-                    fechaDesdeFiltro = ViewBag.FechaDesdeFiltro,
-                    fechaHastaFiltro = ViewBag.FechaHastaFiltro,
-                    usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro,
-                    codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro,
-                    tipoActividadFiltro = ViewBag.TipoActividadFiltro,
-                    notaFiltro = ViewBag.NotaFiltro
-                })" class="sort-link">
-                    Código Equipo
-                    @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "CodigoEquipo")
-                    {
-                        <i class="fas fa-sort-up"></i>
-                    }
-                    else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "codigoequipo_desc")
-                    {
-                        <i class="fas fa-sort-down"></i>
-                    }
-                    else
-                    {
-                        <i class="fas fa-sort"></i>
-                    }
-                </a>
-            </h4>
-        </th>
-        <th style="width: 15%;">
-            <h4>
-                <a href="@Url.Action("Index", new { 
-                    sortOrder = ViewBag.TipoActividadSortParam,
-                    fechaDesdeFiltro = ViewBag.FechaDesdeFiltro,
-                    fechaHastaFiltro = ViewBag.FechaHastaFiltro,
-                    usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro,
-                    codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro,
-                    tipoActividadFiltro = ViewBag.TipoActividadFiltro,
-                    notaFiltro = ViewBag.NotaFiltro
-                })" class="sort-link">
-                    Tipo de Actividad
-                    @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "TipoActividad")
-                    {
-                        <i class="fas fa-sort-up"></i>
-                    }
-                    else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "tipoactividad_desc")
-                    {
-                        <i class="fas fa-sort-down"></i>
-                    }
-                    else
-                    {
-                        <i class="fas fa-sort"></i>
-                    }
-                </a>
-            </h4>
-        </th>
-        <th>
-            <h4>
-                <a href="@Url.Action("Index", new { 
-                    sortOrder = ViewBag.NotaSortParam,
-                    fechaDesdeFiltro = ViewBag.FechaDesdeFiltro,
-                    fechaHastaFiltro = ViewBag.FechaHastaFiltro,
-                    usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro,
-                    codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro,
-                    tipoActividadFiltro = ViewBag.TipoActividadFiltro,
-                    notaFiltro = ViewBag.NotaFiltro
-                })" class="sort-link">
-                    Nota
-                    @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "Nota")
-                    {
-                        <i class="fas fa-sort-up"></i>
-                    }
-                    else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "nota_desc")
-                    {
-                        <i class="fas fa-sort-down"></i>
-                    }
-                    else
-                    {
-                        <i class="fas fa-sort"></i>
-                    }
-                </a>
-            </h4>
-        </th>
-    </tr>
-</thead>
-<tbody>
+        <thead class="sticky-header">
+            <tr>
+                <th style="width: 15%;">
+                    <h4>
+                        <a href="@Url.Action("Index", new { sortOrder = ViewBag.FechaSortParam, fechaDesdeFiltro = ViewBag.FechaDesdeFiltro, fechaHastaFiltro = ViewBag.FechaHastaFiltro, usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro, codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro, tipoActividadFiltro = ViewBag.TipoActividadFiltro, notaFiltro = ViewBag.NotaFiltro })" class="sort-link">
+                            Fecha y Hora
+                            @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "Fecha")
+                            {
+                                <i class="fas fa-sort-up"></i>
+                            }
+                            else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "fecha_desc")
+                            {
+                                <i class="fas fa-sort-down"></i>
+                            }
+                            else
+                            {
+                                <i class="fas fa-sort"></i>
+                            }
+                        </a>
+                    </h4>
+                </th>
+                <th style="width: 15%;">
+                    <h4>
+                        <a href="@Url.Action("Index", new { sortOrder = ViewBag.UsuarioSortParam, fechaDesdeFiltro = ViewBag.FechaDesdeFiltro, fechaHastaFiltro = ViewBag.FechaHastaFiltro, usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro, codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro, tipoActividadFiltro = ViewBag.TipoActividadFiltro, notaFiltro = ViewBag.NotaFiltro })" class="sort-link">
+                            Usuario que Registró
+                            @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "Usuario")
+                            {
+                                <i class="fas fa-sort-up"></i>
+                            }
+                            else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "usuario_desc")
+                            {
+                                <i class="fas fa-sort-down"></i>
+                            }
+                            else
+                            {
+                                <i class="fas fa-sort"></i>
+                            }
+                        </a>
+                    </h4>
+                </th>
+                <th style="width: 13%;">
+                    <h4>
+                        <a href="@Url.Action("Index", new { sortOrder = ViewBag.CodigoEquipoSortParam, fechaDesdeFiltro = ViewBag.FechaDesdeFiltro, fechaHastaFiltro = ViewBag.FechaHastaFiltro, usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro, codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro, tipoActividadFiltro = ViewBag.TipoActividadFiltro, notaFiltro = ViewBag.NotaFiltro })" class="sort-link">
+                            Código Equipo
+                            @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "CodigoEquipo")
+                            {
+                                <i class="fas fa-sort-up"></i>
+                            }
+                            else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "codigoequipo_desc")
+                            {
+                                <i class="fas fa-sort-down"></i>
+                            }
+                            else
+                            {
+                                <i class="fas fa-sort"></i>
+                            }
+                        </a>
+                    </h4>
+                </th>
+                <th style="width: 15%;">
+                    <h4>
+                        <a href="@Url.Action("Index", new { sortOrder = ViewBag.TipoActividadSortParam, fechaDesdeFiltro = ViewBag.FechaDesdeFiltro, fechaHastaFiltro = ViewBag.FechaHastaFiltro, usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro, codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro, tipoActividadFiltro = ViewBag.TipoActividadFiltro, notaFiltro = ViewBag.NotaFiltro })" class="sort-link">
+                            Tipo de Actividad
+                            @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "TipoActividad")
+                            {
+                                <i class="fas fa-sort-up"></i>
+                            }
+                            else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "tipoactividad_desc")
+                            {
+                                <i class="fas fa-sort-down"></i>
+                            }
+                            else
+                            {
+                                <i class="fas fa-sort"></i>
+                            }
+                        </a>
+                    </h4>
+                </th>
+                <th>
+                    <h4>
+                        <a href="@Url.Action("Index", new { sortOrder = ViewBag.NotaSortParam, fechaDesdeFiltro = ViewBag.FechaDesdeFiltro, fechaHastaFiltro = ViewBag.FechaHastaFiltro, usuarioRegistroFiltro = ViewBag.UsuarioRegistroFiltro, codigoEquipoFiltro = ViewBag.CodigoEquipoFiltro, tipoActividadFiltro = ViewBag.TipoActividadFiltro, notaFiltro = ViewBag.NotaFiltro })" class="sort-link">
+                            Nota
+                            @if (ViewContext.HttpContext.Request.Query["sortOrder"] == "Nota")
+                            {
+                                <i class="fas fa-sort-up"></i>
+                            }
+                            else if (ViewContext.HttpContext.Request.Query["sortOrder"] == "nota_desc")
+                            {
+                                <i class="fas fa-sort-down"></i>
+                            }
+                            else
+                            {
+                                <i class="fas fa-sort"></i>
+                            }
+                        </a>
+                    </h4>
+                </th>
+                <th style="width: 12%;">
+                    <h4>
+                        Acciones
+                    </h4>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
             @foreach (var item in Model)
             {
                 <tr>
@@ -254,6 +241,13 @@
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Nota)
+                    </td>
+                    <td class="text-nowrap text-center">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-xs">Editar</a>
+                        <form asp-action="Delete" asp-route-id="@item.Id" method="post" style="display:inline;">
+                            @Html.AntiForgeryToken()
+                            <button type="button" class="btn btn-danger btn-xs" onclick="confirmarEliminacion(this);">Eliminar</button>
+                        </form>
                     </td>
                 </tr>
             }
@@ -297,10 +291,132 @@
         white-space: nowrap;
     }
 
-    /* --- Nuevo Estilo para botones extra-pequeños --- */
+    /* --- Estilo para botones extra-pequeños --- */
     .btn.btn-xs {
         padding: 0.1rem 0.25rem;
         font-size: 0.75rem;
         line-height: 1;
     }
 </style>
+
+@section Scripts {
+    <script>
+        var formToSubmit = null;
+        var confirmacionModalInstance = null;
+
+        // Inicializar el modal cuando el documento esté listo
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM cargado, inicializando modal...');
+
+            // Inicializar modal
+            try {
+                confirmacionModalInstance = new bootstrap.Modal(document.getElementById('confirmacionModal'));
+                console.log('Modal inicializado correctamente');
+            } catch(e) {
+                console.error('Error al inicializar modal:', e);
+            }
+
+            // Event listener para el botón "Cerrar" (X)
+            document.getElementById('cerrarModalBtn').addEventListener('click', function() {
+                console.log('Botón cerrar (X) clickeado');
+                cerrarModal();
+            });
+
+            // Event listener para el botón "Cancelar"
+            document.getElementById('cancelarModalBtn').addEventListener('click', function() {
+                console.log('Botón cancelar clickeado');
+                cerrarModal();
+            });
+
+            // Event listener para el botón "Confirmar"
+            document.getElementById('confirmarAccionBtn').addEventListener('click', function() {
+                console.log('Botón confirmar clickeado');
+                if (formToSubmit) {
+                    cerrarModal();
+                    setTimeout(function() {
+                        formToSubmit.submit();
+                    }, 300); // Pequeño delay para que se cierre el modal
+                }
+            });
+
+            // Event listener para cerrar con Escape
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    console.log('Tecla Escape presionada');
+                    cerrarModal();
+                }
+            });
+
+            // Event listener para cerrar clickeando fuera del modal
+            document.getElementById('confirmacionModal').addEventListener('click', function(event) {
+                if (event.target === this) {
+                    console.log('Click fuera del modal');
+                    cerrarModal();
+                }
+            });
+
+            // Limpiar cuando el modal se oculte
+            document.getElementById('confirmacionModal').addEventListener('hidden.bs.modal', function() {
+                console.log('Modal oculto - limpiando referencia');
+                formToSubmit = null;
+            });
+        });
+
+        // Función para cerrar el modal
+        function cerrarModal() {
+            try {
+                if (confirmacionModalInstance) {
+                    confirmacionModalInstance.hide();
+                    console.log('Modal cerrado usando Bootstrap');
+                } else {
+                    // Fallback manual
+                    const modal = document.getElementById('confirmacionModal');
+                    modal.style.display = 'none';
+                    modal.classList.remove('show');
+                    document.body.classList.remove('modal-open');
+
+                    // Remover backdrop si existe
+                    const backdrop = document.querySelector('.modal-backdrop');
+                    if (backdrop) {
+                        backdrop.remove();
+                    }
+                    console.log('Modal cerrado manualmente');
+                }
+                formToSubmit = null;
+            } catch(e) {
+                console.error('Error al cerrar modal:', e);
+            }
+        }
+
+        // Función que muestra el modal de confirmación
+        function confirmarEliminacion(button) {
+            console.log('Confirmando eliminación...');
+            formToSubmit = button.closest('form');
+
+            try {
+                if (confirmacionModalInstance) {
+                    confirmacionModalInstance.show();
+                    console.log('Modal mostrado usando Bootstrap');
+                } else {
+                    // Fallback manual
+                    const modal = document.getElementById('confirmacionModal');
+                    modal.style.display = 'block';
+                    modal.classList.add('show');
+                    document.body.classList.add('modal-open');
+
+                    // Agregar backdrop
+                    const backdrop = document.createElement('div');
+                    backdrop.className = 'modal-backdrop fade show';
+                    document.body.appendChild(backdrop);
+                    console.log('Modal mostrado manualmente');
+                }
+            } catch(e) {
+                console.error('Error al mostrar modal:', e);
+                // Como último recurso, usar confirm() nativo
+                if (confirm('¿Estás seguro de que deseas eliminar este registro?')) {
+                    formToSubmit.submit();
+                }
+            }
+        }
+    </script>
+}
