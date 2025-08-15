@@ -296,15 +296,10 @@ namespace ECARTemplate.Controllers
                 return NotFound();
             }
 
+            // Verificar si tiene credenciales activas (solo para mostrar advertencia)
             var credencialesActivas = await _context.Credenciales
                                             .Where(c => c.CodigoUsuarioEcar == empleado.CodigoEmpleadoEcar && c.Estado == "Activo")
                                             .AnyAsync();
-
-            if (credencialesActivas)
-            {
-                TempData["ErrorMessage"] = "No se puede inactivar el empleado. Aún hay credenciales activas asociadas a este empleado. Por favor, revise y desactive las credenciales primero.";
-                return RedirectToAction(nameof(Index));
-            }
 
             empleado.Estado = "Inactivo";
 
@@ -312,7 +307,18 @@ namespace ECARTemplate.Controllers
             {
                 _context.Update(empleado);
                 await _context.SaveChangesAsync();
-                TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' inactivado exitosamente.";
+
+                // Mensaje de éxito con advertencia si tiene credenciales activas
+                if (credencialesActivas)
+                {
+                    TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' inactivado exitosamente. " +
+                                               $"<strong>ADVERTENCIA:</strong> Este empleado tiene credenciales activas asociadas. " +
+                                               $"Por favor, revise y desactive las credenciales manualmente.";
+                }
+                else
+                {
+                    TempData["SuccessMessage"] = $"Empleado '{empleado.NombreEmpleado}' inactivado exitosamente.";
+                }
             }
             catch (Exception ex)
             {
