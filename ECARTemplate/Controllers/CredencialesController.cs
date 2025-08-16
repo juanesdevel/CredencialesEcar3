@@ -643,7 +643,7 @@ namespace ECARTemplate.Controllers
             await _context.SaveChangesAsync();
 
             // Lógica de Auditoría: Registro de desactivación
-            await RegistrarAuditoriaAsync(User.Identity.Name, "Desactivar", "Credenciales", $"Se desactivó la credencial con ID {id} para el equipo '{credencial.CodigoEquipo}' y el usuario '{credencial.NombreUsuario}'.");
+            await RegistrarAuditoriaAsync(User.Identity.Name, "Inactivar", "Credenciales", $"Se inactivó la credencial con ID {id} para el equipo '{credencial.CodigoEquipo}' y el usuario '{credencial.NombreUsuario}'.");
 
             TempData["SuccessMessage"] = $"La credencial para el empleado '{credencial.NombreUsuario}' en el equipo '{credencial.CodigoEquipo}' ha sido inactivada correctamente.";
             return RedirectToAction(nameof(Index));

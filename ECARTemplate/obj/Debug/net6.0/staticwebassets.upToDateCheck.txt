@@ -147,6 +147,7 @@ wwwroot\iconos\auditoria.png
 wwwroot\iconos\credenciales.png
 wwwroot\iconos\empleados.png
 wwwroot\iconos\equipos.png
+wwwroot\iconos\usuario.png
 wwwroot\images\equipos\29eaaa0e-98f1-41a5-b17e-9843634bfb79_auxiliarti06.png
 wwwroot\images\equipos\31bc16ae-a0cc-45c5-a95d-f5060f851995_GRA08.png
 wwwroot\images\equipos\505ecb15-0934-42e8-b6df-5aa8aa1e8cd2_GRA08.png

@@ -28,7 +28,8 @@
 		</a>
 	</div>
 		<div class="search">
-			<span class="badge bg-success">@User.Identity.Name</span>
+			<span class="badge bg-success">@User.Identity.Name</span> <img src="~/iconos/usuario.png" alt="Usuario" style="width: 20px; height: 20px;">
+			
 		@* <form class="app-forms hidden-xs-down" role="search" asp-controller="Page" asp-action="Search" autocomplete="off">
 			<input type="text" id="search-field" placeholder="Buscar ..." class="form-control" tabindex="1">
 			<a href="#" onclick="return false;" class="btn-danger btn-search-close js-waves-off d-none" data-action="toggle" data-class="mobile-search-on">
@@ -51,6 +52,12 @@
 		//</div>	 *@
 		}
 		<div>
+				<form class="form-inline" method="post" asp-controller="Page" asp-action="Logout">
+					<button type="submit" class="nav-link btn btn-link text-left">
+						<i class="nav-link-icon fal fa-power-off"></i>
+						<span class="nav-link-text" data-i18n="nav.utilities">Cerrar Sesión</span>
+					</button>
+				</form>
 			@* <a href="#" class="header-icon" data-toggle="dropdown" title="Mis Aplicaciones">
 				<i class="@(Settings.Theme.IconPrefix) fa-cube"></i>
 			</a> *@
