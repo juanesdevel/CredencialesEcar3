@@ -4,6 +4,11 @@
 <head>
 	<partial name="_Head" />
 	@RenderSection("HeadBlock", required: false)
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2eXJ43t8G/Q0E9I6J2C7j3tJ3p6+rF5P5t1N6p4+a4G3p6+z8L1f3tJ2p+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+	<link rel="stylesheet" href="~/webfonts/" />
 </head>
 <body class="mod-bg-1 mod-nav-link mod-nav-link @ViewBag.PreemptiveClass">
 	<partial name="_ScriptsLoadingSaving" />
@@ -27,7 +32,7 @@
 				<partial name="_PageFooter" />
 				<partial name="_ShortcutModal" />
 				<partial name="_ColorProfileReference" />
-			</div>
+			</div>	
 		</div>
 	</div>
 	<partial name="_ShortcutMenu" />
@@ -35,7 +40,7 @@
 	<partial name="_PageSettings" />
 	<partial name="_GoogleAnalytics" />
 	<partial name="_ScriptsBasePlugins" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 	@* Las siguientes líneas fueron eliminadas porque los bundles del tema ya cargan jQuery y Bootstrap *@
 	@* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
 	@* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@

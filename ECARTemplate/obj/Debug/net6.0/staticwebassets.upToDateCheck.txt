@@ -142,6 +142,11 @@ wwwroot\css\themes\cust-theme-9.css
 wwwroot\css\themes\cust-theme-9.css.map
 wwwroot\css\vendors.bundle-rtl.css
 wwwroot\css\vendors.bundle.css
+wwwroot\iconos\actividades.png
+wwwroot\iconos\auditoria.png
+wwwroot\iconos\credenciales.png
+wwwroot\iconos\empleados.png
+wwwroot\iconos\equipos.png
 wwwroot\images\equipos\29eaaa0e-98f1-41a5-b17e-9843634bfb79_auxiliarti06.png
 wwwroot\images\equipos\31bc16ae-a0cc-45c5-a95d-f5060f851995_GRA08.png
 wwwroot\images\equipos\505ecb15-0934-42e8-b6df-5aa8aa1e8cd2_GRA08.png
@@ -494,6 +499,7 @@ wwwroot\media\sound\voice_on.ogg
 wwwroot\media\video\36150715-heavenly-clouds-v2-license.txt
 wwwroot\media\video\cc.mp4
 wwwroot\media\video\cc.webm
+wwwroot\webfonts\auditoria.svg
 wwwroot\webfonts\fa-brands-400.eot
 wwwroot\webfonts\fa-brands-400.svg
 wwwroot\webfonts\fa-brands-400.ttf

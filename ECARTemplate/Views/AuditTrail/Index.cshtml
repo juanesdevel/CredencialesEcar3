@@ -15,7 +15,7 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Registro de Auditoría (Audit Trail)</h1>
+    <h1 class="display-4">Registro de Auditoría <span></span> <img src="~/iconos/auditoria.png" alt="Auditoría" style="width: 40px; height: 40px;"></h1>
 </div>
 
 <div class="card mb-3 no-print mx-5">
@@ -274,3 +274,9 @@
         line-height: 1;
     }
 </style>
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
